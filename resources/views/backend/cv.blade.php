@@ -265,8 +265,8 @@
                                     <!-- <i class="material-icons" style="color: #0a0a0a">visibility_off</i> -->
                                     <i onclick="show_hide_preview(event)" class="icmn-eye-blocked button-icon" style="cursor: pointer; border-radius:5px;top: 0px;right: 20px;padding: 5px;font-size:16px;"></i>
                                 </button>
-                                <a href="{{ url('main/datadiri') }}" id="ubah" class="btn btn-rounded btn-primary  mr-2 mb-2"><i class="icmn-pencil" style=""></i> Ubah Data </a>
-                                <a style="" href="curiculum_vitae/download_cv/YzE1MGZjYjg4Yzk4YmRlYTA4MmE2MDZiYjBiYTE1ZDU0OWM0Y2I4NTk5ZDdhYTk0NWMyYWZhNTE2ZmUxY2VkMTA1ZjI2YzM4ZmI4NzkwNzMzMGUxMWI5YzJiMzEyN2UzNGRiMWFkNTJlYjU1Zjc3Y2U0Yzk1MDUzNDZkMzViOTdGTGU4cWJtMndzWlJIQjZNMEEyaFVsdnhYaXhQL1U5YjM0eGhtMUFLRVljPQ==" class="btn btn-rounded btn-light mr-2 mb-2" target="_blank"><i class="icmn-cloud-download"></i> Download </a>
+                                <a href="{{ url('main/datadiri') }}" id="ubah" class="btn btn-rounded btn-primary  mr-2 mb-2"><i class="icmn-pencil"></i> Ubah Data </a>
+                                <a href="curiculum_vitae/download_cv/YzE1MGZjYjg4Yzk4YmRlYTA4MmE2MDZiYjBiYTE1ZDU0OWM0Y2I4NTk5ZDdhYTk0NWMyYWZhNTE2ZmUxY2VkMTA1ZjI2YzM4ZmI4NzkwNzMzMGUxMWI5YzJiMzEyN2UzNGRiMWFkNTJlYjU1Zjc3Y2U0Yzk1MDUzNDZkMzViOTdGTGU4cWJtMndzWlJIQjZNMEEyaFVsdnhYaXhQL1U5YjM0eGhtMUFLRVljPQ==" class="btn btn-rounded btn-light mr-2 mb-2" target="_blank"><i class="icmn-cloud-download"></i> Download </a>
 
                             </div>
 
@@ -396,7 +396,7 @@
 
                             <!-- </div> -->
                             <div class="col-md-2 ">
-                                <a href="{{ url('main/datadiri') }}" id="ubah" class="btn btn-rounded btn-primary  mr-2 mb-2"><i class="icmn-pencil" style=""></i> Ubah Data </a>
+                                <a href="{{ url('main/datadiri') }}" id="ubah" class="btn btn-rounded btn-primary  mr-2 mb-2"><i class="icmn-pencil"></i> Ubah Data </a>
                             </div>
 
                             <div class="col-md-2" hidden="">
@@ -420,13 +420,13 @@
                         <!-- start alamat -->
                         <div class="row m-0" style="padding-top:5px;">
                             <div class="col-md-1 icon-box">
-                                <img class="icon-1" src="https://recruit.infomedia.co.id/assets/images/icons/Cube-2.png" style="">
+                                <img class="icon-1" src="https://recruit.infomedia.co.id/assets/images/icons/Cube-2.png">
                             </div>
                             <div class="col-12 col-md-11">
                                 <h4 class="text-header">Alamat</h4>
                                 <ul class="timeline-cv" id="">
                                     <li class="qualified">
-                                        <h5 class="sub-header"><b style="" class="">Alamat Domisili</b></h5>
+                                        <h5 class="sub-header"><b class="">Alamat Domisili</b></h5>
 
                                         <p>Jl Lodan Dalam II C Kota Jakarta Utara</p>
                                         <div class="row m-0">
@@ -470,13 +470,13 @@
                         <div class="row m-0">
                             <div class="row m-0" style="padding-top:5px;">
                                 <div class="col-md-1 icon-box">
-                                    <img class="icon-1" src="https://recruit.infomedia.co.id/assets/images/icons/Cube-2.png" style="">
+                                    <img class="icon-1" src="https://recruit.infomedia.co.id/assets/images/icons/Cube-2.png">
                                 </div>
                                 <div class="col-12 col-md-11">
                                     <h4 class="text-header">Pendidikan</h4>
                                     <ul class="timeline-cv" id="">
                                         <li class="qualified">
-                                            <h5 class="sub-header"><b style="" class="">S1-Perguruan Tinggi, STMIK SwadharmaJakarta</b></h5>
+                                            <h5 class="sub-header"><b class="">S1-Perguruan Tinggi, STMIK SwadharmaJakarta</b></h5>
 
                                             <p>Negara : Indonesia, Kota : ADM. JAKARTA BARAT</p>
                                             <div class="row m-0">
@@ -514,14 +514,14 @@
                         <!-- Pengalaman Kerja -->
                         <div class="row m-0">
                             <div class="col-md-1 icon-box">
-                                <img class="icon-1" src="https://recruit.infomedia.co.id/assets/images/icons/Cube-2.png" style="">
+                                <img class="icon-1" src="https://recruit.infomedia.co.id/assets/images/icons/Cube-2.png">
                             </div>
                             <div class="col-12 col-md-11">
                                 <h4 class="text-header">Pengalaman Pekerjaan</h4>
 
                                 <ul class="timeline-cv" id="">
                                     <li class="qualified">
-                                        <h5 class="sub-header"><b style="" class="">PT RAVALIA INTI MANDIRI</b></h5>
+                                        <h5 class="sub-header"><b class="">PT RAVALIA INTI MANDIRI</b></h5>
 
                                         <p> Negara: Indonesia, Kota: KAB. BEKASI</p>
                                         <div class="row m-0">
@@ -573,7 +573,7 @@
                                     </li>
 
                                     <li class="qualified">
-                                        <h5 class="sub-header"><b style="" class="">PT SIGAP PRIMA ASTREA</b></h5>
+                                        <h5 class="sub-header"><b class="">PT SIGAP PRIMA ASTREA</b></h5>
 
                                         <p> Negara: Indonesia, Kota: ADM. JAKARTA PUSAT</p>
                                         <div class="row m-0">
@@ -625,7 +625,7 @@
                                     </li>
 
                                     <li class="qualified">
-                                        <h5 class="sub-header"><b style="" class="">PT INDOMARCO PRISMATAMA</b></h5>
+                                        <h5 class="sub-header"><b class="">PT INDOMARCO PRISMATAMA</b></h5>
 
                                         <p> Negara: Indonesia, Kota: ADM. JAKARTA UTARA</p>
                                         <div class="row m-0">
@@ -685,13 +685,13 @@
                         <!-- pengalaman organisasi -->
                         <div class="row m-0">
                             <div class="col-md-1 icon-box">
-                                <img class="icon-1" src="https://recruit.infomedia.co.id/assets/images/icons/Cube-2.png" style="">
+                                <img class="icon-1" src="https://recruit.infomedia.co.id/assets/images/icons/Cube-2.png">
                             </div>
                             <div class="col-12 col-md-11">
                                 <h4 class="text-header">Pengalaman Organisasi</h4>
                                 <ul class="timeline-cv" id="">
                                     <li class="qualified">
-                                        <h5 class="sub-header"><b style="" class="">Tarung Derajat</b></h5>
+                                        <h5 class="sub-header"><b class="">Tarung Derajat</b></h5>
                                         <div class="row m-0">
                                             <div class="col-6 pl-0">
                                                 <b>Jabatan / Posisi</b>
@@ -714,7 +714,7 @@
                         <!-- Sertifikasi -->
                         <div class="row m-0">
                             <div class="col-md-1 icon-box">
-                                <img class="icon-1" src="https://recruit.infomedia.co.id/assets/images/icons/Cube-2.png" style="">
+                                <img class="icon-1" src="https://recruit.infomedia.co.id/assets/images/icons/Cube-2.png">
                             </div>
                             <div class="col-12 col-md-11">
                                 <h4 class="text-header">Sertifikasi</h4>
@@ -732,7 +732,7 @@
                         <!-- skill -->
                         <div class="row m-0" style="padding-top:5px;">
                             <div class="col-md-1 icon-box">
-                                <img class="icon-1" src="https://recruit.infomedia.co.id/assets/images/icons/Cube-2.png" style="">
+                                <img class="icon-1" src="https://recruit.infomedia.co.id/assets/images/icons/Cube-2.png">
                             </div>
                             <div class="col-12 col-md-11">
                                 <h4 class="text-header">Kompetensi / Skill</h4>
@@ -772,7 +772,7 @@
                         <!-- list file -->
                         <div class="row m-0" style="padding-top:5px;">
                             <div class="col-md-1 icon-box">
-                                <img class="icon-1" src="https://recruit.infomedia.co.id/assets/images/icons/Cube-2.png" style="">
+                                <img class="icon-1" src="https://recruit.infomedia.co.id/assets/images/icons/Cube-2.png">
                             </div>
                             <div class="col-12 col-md-11">
                                 <h4 class="text-header">File Uploaded</h4>

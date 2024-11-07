@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CVController;
+use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\PortalController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,11 +19,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PortalController::class, 'index']);
 Route::get('/login', [PortalController::class, 'login']);
+Route::post('/auth', [PortalController::class, 'cekAccount']);
+Route::get('/logout', [LogoutController::class, 'index']);
 Route::get('/regis', [PortalController::class, 'regis']);
+Route::post('/registrasi', [PortalController::class, 'registrasi']);
 Route::post('/load_vacancy_by_company', [PortalController::class, 'load_vacancy_by_company']);
 
 
-Route::prefix('/main')->group(function () {
+Route::middleware(['check.session'])->prefix('/main')->group(function () {
     Route::get('/datadiri', [CVController::class, 'index']);
     Route::get('/home', [CVController::class, 'home']);
     Route::get('/apply', [CVController::class, 'apply']);

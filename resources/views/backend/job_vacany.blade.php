@@ -152,9 +152,9 @@
             transition: 0.3s;
         }
 
-        .tab button:hover {
-            /* background-color: #ddd; */
-        }
+        /* .tab button:hover {
+            background-color: #ddd;
+        } */
 
         .tab button.active {
             /* background-color: #ccc; */
@@ -1601,12 +1601,12 @@
                                         <div class="result-list-wrapper" id="list_vacancy_urgent">
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:none;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8974" width="0" height="0" style="display: none; height: 0px; width: 0px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Contact Center Bahasa Inggris Bank Milik Negara - Semarang</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1616,12 +1616,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:none;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8973" width="0" height="0" style="display: none; height: 0px; width: 0px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI MEDAN</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1631,12 +1631,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:none;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8972" width="0" height="0" style="display: none; height: 0px; width: 0px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI SIBOLGA</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1646,12 +1646,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:none;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8971" width="0" height="0" style="display: none; height: 0px; width: 0px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI PEMATANG SIANTAR</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1661,12 +1661,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:none;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8970" width="0" height="0" style="display: none; height: 0px; width: 0px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI BINJAI</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1676,12 +1676,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:none;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8969" width="0" height="0" style="display: none; height: 0px; width: 0px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI LAMPUNG</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1691,12 +1691,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:none;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8968" width="0" height="0" style="display: none; height: 0px; width: 0px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI JAMBI</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1706,12 +1706,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:none;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8967" width="0" height="0" style="display: none; height: 0px; width: 0px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI PEKANBARU</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1721,12 +1721,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:none;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8966" width="0" height="0" style="display: none; height: 0px; width: 0px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI BANDA ACEH</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1736,12 +1736,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:none;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8965" width="0" height="0" style="display: none; height: 0px; width: 0px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI RANTAU PRAPAT</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1751,12 +1751,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:none;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8934" width="0" height="0" style="display: none; height: 0px; width: 0px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;"> Engineer On Site Lembaga Militer Kalimantan Utara - Bulungan</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1766,12 +1766,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:none;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8935" width="0" height="0" style="display: none; height: 0px; width: 0px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Engineer On Site Lembaga Militer Sulawesi Barat - Mamuju</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1781,12 +1781,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:none;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8930" width="0" height="0" style="display: none; height: 0px; width: 0px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">AGENT CONTACT CENTER MASKAPAI PENERBANGAN YOGYAKARTA</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1796,12 +1796,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_7526" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">QC Helpdesk Mitratel</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1811,12 +1811,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:none;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8918" width="0" height="0" style="display: none; height: 0px; width: 0px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">System Analyst Finance SSO</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1826,12 +1826,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:none;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8911" width="0" height="0" style="display: none; height: 0px; width: 0px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Agent Transaksi R2R &amp; Tax Finance SSO</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1841,12 +1841,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_7463" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Agent Contact Center Layanan Kesehatan - Yogyakarta</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1856,12 +1856,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8764" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Agent Call Center Rumah Sakit Denpasar (RS Ngoerah) - Denpasar</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1871,12 +1871,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:none;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8836" width="0" height="0" style="display: none; height: 0px; width: 0px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI Telkomsel - Jayapura Papua</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1886,12 +1886,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:none;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8837" width="0" height="0" style="display: none; height: 0px; width: 0px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI Telkomsel - Bitung Yos Sudarso Sulawesi Utara</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1901,12 +1901,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8440" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">AGENT OBC Mitratel</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1916,12 +1916,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:none;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8813" width="0" height="0" style="display: none; height: 0px; width: 0px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">IT SUPPORT MAYBANK - KENDARI</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1931,12 +1931,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8376" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR Grapari Bukittinggi</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1946,12 +1946,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8377" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR Grapari BATAM CENTER</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1961,12 +1961,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8740" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">IT DATA CENTER OPERATION MAYBANK (23111)</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1976,12 +1976,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_7343" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Manager Corporate Planning PT Infomedia Nusantara</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -1991,12 +1991,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8669" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CAMPAIGN OFFICER Telkom DMO HQ</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2006,12 +2006,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8668" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI Telkomsel Sorong - Papua Barat</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2021,12 +2021,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8667" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI Belitung</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2036,12 +2036,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8383" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">AGENT TELKOMSEL OBC CC MEDAN - 1865</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2051,12 +2051,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8657" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Agent Call Center Inbound Bank Negara - Solo (2024)</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2066,12 +2066,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_7518" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Agent Contact Center Bank Swasta - Jakarta Selatan </h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2081,12 +2081,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8293" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI Dumai</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2096,12 +2096,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_7525" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Helpdesk L1 Mitratel</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2111,12 +2111,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_6915" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Agent Contact Center Maskapai Penerbangan - Semarang</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2126,12 +2126,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8538" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI Telkomsel - Kaimana Papua Barat</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2141,12 +2141,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8470" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Agent Contact Center CIMB Niaga</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2156,12 +2156,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_6244" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Agent Contact Center Bank Milik Negara - Semarang</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2171,12 +2171,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8355" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Agent Sis n Bro - Surabaya (Replace sdm resign)</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2186,12 +2186,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_5166" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Agent Call Center Bank Danamon - Semarang</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2201,12 +2201,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8236" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Expert AI Engineer - Google</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2216,12 +2216,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_8237" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Expert AI Engineer - Microsoft</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2231,12 +2231,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_4385" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Manager IT Governance &amp; Security Management</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2246,12 +2246,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_5927" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Carring Visiting Agent - Jambi</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2261,12 +2261,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_7999" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI Pangkal Pinang</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2276,12 +2276,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_5639" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI Tondano-Sulawesi Utara</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2291,12 +2291,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_7350" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Junior Officer IT Digitization (Odoo Developer) PT Infomedia Nusantara</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2306,12 +2306,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_7150" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI Subang</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2321,12 +2321,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_4053" width="133" height="300" style="display: block; height: 200px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Agent Outbound Call Center Telkomsel - Bandung</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2336,12 +2336,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:none;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_1916" width="0" height="0" style="display: none; height: 0px; width: 0px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Grapari Telkomsel West Area (Cilegon, Serang, Karawaci, Cikupa, &amp; BSD)</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2351,12 +2351,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:none;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_2158" width="0" height="0" style="display: none; height: 0px; width: 0px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Grapari Telkomsel East Area (Sukabumi, Bogor, Bekasi, Depok, Sawangan, Cibubur, Karawang)</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2366,12 +2366,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:none;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_2157" width="0" height="0" style="display: none; height: 0px; width: 0px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Grapari Central Area (Pondok Indah Plasa, Bassura, Emporium, Alia, Kokas, GMP, MKG &amp; All Jakarta)</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2381,12 +2381,12 @@
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
                                                 <div class="ribbon">Vacancy Urgent</div>
-                                                <div class="col-md-2" style=""> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
+                                                <div class="col-md-2"> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">
                                                     <div class="relative" style="position: relative;display:block;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe><canvas id="chartProgress_3481" width="133" height="0" style="display: block; height: 0px; width: 89px;"></canvas>
                                                         <div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Agent Call Center Bahasa Mandarin Bank ICBC - Jakarta</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2397,8 +2397,8 @@
                                         </div>
                                         <div class="result-list-wrapper" id="list_vacancy">
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8733" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8733" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Quality Control Agent CC Perusahaan Minyak Milik Negara - Semarang</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2407,8 +2407,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>Inbound Call/CS/Frontliner</b><br><br> <span>Jenjang</span><br> <b>Diploma III</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/MmNhNTU2YTIxOTU3OTFlNmI2Yjc5YzExNGI3Mzg3MzAxNTNhNTlhMjQ4ZWNmNjUxYjI4NzkyMmRkNGFiMTU1Yzk2YmI0YzFiNzFkYWE2MTBkMjhiMTAzMDQ2N2MyNzliODA0ZTc0ZWYyNmM1ZjdjYWZiMTY4NzUyNDMwODM3ZTlDaEZDNHdiZE1TQ2VGVmxYMEpEck1TZ0FBek1DUlAzeEtVZDNpaEdqSDdVPQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_8733"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,8733)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8932" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8932" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI Telkomsel - Tarakan Kalimantan Utara</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2417,8 +2417,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>Inbound Call/CS/Frontliner</b><br><br> <span>Jenjang</span><br> <b>Diploma III</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/ZDUzNjQzZDZjOGM4MTk0OTEyMjNmMzI3OTM5NjY5MTEyNzE1MGQxY2Y5ZjkwMjU2MDY2ZGU0OTk5YzkyNmNjNjg2ZGMwZjgzMjE4YTdlY2YzNThkMGFhMmYzZDI5YTkzZTg0OTk2NDE2OTIwMzFlMWFlZDZiZTZlNTJiYmEwMWE5djBZZDc0MlBXbVdkSzlsdUdDRmlDT3JrdURKaXV1ZDVPKytvUUkrMHNFPQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_8932"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,8932)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8931" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8931" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI Telkomsel - Bantaeng Sulawesi Selatan</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2427,8 +2427,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>Inbound Call/CS/Frontliner</b><br><br> <span>Jenjang</span><br> <b>Diploma III</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/NDQ2ZmZmZjM5MDNjNWM0ZmQxYWNjZWZiMzIwNWNkMGZlMjRmOWU4NzA1MTVhNzI2NmU2Nzg1MTdkMzQ5NDM1OTZlMmY1NTIxNzg1N2Y3MDY2ZDcwYmJhMGY3N2ZkMTA2NTE1ZWE5NTRmNTQzODg3ZjM3ZjMwNjVlZjc0ODlhZDV5MjFPeUdsZVIyK05jTDBxWlp0bGwvcXZJVnB6UzRSWFJuTnQ5d3FsQVZRPQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_8931"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,8931)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_7117" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_7117" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Agent Contact Center Laboratorium Klinik - Semarang dan Bandung</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2437,8 +2437,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>Inbound Call/CS/Frontliner</b><br><br> <span>Jenjang</span><br> <b>Diploma III</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/NmY0ZmM1YWE2NzkxZDg2NmU1NWUzYzVlZjM1ZjMxNDVmMzRhMGQ3ZGU0ZjRkYWNmYzcyZDBlODNkZWQ5YzM3YTE2MTFkMDFiM2I3ZGMzOTlhNzAzOTAzMDNmNjhiNjQzMTc3NGVmMTE4ZGJkNDNkZmM3NTRiZjMwOTZiOTdjYWRDZHlQUUJoRk1RanpOVzVvcHhDUlJSNTZqRXFGb012TU5GNnlXcG9iVDEwPQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_7117"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,7117)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8925" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8925" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Supervisor Contact Center Ecommerce - Semarang</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2447,8 +2447,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>Inbound Call/CS/Frontliner</b><br><br> <span>Jenjang</span><br> <b>Diploma III</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/MDljYTcwZmFhZDA3Y2Y5YWE0OGY5MjcxMWU5ZTZmODA1ZTAzODJkMDAzNDNiZjFmODUyNDY4MWNmN2RlYTdlNzQ2NTQwZGRmMjlkNTcyNmJkOWMxODQ4YTM2OTRiMjg5NDdlOWZjZGU0MTFiZTc4MTAyMGY5NjJiODEyNTQxY2JycnAzZmw2bUZtZndDNzNaZFRnNXJXa1J1VjBrN0RCM3ZSejJvWGsvaWI0PQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_8925"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,8925)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8895" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8895" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI Telkomsel - Kwandang Gorontalo</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2457,8 +2457,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>Inbound Call/CS/Frontliner</b><br><br> <span>Jenjang</span><br> <b>Diploma III</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/NGNkMTgzNDVhZDE4NDJiNWUzYzRmZjZiMDlhOWNhOGZjODZlYWY2MDRmMzViNWIxNjg0YzFiZWNhYjBhMWU5ZGVkYTQ2ODk3OTE0MDBiNWRjNDVhZGU0Nzg4ZTQ4YjhiYmE2YTVlNWY3ZTI2MjQ0NTk0NzIxOGFlNWNjOTBmZGFzL1VRMWtWRnVlR3VXV3U5ZTQ5eEdSMnJzQlRMdjhjaEFlL1pSTzZzME9zPQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_8895"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,8895)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8831" width="135" height="324" style="display: block; height: 216px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8831" width="135" height="324" style="display: block; height: 216px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Junior Account Manager PT Infomedia - Makassar</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2467,8 +2467,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>Marketing/Sales</b><br><br> <span>Jenjang</span><br> <b>S1-Perguruan Tinggi</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/MmVjYzczYWY1MWNiZGUwMzc3ZTZkMDZhNjljZGE5ODFmYTg2MTRiNWRiMTQ3Zjk4NmNhNjAwYzU4YWI1MGE3M2E4NDE0OGRlMzIxZjY2OGVjZDdkOTFjYWNkNjVlNGVhOWU5NGEwMDcxMzcyMDI4YThjODI3Yzc3ZWFlMWJjMTUxZHFqQ0RZMWdrV096ZU5DVVk2K3ZIVnZyY0dyODhrelM3a3RQRlZDMVJBPQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_8831"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,8831)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8806" width="135" height="324" style="display: block; height: 216px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8806" width="135" height="324" style="display: block; height: 216px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Junior Account Manager Sales Government Area Surabaya</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2477,8 +2477,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>Marketing/Sales</b><br><br> <span>Jenjang</span><br> <b>Diploma III</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/YzNmNjU4MzIxZjI4YTkwYmU1ZGY3NzM4ODlmOWNkYjJhZThjYmZhMTU4NWFkNTJiOTIzYmQwM2FiOGI5Yjc5NTU5MWE1YTc2YWZiODc1MzEzN2FjMTQxMzZiZWZhMzc0NDZlMmU1YzA0NTFlY2QwYjQ5YmY0OWIzYTc2NmIwZTF6VEtmQUpIUjM5VDJzVmZKVEJxUi94dlRDR01YSzAyQTFQdjJaNFAxTlBrPQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_8806"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,8806)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8734" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8734" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Admin Agent CC Perusahaan Minyak Milik Negara - Semarang</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2487,8 +2487,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>Inbound Call/CS/Frontliner</b><br><br> <span>Jenjang</span><br> <b>Diploma III</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/OWMzNzU4YjJjNDA1NWQ2NDRmNTE4NmZjOTYzYzhmYWJjN2MyMzc1YzA1Njk1YWE3OTIzZjI1NDM2MTEyNTE0Y2U1ZmI2Zjk3M2Q5MWVhNmUzZTRkZjRlYjVlMDBkNjA4YjQ3NDFjZTgzOTUwNGVjY2UyOTQwMDVmYWJlMGY4ZDZqeHJPZlNzUUhJMkZZa1E3M04yMG4rNTRzOWtZYmtoT0RlbEJtVEZsb1V3PQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_8734"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,8734)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8791" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8791" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">AGENT WSO - Semarang</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2497,8 +2497,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>Inbound Call/CS/Frontliner</b><br><br> <span>Jenjang</span><br> <b>Diploma III</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/Yzk0MDQ4ZWRjNGVmN2VmM2RmYjhlM2MwYzIyNTUxNGZiZmRkNTllYWRmNDEyNGFjZmZmZDVlYjdjYzNhN2FlNDUzZjJhZTA2MmFjODMwYTc2OGQwOTAxYzYyMGI0ZTc5MDhlOGI3MTRkMGFmMDJjN2RhN2U2NmZhMDNmODlhYWFXTDdZN3o4NVR2U05vbTJuOVZBM1BrazZFMFIrcHp2YUVTTG51Ni9ENTRJPQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_8791"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,8791)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8732" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8732" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Team Leader Agent CC Perusahaan Minyak Milik Negara - Semarang</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2507,8 +2507,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>Inbound Call/CS/Frontliner</b><br><br> <span>Jenjang</span><br> <b>Diploma III</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/M2VmMTI0NzM4NTZhM2ZmZWYwZDNjODkyNDQ1ZjhkOGJmOTg3M2FlN2ViYTgyZTI1NDZlODNhMDFkMGYyOWEyNmY3NzUyNjUzZGZjMjhmMjhhNmYzZWYwYmI0N2U1MDNlOGRmNDNkN2E3MWE1OTUwZjQ2ODNiNjZjNzc3NzIxZGEzeXB1bGRmTU5kZTRjWG1Od2hxNGVIRVhHWUJKQldmUzNnalJ6dGlSZEZjPQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_8732"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,8732)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8790" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8790" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">AGENT WSO BANDUNG </h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2517,8 +2517,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>Inbound Call/CS/Frontliner</b><br><br> <span>Jenjang</span><br> <b>Diploma III</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/OTE1MzQxYWNjZTgyZmQwMzRiZWNiYTk0NTFmOTJkMDNjNmZmOGQ4YTFiODhkYTA3ZGYzMWZhN2VjMjJhOTllOTk0ZGE0MzdiOTM5MzI2NDQ3NjgzNzk3MGFjYjM1MGFjMWZmYTBmYjRiNjBiZTg0NjMwMWQ4MzM0ZjA5NDE0MmZObTN3VWR3Ykg0cnBLeHoxOG1DdlNDOWp5VnJDUFQ4aVBhOTR1blYzL3FNPQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_8790"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,8790)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8666" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8666" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Agent Inbound Fixed - Semarang</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2527,8 +2527,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>Inbound Call/CS/Frontliner</b><br><br> <span>Jenjang</span><br> <b>Diploma III</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/YTQ2ODQ3NWY1NzA5OTg2MjllM2Y2M2RlNDlhYWU4MDBiNzRlNzVmZWQ1YzQ5MzZiMTU3YjMxMzIwM2EwYmFkMTNiNWM1NzUxZWNhNWM4ZWZhY2FmZjQ5NzZjODBlOTEwMGJjMjcwNWUzNzliOWY2N2EwMGNiZjllMTBkNDE0MjBaMmVEQlh6blMzL0F1bGI2S2FMdW1JcnZ1bmhiVlZHRWxPV1pNZXBBRitjPQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_8666"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,8666)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8748" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8748" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">IT FBCC Semarang</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2537,8 +2537,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>Information Technology</b><br><br> <span>Jenjang</span><br> <b>Diploma III</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/MTRmMDNmMzg5YThkNmNhNGRkNjE4YmRlODQ5Y2NmZTc2MGY3ZGQ5OGJlYzFlNjU5M2RkODBhZjg0ODdmYTUzM2U0MzE2MjIyODczNDM0NmM5ODk1NDgwODM1MGQxMWExZGEzMDM5ZTFmYmYyNmRhNmZmOGNlNWIzZWU0YjhmNWFKMi93QmpxOWRpVFZKQUs0N3VFRE81SVBBY3h1TnVxOC9ZRS9Pd3k4bzZ3PQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_8748"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,8748)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_5811" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_5811" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">GraPARI Kefamenanu- NTT</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2547,8 +2547,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>Inbound Call/CS/Frontliner</b><br><br> <span>Jenjang</span><br> <b>Diploma III</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/MGQ5NDU0ZjcyMjNiNzcyYzJhOTdhYjkwN2I0NTM1NzVmZmM3YTU0Zjc5MTk2MjRhYmY2NjE3MzY5YmU1MmM5MDVhNjY4ZDJiMGJiOGFkMGIzZGZmZTE3YmU5ZjZkMGEwY2EzYjQ1ZDc2MmY4YTIzMDhlNmEwNzJmYTMzYzA5NDVhN1BYMzhzR2dlaEdsaHB2UEtXa3FYQk9aazh0Kzc1UWtYejVYM0kyWDdFPQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_5811"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,5811)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_5761" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_5761" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI Boyolali</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2557,8 +2557,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>Inbound Call/CS/Frontliner</b><br><br> <span>Jenjang</span><br> <b>Diploma III</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/NjYwOTRhMmMzMmE3M2NlNWY4M2E3YTg0Njc2MzQ0M2JhMjg4ZGRlNWVjNWI0MDNkZjEzZDVlMDg0YjdiODIwNzdjMTVjNDJjNDRhNGI1NGI1OTY2OGUzODhkZTc4OWVhZWI1MzdmZWNiNzAwYjU1NzczMTlmNjI1MGE0NmFjZGZGcmtrUk9vVlZSV3ZmV1NrSHRBK0EzeUcweUV2M1NWdTRkOUJzWEUxOHJRPQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_5761"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,5761)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8731" width="135" height="324" style="display: block; height: 216px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8731" width="135" height="324" style="display: block; height: 216px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Agent Remcall FBCC - Bandung</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2567,8 +2567,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>OBC Telesales</b><br><br> <span>Jenjang</span><br> <b>SLTA/SMK</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/NjMwYTY2MjFhNmRiOWUyYTU2Yjg5YTY4MmZkYmZhNGJhODY0NzNmZjdjZjYxOGUwMmFhYjEwZTgxMWVhNGZmMjM5OGEyZDZlYTRlZjllZDI2YjUzNjljZjE5ODliN2NmYWRlMjM0MjgzMzgzZjM1NTJjZDI1ZTE3MjNlZDI5NmUxbHAwM3QxcjJzQzBub0h1cWM5czRvZ1NGUks5Z3k4aVM3VzUzeUYyMWdFPQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_8731"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,8731)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_5764" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_5764" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI Magelang</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2577,8 +2577,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>Inbound Call/CS/Frontliner</b><br><br> <span>Jenjang</span><br> <b>Diploma III</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/MTkyODExM2M3ZjFmZjQ5MTIzZjg5ZGYwNGM4NWMzZmFiNzczMDVjYWExNWRiMWRhNmQ5ZTdiNDdiNzMyY2Y3MjQ4ODM2NjUwNzcxOWJhM2YyNzhjNGY0OGEyMzUzNmNiMTBlYTY0NDhjZDk4OTE1NzYxY2QxZWU1MDUxMTU1Y2FTNjFXM3dOZWdvODE3aVRIU2c2cTA0dG42R1QyVzVJSFQ2Yi9PdnlndEFnPQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_5764"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,5764)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8347" width="135" height="324" style="display: block; height: 216px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8347" width="135" height="324" style="display: block; height: 216px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">AGENT SALES OBC MALANG - 1742</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2587,8 +2587,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>Marketing/Sales</b><br><br> <span>Jenjang</span><br> <b>SLTA/SMK</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/MzBmZDUzYzc2ZjA2ZTIyYjY3MWMzODZmY2NjMTMzNDJmOWE0NmZlYjQwYzA1MWRlZjI3YmRlMjg1ZmY2OTJhNTdkM2IwMGE5NDAyNWExOTI5YWQ5YjMyM2RmZDU1MWQ5OTkyODdiMDZlZmJlNGM4NTIyMWJjNjFkNmE3MjI3MjlsclpSSzFxQUFXN3ZqaUJEYzQxd0IrczhlRFlLS2dFZlQxTjU5MWRSQTN3PQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_8347"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,8347)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8633" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8633" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Agent Contact Center Maskapai Penerbangan - Bandung</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2597,8 +2597,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>Inbound Call/CS/Frontliner</b><br><br> <span>Jenjang</span><br> <b>Diploma III</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/M2FlMTcwM2FjNGE5NmY4MDM5YjJkNjM3YTkyODg0NjM1MmI4MDQwOTA4YWJmNTZhN2M0N2M5MTMwODY0NTQwNTQwYWQ2NjMzNmM5NTY0MTQ1M2MzNTdmNzY3NTU2YmQzMGJlNTdjNWM5YmY5NThiOTljOTZlMzQ1MDRiYjM0NWViWVg1SlIwODJYcFVTRy9nQVB5aDNKQ3BUU2pCVWVRSDJ2L2F4d2RrbmJFPQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_8633"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,8633)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_5765" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_5765" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI Bantul</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2607,8 +2607,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>Inbound Call/CS/Frontliner</b><br><br> <span>Jenjang</span><br> <b>Diploma III</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/Y2M0MmJmZDcyMzhiODdmMTdiNTc3ZDQyMjdkMWJmZGNlNzdiYmFiMjA3OTBiYzA0ZGY3NDViZWU5OTY2OTEyZWRhZTNmOWE5Mjc1MzQ5ZGFiNmQ1MDdiOTlmZTI2MGU2ZjFmN2RkYzMwZjE3MTQ4OGQ3YTJhNmE5ZDFkZjY1NzRNWHFiVUE5T3NRRHIrWC84WkswQmYwVnAwNGMyUnJPSm1IczRMTWphRzQwPQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_5765"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,5765)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8593" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8593" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Senior Officer Product Architect</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2617,8 +2617,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>Information Technology</b><br><br> <span>Jenjang</span><br> <b>S1-Perguruan Tinggi</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/ODA0MWE4YWI0M2E0ZDZjNThkYTkwOTlhZGE2NWZjMGVkNmZjMWQ5N2IxMjNjMWMxMmQ4NTI0NjNmNjAzYTY3YzVlNDkxMTFhNjY5NGZmYjFhODEzODYxODBiNDgyN2I3Yjg2Yjg5ZWY5NjE3OTE1ZjU4ZjE5ZGJiMWRlYzNlNDQwVUFibjNkcm5ILy9PL2U5c29yZXhOYUEyZldXU2lTdVdjSHpYbnllRXFjPQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_8593"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,8593)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8595" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8595" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Junior Officer Product Owner</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2627,8 +2627,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>Information Technology</b><br><br> <span>Jenjang</span><br> <b>S1-Perguruan Tinggi</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/ODI1YzIxZTU1MzY5Nzk1NjZhNmMxNmNmOTU0ZTJmYmFmZDIyNTI1MTQ0NjQ1YjZkMWQ5YTFmOWViMDE1Y2FlMWUxYzA4YWZjZjZmNGFkYjIzOTc4ZTUwZmYzZjAzYTc5NmNlMTM0NWYwMTFhMmQ0NjU2MDkzNWY4ODAwYzFhOWJnTEM4Z0xnZ1kxYnJkRFowWW5naFVVd3ppcW4yVTlETjRYRGx5TnpaV0M0PQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_8595"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,8595)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8375" width="135" height="324" style="display: block; height: 216px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8375" width="135" height="324" style="display: block; height: 216px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Agent Telkom Carring Visiting - Bangka (Collector)</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2637,8 +2637,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>OBC Agent Verifikator</b><br><br> <span>Jenjang</span><br> <b>SLTA/SMK</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/NWQyNjJkOGIzNDllMTI4ODcwZmEwYTY1N2MxZjk5ZDcwMzA2NzU2OWJlMGY0NDBkODk2MTgwNWY2OTNjOGNkMGJiYzUyOTUzN2NjYTAzMjM1M2YwNGRmYzUyNmM3NjYxNzI4ZjJmMTAwMmIyYWQyYWMxOTIzZmU3ZGRkMzY3OGJxMHlRU3JHN0g1cFVGeDAydWF1MVZLdk1HRXlsTXpBc3dySHdyTUYrM2VnPQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_8375"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,8375)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_5680" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_5680" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI Kupang - NTT</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2647,8 +2647,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>Inbound Call/CS/Frontliner</b><br><br> <span>Jenjang</span><br> <b>Diploma III</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/NjdjMDc5OTc1NmYxZTg4NzZkZjhkMDIzYjY5NGE2ODJkMzg5NWJmNTMzZWIxZTVmMmMwZDM4ZmRmMGMzMDI0NDcyOTcxZGM2NzMxOTExZDI4ZGViMDI3ZmM1MGRkOTQ3NGUwMGM0ZmZmMmY5YzFkNmRlNzVhYzRmYzM3YmExYTRyRmVLMnBhMk5qYkdUbHdlZWNaRjMrSFlkeDNZMEdqN0ZnZmVBYWREZU5BPQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_5680"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,5680)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8372" width="135" height="324" style="display: block; height: 216px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_8372" width="135" height="324" style="display: block; height: 216px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">Agent Telkom Carring Visiting - Tabanan (Collector)</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2657,8 +2657,8 @@
                                                 <div class="col-md-3" style="padding:5px"> <span>Bidang Pekerjaan</span><br> <b>OBC Agent Verifikator</b><br><br> <span>Jenjang</span><br> <b>SLTA/SMK</b> <br><br> <a href="https://recruit.infomedia.co.id/main#job_vacancy/job_detail/MzQzNjk4M2NhYmMzNmFjMmQ5ODE1MmQ2NjFlZTUxMmFkOTQyYWRmMGZmZjc5ZjdhZTNkOTZlMzM4Y2RlYzg1YWVlZGU1YmY2YTNjODJkZmY4NjcyOWExNTQ3Zjc3Yjc0ZjE2MTNkMDBlZTJkY2I3MDc4NzRiYjQxNjI1ZDZmMDZQRWtDUGRvOWgvVndZSlNObFhBbTg1OUFuQmVSOGYzR3p1QjFRUnV4bmFzPQ" target="_blank" class="btn btn-danger">Detail Pekerjaan</a> <span id="btn_save_8372"><button type="button" class="btn btn-sm btn-outline-primary cursor" onclick="save_job(`saved`,8372)" data-bs-toggle="tooltip" data-bs-placement="right" title="Save"><span class="material-icons">bookmark_border</span></button></span> </div>
                                             </div>
                                             <div class="row card-list-vacancy card-vac">
-                                                <div class="col-md-2" style=""><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_6844" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
-                                                <div class="col-md-7 center-list-job" style="">
+                                                <div class="col-md-2"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe> <img src="https://recruit.infomedia.co.id/assets/backend/images/company_logo/1a6b173689253eb15d3ca33323ecff1f.png" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;"> <canvas id="chartProgress_6844" width="135" height="355" style="display: block; height: 237px; width: 90px;"></canvas> </div>
+                                                <div class="col-md-7 center-list-job">
                                                     <h4 style="margin-bottom: 0px;font-weight: bold;">CSR GraPARI Ngawi</h4>
                                                     <p style="display:none;">null</p>
                                                     <hr>
@@ -2831,7 +2831,7 @@
                         <div class="col-md-2" style="padding:10px;background:#F0F0F0">\
                           <img src="' + val.logo_event + '" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);">\
                         </div>\
-                        <div class="col-md-7 center-list-job" style="">\
+                        <div class="col-md-7 center-list-job"  >\
                           <h4 style="margin-bottom: 0px;font-weight: bold;"> Bursa Kerja: ' + val.event_name + '</h4>\
                           <span>Tanggal Pelaksanaan</span>\
                           <b>' + val.date_start + '</b> sd <b>' + val.date_end + '</b>\
@@ -2927,11 +2927,11 @@
                                 }
                                 $("#list_vacancy_urgent").append('<div class="row card-list-vacancy card-vac" >\
                      <div class="ribbon">Vacancy Urgent</div>\
-                     <div class="col-md-2" style="">\
+                     <div class="col-md-2"  >\
                        <img src="' + val.vacancy_base_url + 'assets/backend/images/company_logo/' + val.vacancy_logo_company + '" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">\
                       <div class="relative" style="position: relative;display:' + canvasStyle + ';"><canvas id="chartProgress_' + val.id + '" width="300px" height="200" style="display:' + canvasStyle + '"></canvas><div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div></div>\
                      </div>\
-                     <div class="col-md-7 center-list-job" style="">\
+                     <div class="col-md-7 center-list-job"  >\
                        <h4 style="margin-bottom: 0px;font-weight: bold;">' + val.vacancy_name + '</h4>\
                        <p style="display:none;">' + val.vacancy_company_name + '</p>\
                        <hr>\
@@ -2951,11 +2951,11 @@
                             } else {
 
                                 $("#list_vacancy").append('<div class="row card-list-vacancy card-vac" >\
-                     <div class="col-md-2" style="">\
+                     <div class="col-md-2"  >\
                        <img src="' + val.vacancy_base_url + 'assets/backend/images/company_logo/' + val.vacancy_logo_company + '" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">\
-                       <canvas id="chartProgress_' + val.id + '" width="300px" height="200" style=""></canvas>\
+                       <canvas id="chartProgress_' + val.id + '" width="300px" height="200"  ></canvas>\
                      </div>\
-                     <div class="col-md-7 center-list-job" style="">\
+                     <div class="col-md-7 center-list-job"  >\
                        <h4 style="margin-bottom: 0px;font-weight: bold;">' + val.vacancy_name + '</h4>\
                        <p style="display:none;">' + val.vacancy_company_name + '</p>\
                        <hr>\
@@ -3098,7 +3098,7 @@
                      <div class="col-md-2" style="padding:10px;background:#f9f9f9">\
                        <img src="' + val.vacancy_base_url + 'assets/backend/images/company_logo/' + val.vacancy_logo_company + '" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);">\
                      </div>\
-                     <div class="col-md-7 center-list-job" style="">\
+                     <div class="col-md-7 center-list-job"  >\
                        <h4 style="margin-bottom: 0px;font-weight: bold;">' + val.vacancy_name + '</h4>\
                        <hr>\
                        <p>' + val.short_description + '</p>\
@@ -3120,7 +3120,7 @@
                      <div class="col-md-2" style="padding:10px;background:#f9f9f9">\
                        <img src="' + val.vacancy_base_url + 'assets/backend/images/company_logo/' + val.vacancy_logo_company + '" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);">\
                      </div>\
-                     <div class="col-md-7 center-list-job" style="">\
+                     <div class="col-md-7 center-list-job"  >\
                        <h4 style="margin-bottom: 0px;font-weight: bold;">' + val.vacancy_name + '</h4>\
                        <hr>\
                        <p>' + val.short_description + '</p>\
@@ -3191,7 +3191,7 @@
                       <div class="col-md-2" style="padding:10px;background:#f9f9f9">\
                         <img src="' + val.vacancy_base_url + 'assets/backend/images/company_logo/' + val.vacancy_logo_company + '" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);">\
                       </div>\
-                      <div class="col-md-7 center-list-job" style="">\
+                      <div class="col-md-7 center-list-job"  >\
                         <h4 style="margin-bottom: 0px;font-weight: bold;">' + val.vacancy_name + '</h4>\
                         <hr>\
                         <p>' + val.job_description + '</p>\
@@ -3212,7 +3212,7 @@
                           <div class="col-md-2" style="padding:10px;background:#f9f9f9">\
                             <img src="' + val.vacancy_base_url + 'assets/backend/images/company_logo/' + val.vacancy_logo_company + '" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);">\
                           </div>\
-                          <div class="col-md-7 center-list-job" style="">\
+                          <div class="col-md-7 center-list-job"  >\
                             <h4 style="margin-bottom: 0px;font-weight: bold;">' + val.vacancy_name + '</h4>\
                             <hr>\
                             <p>' + val.job_description + '</p>\
@@ -3294,7 +3294,7 @@
                       <div class="col-md-2" style="padding:10px;background:#f9f9f9">\
                         <img src="' + val.vacancy_base_url + 'assets/backend/images/company_logo/' + val.vacancy_logo_company + '" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);">\
                       </div>\
-                      <div class="col-md-7 center-list-job" style="">\
+                      <div class="col-md-7 center-list-job"  >\
                         <h4 style="margin-bottom: 0px;font-weight: bold;">' + val.vacancy_name + '</h4>\
                         <hr>\
                         <p>' + val.short_description + '</p>\
@@ -3315,7 +3315,7 @@
                           <div class="col-md-2" style="padding:10px;background:#f9f9f9">\
                             <img src="' + val.vacancy_base_url + 'assets/backend/images/company_logo/' + val.vacancy_logo_company + '" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);">\
                           </div>\
-                          <div class="col-md-7 center-list-job" style="">\
+                          <div class="col-md-7 center-list-job"  >\
                             <h4 style="margin-bottom: 0px;font-weight: bold;">' + val.vacancy_name + '</h4>\
                             <hr>\
                             <p>' + val.short_description + '</p>\
@@ -3359,7 +3359,7 @@
         //              <div class="col-md-2" style="padding:10px;background:#f9f9f9">\
         //                <img src="'+val.vacancy_base_url+'assets/backend/images/company_logo/'+val.vacancy_logo_company+'" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);">\
         //              </div>\
-        //              <div class="col-md-7 center-list-job" style="">\
+        //              <div class="col-md-7 center-list-job"  >\
         //                <h4 style="margin-bottom: 0px;font-weight: bold;">'+val.vacancy_name+'</h4>\
         //                <hr>\
         //                <p>'+val.short_description+'</p>\
@@ -3381,7 +3381,7 @@
         //              <div class="col-md-2" style="padding:10px;background:#f9f9f9">\
         //                <img src="'+val.vacancy_base_url+'assets/backend/images/company_logo/'+val.vacancy_logo_company+'" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);">\
         //              </div>\
-        //              <div class="col-md-7 center-list-job" style="">\
+        //              <div class="col-md-7 center-list-job"  >\
         //                <h4 style="margin-bottom: 0px;font-weight: bold;">'+val.vacancy_name+'</h4>\
         //                <hr>\
         //                <p>'+val.short_description+'</p>\
@@ -3478,11 +3478,11 @@
                                 }
                                 $("#list_vacancy_urgent").append('<div class="row card-list-vacancy card-vac" >\
                      <div class="ribbon">Vacancy Urgent</div>\
-                     <div class="col-md-2" style="">\
+                     <div class="col-md-2"  >\
                        <img src="' + val.vacancy_base_url + 'assets/backend/images/company_logo/' + val.vacancy_logo_company + '" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">\
                        <div class="relative" style="position: relative;display:' + canvasStyle + ';"><canvas id="chartProgress_' + val.id + '" width="300px" height="200" style="display:' + canvasStyle + '"></canvas><div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div></div>\
                      </div>\
-                     <div class="col-md-7 center-list-job" style="">\
+                     <div class="col-md-7 center-list-job"  >\
                        <h4 style="margin-bottom: 0px;font-weight: bold;">' + val.vacancy_name + '</h4>\
                        <p style="display:none;">' + val.vacancy_company_name + '</p>\
                        <hr>\
@@ -3504,9 +3504,9 @@
                                 $("#list_vacancy").append('<div class="row card-list-vacancy card-vac" >\
                      <div class="col-md-2" style="padding:10px;background:#f9f9f9">\
                        <img src="' + val.vacancy_base_url + 'assets/backend/images/company_logo/' + val.vacancy_logo_company + '" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);display:none;">\
-                       <canvas id="chartProgress_' + val.id + '" width="300px" height="200" style=""></canvas>\
+                       <canvas id="chartProgress_' + val.id + '" width="300px" height="200"  ></canvas>\
                      </div>\
-                     <div class="col-md-7 center-list-job" style="">\
+                     <div class="col-md-7 center-list-job"  >\
                        <h4 style="margin-bottom: 0px;font-weight: bold;">' + val.vacancy_name + '</h4>\
                        <p style="display:none;">' + val.vacancy_company_name + '</p>\
                        <hr>\
@@ -3657,11 +3657,11 @@
                                 }
                                 $("#list_vacancy_urgent").append('<div class="row card-list-vacancy card-vac" >\
                      <div class="ribbon">Vacancy Urgent</div>\
-                     <div class="col-md-2" style="">\
+                     <div class="col-md-2"  >\
                        <img src="' + val.vacancy_base_url + 'assets/backend/images/company_logo/' + val.vacancy_logo_company + '" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);"display:none;>\
                        <div class="relative" style="position: relative;display:' + canvasStyle + ';"><canvas id="chartProgress_' + val.id + '" width="300px" height="200" style="display:' + canvasStyle + '"></canvas><div class="absolute-center text-center" style="position:absolute;top: 63%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: x-small;">Kuota Kandidat</label></div></div>\
                      </div>\
-                     <div class="col-md-7 center-list-job" style="">\
+                     <div class="col-md-7 center-list-job"  >\
                        <h4 style="margin-bottom: 0px;font-weight: bold;">' + val.vacancy_name + '</h4>\
                        <hr>\
                        <p>' + val.short_description + '</p>\
@@ -3683,7 +3683,7 @@
                      <div class="col-md-2" style="padding:10px;background:#f9f9f9">\
                        <img src="' + val.vacancy_base_url + 'assets/backend/images/company_logo/' + val.vacancy_logo_company + '" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);">\
                      </div>\
-                     <div class="col-md-7 center-list-job" style="">\
+                     <div class="col-md-7 center-list-job"  >\
                        <h4 style="margin-bottom: 0px;font-weight: bold;">' + val.vacancy_name + '</h4>\
                        <p style="display:none;">' + val.vacancy_company_name + '</p>\
                        <hr>\
@@ -3753,7 +3753,7 @@
                 <div class="col-md-2" style="padding:10px;background:#f9f9f9">\
                   <img src="' + x.vacancy_base_url + 'assets/backend/images/company_logo/' + x.vacancy_logo_company + '" alt="" style="width:inherit;height:inherit;position: inherit;top: 50%;left: 50%;transform: translate(-50%, -50%);">\
                 </div>\
-                <div class="col-md-7 center-list-job" style="">\
+                <div class="col-md-7 center-list-job"  >\
                   <h4 style="margin-bottom: 0px;font-weight: bold;">' + x.vacancy_name + '</h4>\
                   <hr>\
                   <p>' + x.short_description + '</p>\

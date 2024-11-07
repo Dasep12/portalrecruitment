@@ -16,11 +16,9 @@
             </div>
             <div class="col-md-8 section-custom" style="text-align:left">
                 <div class="card-green" style="border-radius:0.25rem">
-                    <form id="form-register-v3" name="form-validation" method="POST">
+                    <form id="form-register-v3" name="form-validation">
                         <div class="row">
-                            <input type="hidden" name="csrf_sso_tg" value="a95b10d9691fe33c40a78517979a04af">
-                            <input type="hidden" name="session_state" id="session_state" value="2C8C6FFEBA5E2BD3D4D3F4CBA7A811D5642798889662A9AF3E44B7441918B920CE3832838978248452ABD95A14519784">
-                            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" value="">
+                            @csrf
 
                             <div class="col-sm-12 col-md-12">
                                 <i class="material-icons icon-big" style="color: #1d7d39;background: #3bb07991;border-radius: 50%;padding: 15px;">person_add</i>
@@ -39,38 +37,37 @@
                             <div class="col-sm-12 col-md-12">
                                 <div class="form-group">
                                     <label>Nama Lengkap</label>
-                                    <input id="fullname" class="form-control" onkeypress="return isQuotes(event)" placeholder="Nama Lengkap" name="fullname" type="text" data-validation="[NOTEMPTY]" data-validation-message="Tidak boleh kosong" />
+                                    <input id="fullname" required class="form-control" placeholder="Nama Lengkap" name="fullname" type="text" />
                                 </div>
                             </div>
-                            <div hidden class="col-sm-12 col-md-12">
+                            <div class="col-sm-12 col-md-12">
                                 <div class="form-group">
                                     <label>No. KTP</label>
-                                    <input id="ktp" class="form-control" placeholder="KTP" name="ktp" type="text" onkeypress="return isNumberKey(event)" data-validation="[KTP][NOTEMPTY]" maxlength="16" minlength="16" data-validation-message="$ No. KTP Harus 16 Angka" />
+                                    <input id="ktp" class="form-control" placeholder="KTP" name="ktp" type="text" onkeypress="return isNumberKey(event)" maxlength="16" />
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-12">
                                 <div class="form-group">
                                     <label>Alamat Email</label>
-                                    <input id="email" class="form-control" onkeypress="return isQuotes(event)" placeholder="Email" name="email" type="email" data-validation="[EMAIL]">
+                                    <input id="email" class="form-control" placeholder="Email" name="email" type="email">
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-12">
                                 <div class="form-group">
                                     <label>Konfirmasi Alamat Email</label>
-                                    <input id="email_confirm" class="form-control" onkeypress="return isQuotes(event)" placeholder="Ketik ulang email" name="email_confirm" type="email" data-validation="[V==email]" data-validation-message="Penulisan Ulang Email Tidak Sesuai">
+                                    <input id="email_confirm" class="form-control" placeholder="Ketik ulang email" name="email_confirm" type="email">
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-12">
                                 <div class="form-group" id="show_hide_password">
                                     <label>Password</label>
-                                    <!-- <input id="password" class="form-control password" name="password" type="password" data-validation="[L>=6]" maxlength="15" data-validation-message="Harus 6 Karakter" placeholder="Password" autocomplete="off"> -->
                                     <div>
-                                        <input aria-describedby="button-addon" id="password" class="form-control password" name="password" type="password" data-validation="[L>=6]" maxlength="15" data-validation-message="Harus 6 Karakter" placeholder="Password" autocomplete="off">
-                                        <div class="input-group-append icon-show-hide">
+                                        <input aria-describedby="button-addon" id="password" class="form-control password" name="password" type="password" placeholder="Password" autocomplete="off">
+                                        <!-- <div class="input-group-append icon-show-hide">
                                             <button class="btn btn-link" type="button" id="button-addon">
                                                 <a href="javascript: void(0);"><i class="material-icons" style="color: #aaa">visibility_off</i></a>
                                             </button>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                 </div>
@@ -78,32 +75,31 @@
                             <div class="col-sm-12 col-md-12">
                                 <div class="form-group" id="show_hide_password_conf">
                                     <label>Konfirmasi Password</label>
-                                    <!-- <input class="form-control password" id="password_confirm" name="password_confirm" type="password" data-validation="[V==password]" data-validation-message="Penulisan Ulang Password Tidak Sesuai" placeholder="Ketik ulang password" autocomplete="off"> -->
                                     <div>
-                                        <input aria-describedby="button-addon2" class="form-control password" id="password_confirm" name="password_confirm" type="password" data-validation="[V==password]" data-validation-message="Penulisan Ulang Password Tidak Sesuai" placeholder="Ketik ulang password" autocomplete="off">
-                                        <div class="input-group-append icon-show-hide">
+                                        <input aria-describedby="button-addon2" class="form-control password" id="password_confirm" name="password_confirm" type="password" placeholder="Ketik ulang password" autocomplete="off">
+                                        <!-- <div class="input-group-append icon-show-hide">
                                             <button class="btn btn-link" type="button" id="button-addon2">
                                                 <a href="javascript: void(0);"><i class="material-icons" style="color: #aaa">visibility_off</i></a>
                                             </button>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6">
-                                <!-- <div class="form-group">
-                          <label>Verifikasi Captcha</label>
-                          <div class="g-recaptcha" data-sitekey="6LcEqq0UAAAAAF6jFbMkut9GQQHiu_b5QonXNzkS" data-theme="light" data-type="image" data-size="normal" ></div>                        </div> -->
                             </div>
                             <div class="col-sm-12 col-md-12">
                                 <div class="custom-fa">
                                     <label for="register_accept_checkbox">
                                         <input id="register_accept_checkbox" name="register_accept_checkbox" class="checkbox" value="First Choice" type="checkbox">
                                         <span>Dengan melakukan registrasi saya menyatakan telah membaca dan menerima
-                                            <!-- <a data-toggle="modal" href="#TermsModal">ketentuan dan persyaratan yang berlaku</a> -->
                                             <a href="https://recruit.infomedia.co.id/privacy_policy/privacy_page" target="_blank">ketentuan dan persyaratan yang berlaku</a>
                                         </span>
                                     </label>
+                                </div>
+                                <div class="col-lg-12 ">
+                                    <div id="ErrorInfo">
+                                    </div>
                                 </div>
                             </div>
 
@@ -116,8 +112,133 @@
                     </form>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
 
+<script>
+    $(document).ready(function() {
+        $("#form-register-v3").validate({
+            ignore: ":hidden",
+            submitHandler: function(form) {
+                $.ajax({
+                    url: "{{ url('registrasi') }}",
+                    type: 'POST',
+                    contentType: false,
+                    processData: false,
+                    data: new FormData(form),
+                    async: false,
+                    beforeSend: function() {
+                        loaderSending()
+                    },
+                    complete: function() {
+                        $.unblockUI();
+                    },
+                    success: function(data) {
+                        if (data.success) {
+                            swal({
+                                title: "Berhasil Registrasi!",
+                                text: "Lakukan Verifikasi Akun Pada Link Di Email Anda",
+                                timer: 3000,
+                                showConfirmButton: false,
+                                allowOutsideClick: false,
+                                onOpen: function() {
+                                    swal.showLoading();
+                                    const timerInterval = setInterval(function() {
+                                        const timerText = swal.getTimerLeft ? swal.getTimerLeft() : ""; // check if getTimerLeft exists
+                                        if (timerText) {
+                                            swal.getContent().querySelector("b").textContent = timerText;
+                                        }
+                                    }, 100);
+
+                                    // Clear interval when modal closes
+                                    swal.getContent().addEventListener("swal:close", function() {
+                                        clearInterval(timerInterval);
+                                    });
+                                }
+                            }).then(function() {
+                                window.location.href = "{{ url('/login') }}"
+                            });
+                        }
+                    },
+                    error: function(xhr, desc, err) {
+                        var respText = "";
+                        try {
+                            let jsonResponse = JSON.parse(xhr.responseText);
+                            respText = jsonResponse.error || xhr.responseText;
+                        } catch (e) {
+                            respText = xhr.responseText;
+                        }
+
+                        respText = respText.replaceAll("_n_", "<br/>");
+
+                        var errMsg = '<div class="alert alert-warning alert-dismissible fade show" role="alert"><small><b> Error ' + xhr.status + '!</b><br/>' + respText + '</small><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>'
+                        $('#ErrorInfo').html(errMsg);
+                    },
+                });
+            }
+        });
+    });
+
+    // $('#form-register-v3').submit(function(e) {
+    //     var formData = new FormData($('#form-register-v3')[0]);
+    //     e.preventDefault();
+    //     $.ajax({
+    //         url: "{{ url('registrasi') }}",
+    //         type: 'POST',
+    //         contentType: false,
+    //         processData: false,
+    //         data: formData,
+    //         async: false,
+    //         beforeSend: function() {
+    //             loaderSending()
+    //         },
+    //         complete: function() {
+    //             $.unblockUI();
+    //         },
+    //         success: function(data) {
+    //             if (data.success) {
+    //                 swal({
+    //                     title: "Berhasil Registrasi!",
+    //                     text: "Lakukan Verifikasi Akun Pada Link Di Email Anda",
+    //                     timer: 3000,
+    //                     showConfirmButton: false,
+    //                     allowOutsideClick: false,
+    //                     onOpen: function() {
+    //                         swal.showLoading();
+    //                         const timerInterval = setInterval(function() {
+    //                             const timerText = swal.getTimerLeft ? swal.getTimerLeft() : ""; // check if getTimerLeft exists
+    //                             if (timerText) {
+    //                                 swal.getContent().querySelector("b").textContent = timerText;
+    //                             }
+    //                         }, 100);
+
+    //                         // Clear interval when modal closes
+    //                         swal.getContent().addEventListener("swal:close", function() {
+    //                             clearInterval(timerInterval);
+    //                         });
+    //                     }
+    //                 }).then(function() {
+    //                     window.location.href = "{{ url('/login') }}"
+    //                 });
+    //             }
+    //         },
+    //         error: function(xhr, desc, err) {
+    //             var respText = "";
+    //             try {
+    //                 let jsonResponse = JSON.parse(xhr.responseText);
+    //                 respText = jsonResponse.error || xhr.responseText;
+    //             } catch (e) {
+    //                 respText = xhr.responseText;
+    //             }
+
+    //             respText = respText.replaceAll("_n_", "<br/>");
+
+    //             var errMsg = '<div class="alert alert-warning alert-dismissible fade show" role="alert"><small><b> Error ' + xhr.status + '!</b><br/>' + respText + '</small><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>'
+    //             $('#ErrorInfo').html(errMsg);
+    //         },
+    //     });
+    // })
+</script>
 @endsection

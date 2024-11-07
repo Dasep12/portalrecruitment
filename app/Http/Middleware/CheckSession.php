@@ -17,7 +17,7 @@ class CheckSession
     public function handle(Request $request, Closure $next): Response
     {
         if (!session()->get('user_id')) {
-            return redirect('/'); // Redirect to login if session doesn't exist
+            return redirect('/login'); // Redirect to login if session doesn't exist
         }
         return $next($request);
     }

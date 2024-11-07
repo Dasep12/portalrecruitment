@@ -51,14 +51,6 @@
             border-radius: 5px;
             border: solid 1px #e5eaf0;
         }
-
-        .note {
-            /* font-size: 11px;
-      text-align: justify;
-      font-style: italic;
-      color: #898989; */
-        }
-
         .ui-datepicker-today a.ui-state-highlight {
             border-color: #000000;
             background: #607D8B;
@@ -245,8 +237,8 @@
             <span onclick="toogle_menu_nav()" class="material-icons" style="background: white;position: absolute;right: 18px;border-radius: 50px;padding: 5px;box-shadow: 0 6px 15px rgba(36, 37, 38, 0.08);cursor: pointer;">close</span>
             <div class="col-12 p-0 mt-5">
                 <a id="pp_user_m" href="https://recruit.infomedia.co.id/main#profile" class="cat__core__avatar cat__core__avatar--110 cat__core__avatar--border-white d-block mb-2" style="width: 5rem;height: 5rem;">
-                    <img src="https://recruit.infomedia.co.id/curiculum_vitae/get_document/prev/NTY3ZWRkMTA1MDNmMGMyZWY3NGU2ZjYwYTk0Y2MyNTZhMjUzNjYzNzM3NDFjNjVmZGE5ZTJkOWU1MzFmNTNmODdhOTY0MTJhNmY1MjAzMTc1MGFmYjQyYmI5MGJjNWMwNWYwMzAyM2YwMmJhYTU3OTVlZTAwMjhmMzBjMGQ3ZWVaS1pPWDNMZXdKQzgwdngwZHVUTWRxSnlhWndyNnBVWUUzWjNWMnRmYlR3PQ==/71aa54fc36116f6104389ca2e4576cc1.jpg" alt="" style="object-fit:cover;">
-                    <span class="complete material-icons pull-right icon-complete-pp-m" style="">check</span></a>
+                    <img src="https://recruit.infomedia.co.id/curiculum_vitae/get_document/prev/NTY3ZWRkMTA1MDNmMGMyZWY3NGU2ZjYwYTk0Y2MyNTZhMjUzNjYzNzM3NDFjNjVmZGE5ZTJkOWU1MzFmNTNmODdhOTY0MTJhNmY1MjAzMTc1MGFmYjQyYmI5MGJjNWMwNWYwMzAyM2YwMmJhYTU3OTVlZTAwMjhmMzBjMGQ3ZWVaS1pPWDNMZXdKQzgwdngwZHVUTWRxSnlhWndyNnBVWUUzWjNWMnRmYlR3PQ==/71aa54fc36116f6104389ca2e4576cc1.jpg" alt="" style="object-fit:cover;" />
+                    <span class="complete material-icons pull-right icon-complete-pp-m">check</span></a>
                 <h4>Simple CV Version</h4>
                 <a href="main#curiculum_vitae/preview" id="$id" class="btn btn-sm btn-primary mt-2">Preview CV</a>
                 <a href="main#profile" class="btn-pp btn btn-sm btn-outline-primary mt-2">Photo Profile</a>
@@ -254,7 +246,6 @@
             </div>
             <div id="diri_m" onclick="change_menu_mobile('nav_menu_data_diri','diri_m','Data Diri')" class="col-12 p-2 list-menu-mobile list-menu-mobile-active">
                 <label class=" my-auto">Data Diri</label>
-
                 <span class="complete material-icons pull-right" style="color: green;background: aliceblue;border-radius: 5px;">check</span>
             </div>
             <div id="alamat_m" onclick="change_menu_mobile('nav_menu_address','alamat_m','Alamat')" class="col-12 mt-1 p-2 list-menu-mobile">
@@ -303,7 +294,7 @@
         </div>
         <div class="row">
 
-            <div class="col-md-12" style="">
+            <div class="col-md-12">
                 <div class="panel-group" id="menu-collapse" style="width:100%;display:none">
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -340,7 +331,7 @@
                     </div>
                 </div>
                 <div class="mb-5">
-                    <div class="nav-tabs-vertical" style="">
+                    <div class="nav-tabs-vertical"  >
                         <ul class="nav nav-tabs" role="tablist" id="menu-normal" style="position:sticky; border-radius: 5px;background: white;">
                             <li class="nav-item">
                                 <div style="padding: 30px 20px">
@@ -348,7 +339,7 @@
                                         <!-- <strong>Curriculum Vitae</strong> -->
                                         <a id="pp_user" href="https://recruit.infomedia.co.id/main#profile" class="cat__core__avatar cat__core__avatar--110 cat__core__avatar--border-white d-block mx-auto" style="width: 7rem;height: 7rem;">
                                             <img src="https://recruit.infomedia.co.id/curiculum_vitae/get_document/prev/NTY3ZWRkMTA1MDNmMGMyZWY3NGU2ZjYwYTk0Y2MyNTZhMjUzNjYzNzM3NDFjNjVmZGE5ZTJkOWU1MzFmNTNmODdhOTY0MTJhNmY1MjAzMTc1MGFmYjQyYmI5MGJjNWMwNWYwMzAyM2YwMmJhYTU3OTVlZTAwMjhmMzBjMGQ3ZWVaS1pPWDNMZXdKQzgwdngwZHVUTWRxSnlhWndyNnBVWUUzWjNWMnRmYlR3PQ==/71aa54fc36116f6104389ca2e4576cc1.jpg" alt="" style="object-fit:cover;">
-                                            <span class="complete material-icons pull-right icon-complete-pp" style="">check</span></a>
+                                            <span class="complete material-icons pull-right icon-complete-pp"  >check</span></a>
                                         <div class="text-center mt-3">
                                             <h5>Simple CV Version</h5>
                                             <a href="main#curiculum_vitae/preview" id="$id" class="btn btn-sm btn-primary mt-2">Preview CV</a>
@@ -1298,7 +1289,7 @@
                                 </div>
                             </div>
 
-                            <div class="tab-pane" id="address2" role="tabcard" style="" aria-expanded="true">
+                            <div class="tab-pane" id="address2" role="tabcard"   aria-expanded="true">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="mb-5">
@@ -1909,7 +1900,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane" id="education" role="tabcard" style="" aria-expanded="true">
+                            <div class="tab-pane" id="education" role="tabcard"   aria-expanded="true">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="mb-5">
@@ -1917,7 +1908,7 @@
                                             <form id="form-education" name="form-education" action="#" class="">
                                                 <div class="row" style="padding-bottom: 9px;">
                                                     <div class="col-6">
-                                                        <h4 style="" class="text-black"><strong>Pendidikan</strong></h4>
+                                                        <h4   class="text-black"><strong>Pendidikan</strong></h4>
                                                     </div>
                                                     <div class="col-6 my-auto">
                                                         <button type="submit" class="btn btn-primary btn-sm pull-right" style="cursor:pointer;">
@@ -1938,7 +1929,7 @@
                                                         <div class="row bg-headername ">
                                                             <div class="col-md-12">
                                                                 <h5 class="pull-left"><b>Pendidikan 1</b></h5>
-                                                                <div id="button-remove-1503551"> <a href="javascript: void(0)" data-id="1503551" class="pull-right delete-education d-flex" style="color: white;cursor:pointer"><span class="my-auto" style="">Hapus</span><span style="color: white;" class="material-icons my-auto">delete</span></a> </div>
+                                                                <div id="button-remove-1503551"> <a href="javascript: void(0)" data-id="1503551" class="pull-right delete-education d-flex" style="color: white;cursor:pointer"><span class="my-auto"  >Hapus</span><span style="color: white;" class="material-icons my-auto">delete</span></a> </div>
                                                             </div>
                                                         </div>
                                                         <div class="row">
@@ -4570,7 +4561,7 @@
                                 </div>
                             </div>
 
-                            <div class="tab-pane" id="experience" role="tabcard" style="" aria-expanded="true">
+                            <div class="tab-pane" id="experience" role="tabcard"   aria-expanded="true">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="mb-5">
@@ -4578,10 +4569,10 @@
                                             <form id="form-experience" name="form-experience" action="#" class="">
                                                 <div class="row" style="padding-bottom: 9px;">
                                                     <div class="col-6">
-                                                        <h4 class="text-black" style=""><strong>Pengalaman Kerja</strong></h4>
+                                                        <h4 class="text-black"  ><strong>Pengalaman Kerja</strong></h4>
                                                     </div>
                                                     <div class="col-6 my-auto">
-                                                        <button type="submit" class="btn btn-sm btn-primary pull-right" style=""><i class="fa fa-save"></i> Simpan</button>
+                                                        <button type="submit" class="btn btn-sm btn-primary pull-right"  ><i class="fa fa-save"></i> Simpan</button>
                                                         <a style="margin-right: 10px;cursor:pointer;" class="pull-right btn btn-sm btn-outline-default" id="add-experience"><span class="fa fa-plus"> </span> Tambah </a>
                                                     </div>
                                                 </div>
@@ -4595,7 +4586,7 @@
                                                         <div class="row bg-headername ">
                                                             <div class="col-md-12">
                                                                 <h5 class="pull-left"><b>Pengalaman Kerja 1</b></h5>
-                                                                <div id="button-remove-3231473"> <a href="javascript: void(0)" data-id="3231473" class="pull-right delete-experience d-flex" style="color: white;cursor:pointer"><span class="my-auto" style="">Hapus</span><span style="color: white;" class="material-icons my-auto">delete</span></a> </div>
+                                                                <div id="button-remove-3231473"> <a href="javascript: void(0)" data-id="3231473" class="pull-right delete-experience d-flex" style="color: white;cursor:pointer"><span class="my-auto"  >Hapus</span><span style="color: white;" class="material-icons my-auto">delete</span></a> </div>
                                                             </div>
                                                         </div>
                                                         <div class="row">
@@ -5494,7 +5485,7 @@
                                                         <div class="row bg-headername ">
                                                             <div class="col-md-12">
                                                                 <h5 class="pull-left"><b>Pengalaman Kerja 2</b></h5>
-                                                                <div id="button-remove-3231474"> <a href="javascript: void(0)" data-id="3231474" class="pull-right delete-experience d-flex" style="color: white;cursor:pointer"><span class="my-auto" style="">Hapus</span><span style="color: white;" class="material-icons my-auto">delete</span></a> </div>
+                                                                <div id="button-remove-3231474"> <a href="javascript: void(0)" data-id="3231474" class="pull-right delete-experience d-flex" style="color: white;cursor:pointer"><span class="my-auto"  >Hapus</span><span style="color: white;" class="material-icons my-auto">delete</span></a> </div>
                                                             </div>
                                                         </div>
                                                         <div class="row">
@@ -6393,7 +6384,7 @@
                                                         <div class="row bg-headername ">
                                                             <div class="col-md-12">
                                                                 <h5 class="pull-left"><b>Pengalaman Kerja 3</b></h5>
-                                                                <div id="button-remove-3231475"> <a href="javascript: void(0)" data-id="3231475" class="pull-right delete-experience d-flex" style="color: white;cursor:pointer"><span class="my-auto" style="">Hapus</span><span style="color: white;" class="material-icons my-auto">delete</span></a> </div>
+                                                                <div id="button-remove-3231475"> <a href="javascript: void(0)" data-id="3231475" class="pull-right delete-experience d-flex" style="color: white;cursor:pointer"><span class="my-auto"  >Hapus</span><span style="color: white;" class="material-icons my-auto">delete</span></a> </div>
                                                             </div>
                                                         </div>
                                                         <div class="row">
@@ -7295,7 +7286,7 @@
                                 </div>
                             </div>
 
-                            <div class="tab-pane" id="organizational_experience" role="tabcard" style="" aria-expanded="true">
+                            <div class="tab-pane" id="organizational_experience" role="tabcard"   aria-expanded="true">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="mb-5">
@@ -7305,7 +7296,7 @@
 
                                                 <div class="row" style="padding-bottom: 9px;">
                                                     <div class="col-6">
-                                                        <h4 class="text-black" style=""><strong>Organisasi</strong></h4>
+                                                        <h4 class="text-black"  ><strong>Organisasi</strong></h4>
                                                     </div>
                                                     <div class="col-6 my-auto">
                                                         <button type="submit" class="btn btn-sm btn-primary pull-right" style="cursor:pointer;">
@@ -7324,7 +7315,7 @@
                                                         <div class="row bg-headername ">
                                                             <div class="col-md-12">
                                                                 <h5 class="pull-left"><b>Pengalaman Organisasi 1</b></h5>
-                                                                <div id="button-remove-2230648"> <a href="javascript: void(0)" data-id="2230648" class="pull-right delete-organizational_experience d-flex" style="color: white;cursor:pointer"><span class="my-auto" style="">Hapus</span><span style="color: white;" class="material-icons my-auto">delete</span></a> </div>
+                                                                <div id="button-remove-2230648"> <a href="javascript: void(0)" data-id="2230648" class="pull-right delete-organizational_experience d-flex" style="color: white;cursor:pointer"><span class="my-auto"  >Hapus</span><span style="color: white;" class="material-icons my-auto">delete</span></a> </div>
                                                             </div>
                                                         </div>
                                                         <div class="row">
@@ -7355,7 +7346,7 @@
                                 </div>
                             </div>
 
-                            <div class="tab-pane" id="skill" role="tabcard" style="" aria-expanded="true">
+                            <div class="tab-pane" id="skill" role="tabcard"   aria-expanded="true">
                                 <div class="row">
                                     <div class="col-12 col-md-6">
                                         <div class="mb-5">
@@ -7363,7 +7354,7 @@
                                                 <input type="hidden" name="csrf_sso_tg" value="b08bb7eec9802ef34a68c25a5355fd8a" style="display: none">
                                                 <div class="row" style="padding-bottom: 9px;">
                                                     <div class="col-6">
-                                                        <h4 class="text-black" style=""><strong>Kompetensi / Skill</strong></h4>
+                                                        <h4 class="text-black"  ><strong>Kompetensi / Skill</strong></h4>
                                                     </div>
                                                     <div class="col-6 my-auto">
                                                         <button type="submit" class="btn btn-primary pull-right btn-sm" style="cursor:pointer;">
@@ -8815,7 +8806,7 @@
 
                                                 <div class="row" style="padding-bottom: 9px;">
                                                     <div class="col-md-6">
-                                                        <h4 class="text-black" style=""><strong>Sertifikasi</strong></h4>
+                                                        <h4 class="text-black"  ><strong>Sertifikasi</strong></h4>
                                                     </div>
                                                     <div class="col-md-6 my-auto">
                                                         <button type="submit" class="btn btn-primary pull-right btn-sm" style="cursor:pointer;">
@@ -8831,7 +8822,7 @@
                                                 <div class="body-detail-sertifikasi-add"></div>
                                                 <div class="body-detail-sertifikasi">
                                                     <div hidden="" class="alert alert-warning" role="alert">Saudara Belum Melengkapi Data Sertifikasi.</div>
-                                                    <div class="content-detail-sertifikasi pt-0" style="" data-id="1" id="sertifikasi_1">
+                                                    <div class="content-detail-sertifikasi pt-0"   data-id="1" id="sertifikasi_1">
                                                         <div class="row bg-headername ">
                                                             <div class="col-md-12">
                                                                 <h5 class="pull-left"><b>Sertifikasi</b></h5>
@@ -9088,7 +9079,7 @@
                                                 </div>
                                             </form> -->
 
-                                            <form style="" id="form_ijazah" name="form_ijazah" action="#" method="POST" class="form-upload" enctype="multipart/form-data">
+                                            <form   id="form_ijazah" name="form_ijazah" action="#" method="POST" class="form-upload" enctype="multipart/form-data">
                                                 <input type="hidden" name="csrf_sso_tg" value="b08bb7eec9802ef34a68c25a5355fd8a" style="display: none">
                                                 <div class="row">
                                                     <div style="border-bottom: solid 1px #e4e9f0;" class="col-sm-12 p-3">
@@ -9135,7 +9126,7 @@
                                                 </div>
                                             </form> -->
 
-                                            <form style="" id="form_ktp" name="form_ktp" action="#" method="POST" class="form-upload" enctype="multipart/form-data">
+                                            <form   id="form_ktp" name="form_ktp" action="#" method="POST" class="form-upload" enctype="multipart/form-data">
                                                 <input type="hidden" name="csrf_sso_tg" value="b08bb7eec9802ef34a68c25a5355fd8a" style="display: none">
                                                 <div class="row">
                                                     <div style="border-bottom: solid 1px #e4e9f0;" class="col-sm-12 p-3">
@@ -9181,7 +9172,7 @@
                                                 </div>
                                             </form> -->
 
-                                            <form style="" id="form_transkip" name="form_transkip" action="#" method="POST" class="form-upload" enctype="multipart/form-data">
+                                            <form   id="form_transkip" name="form_transkip" action="#" method="POST" class="form-upload" enctype="multipart/form-data">
                                                 <input type="hidden" name="csrf_sso_tg" value="b08bb7eec9802ef34a68c25a5355fd8a" style="display: none">
                                                 <div class="row">
                                                     <div style="border-bottom: solid 1px #e4e9f0;" class="col-sm-12 p-3">
@@ -9226,7 +9217,7 @@
                                                 </div>
                                             </form> -->
 
-                                            <form style="" id="form_skck" name="form_skck" action="#" method="POST" class="form-upload" hidden="" enctype="multipart/form-data">
+                                            <form   id="form_skck" name="form_skck" action="#" method="POST" class="form-upload" hidden="" enctype="multipart/form-data">
                                                 <input type="hidden" name="csrf_sso_tg" value="b08bb7eec9802ef34a68c25a5355fd8a" style="display: none">
                                                 <div class="row">
                                                     <div style="border-bottom: solid 1px #e4e9f0;" class="col-sm-12 p-3">
@@ -9271,7 +9262,7 @@
                                                 </div>
                                             </form> -->
 
-                                            <form style="" id="form_toefl" name="form_toefl" action="#" method="POST" class="form-upload" enctype="multipart/form-data">
+                                            <form id="form_toefl" name="form_toefl" action="#" method="POST" class="form-upload" enctype="multipart/form-data">
                                                 <input type="hidden" name="csrf_sso_tg" value="b08bb7eec9802ef34a68c25a5355fd8a" style="display: none">
                                                 <div class="row">
                                                     <div style="border-bottom: solid 1px #e4e9f0;" class="col-sm-12 p-3">
@@ -9316,7 +9307,7 @@
                                                 </div>
                                             </form> -->
 
-                                            <form style="" id="form_additional1" name="form_additional1" action="#" method="POST" class="form-upload" enctype="multipart/form-data">
+                                            <form   id="form_additional1" name="form_additional1" action="#" method="POST" class="form-upload" enctype="multipart/form-data">
                                                 <input type="hidden" name="csrf_sso_tg" value="b08bb7eec9802ef34a68c25a5355fd8a" style="display: none">
                                                 <div class="row">
                                                     <div style="border-bottom: solid 1px #e4e9f0;" class="col-sm-12 p-3">
@@ -9361,7 +9352,7 @@
                                                 </div>
                                             </form> -->
 
-                                            <form style="" hidden="" id="form_additional2" name="form_additional2" action="#" method="POST" class="form-upload" enctype="multipart/form-data">
+                                            <form id="form_additional2" name="form_additional2" action="#" method="POST" class="form-upload" enctype="multipart/form-data">
                                                 <input type="hidden" name="csrf_sso_tg" value="b08bb7eec9802ef34a68c25a5355fd8a" style="display: none">
                                                 <div class="row">
                                                     <div style="border-bottom: solid 1px #e4e9f0;" class="col-sm-12 p-3">

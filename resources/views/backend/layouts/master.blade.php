@@ -94,6 +94,7 @@
     <script src="https://recruit.infomedia.co.id/assets/block_ui.js"></script>
 
 
+
 </head>
 <style type="text/css">
     .pointer {
@@ -265,8 +266,8 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="" role="menu">
 
-                        <a class="dropdown-item" href="https://recruit.infomedia.co.id/main#profile"><i class="dropdown-icon icmn-accessibility"></i> My Profile</a>
-                        <a class="dropdown-item" href="https://recruit.infomedia.co.id/dashboard/logout"><i class="dropdown-icon icmn-exit"></i> Logout</a>
+                        <a class="dropdown-item" href="{{ url('main/cv') }}"><i class="dropdown-icon icmn-accessibility"></i> My Profile</a>
+                        <a class="dropdown-item" href="{{ url('logout') }}"><i class="dropdown-icon icmn-exit"></i> Logout</a>
 
                     </ul>
                 </div>

@@ -51,17 +51,43 @@
     <!-- CSS Custom -->
     <link href="{{ asset('/assets/frontend/css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ asset('/assets/backend/vendors/nprogress/nprogress.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('/assets/backend/vendors/bootstrap-sweetalert/dist/sweetalert.css') }}">
+
     <link rel="stylesheet" href="{{ asset('/assets/frontend/animsition/animsition.css') }}" type="text/css" />
 
 
     <link rel="stylesheet" href="{{ asset('assets/frontend/css/custom.css') }}" type="text/css" />
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script>
+        function loaderSending() {
+            $.blockUI({
+                message: '<h4>Mohon tunggu...</h4>',
+                css: {
+                    border: 'none',
+                    padding: '15px',
+                    backgroundColor: '#000',
+                    '-webkit-border-radius': '10px',
+                    '-moz-border-radius': '10px',
+                    opacity: .5,
+                    color: '#fff',
+                    fontSize: '5px'
+                }
+            });
+        }
+    </script>
+
+    <!-- <script type="text/javascript" src="{{ asset('/assets/frontend/js/jqrylib.min.js') }}"></script> -->
+    <!-- First include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Then include the jQuery Validation plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+    <script src="{{ asset('/assets/frontend/animsition/animsition.js') }}"></script>
+    <script src="https://recruit.infomedia.co.id/assets/block_ui.js"></script>
 </head>
 
-
-<script type="text/javascript" src="{{ asset('/assets/frontend/js/jqrylib.min.js') }}"></script>
-<script src="{{ asset('/assets/frontend/animsition/animsition.js') }}"></script>
 
 
 <body>
@@ -522,16 +548,16 @@
 
 
 
-<script type="text/javascript" src="https://recruit.infomedia.co.id/assets/frontend/bootstrap4/popper.min.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://recruit.infomedia.co.id/assets/frontend/bootstrap4/bootstrap.min.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://recruit.infomedia.co.id/assets/frontend/plugins/toastr/toastr.min.js"></script>
-<script src="https://recruit.infomedia.co.id/assets/backend/vendors/nprogress/nprogress.js"></script>
-<script src="https://recruit.infomedia.co.id/assets/backend/vendors/bootstrap-sweetalert/dist/sweetalert.min.js"></script>
-<script src="https://recruit.infomedia.co.id/assets/backend/vendors/html5-form-validation/dist/jquery.validation.min.js"></script>
+<script type="text/javascript" src="{{ asset('assets/frontend/bootstrap4/popper.min.js') }}" crossorigin="anonymous"></script>
+<script type="text/javascript" src="{{ asset('assets/frontend/bootstrap4/bootstrap.min.js') }}" crossorigin="anonymous"></script>
+<script type="text/javascript" src="{{ asset('assets/frontend/plugins/toastr/toastr.min.js') }}"></script>
+<script src="{{ asset('assets/backend/vendors/nprogress/nprogress.js') }}"></script>
+
+
 <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=onload&hl=id" async defer></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145863698-4"></script>
-<link href="https://recruit.infomedia.co.id/assets/frontend/select2/select2.min.css" rel="stylesheet" />
-<script src="https://recruit.infomedia.co.id/assets/frontend/select2/select2.min.js"></script>
+<link href="{{ asset('assets/frontend/select2/select2.min.css') }}" rel="stylesheet" />
+<script src="{{ asset('assets/frontend/select2/select2.min.js') }}"></script>
 
 
 <script type="text/javascript">
@@ -626,14 +652,14 @@
 <!--- botika webchat begins -->
 <script src="https://chat.botika.online/client/assets/js/botika.widget.js"></script>
 <script>
-    window.BotikaChat.init({
-        'client': 'zbOB3CJ',
-        'widget': {
-            'caption': 'Hallo, ada yang bisa Humara bantu?',
-            'history': false,
-            'showCredit': false
-        }
-    });
+    // window.BotikaChat.init({
+    //     'client': 'zbOB3CJ',
+    //     'widget': {
+    //         'caption': 'Hallo, ada yang bisa Humara bantu?',
+    //         'history': false,
+    //         'showCredit': false
+    //     }
+    // });
 </script>
 <!--- botika webchat end -->
 
@@ -739,4 +765,7 @@
             $("#navigation_about_sso").addClass("navigation_about_sso_phone");
         }
     }
+
+    console.log("jQuery version:", $.fn.jquery);
+    console.log("jQuery Validation loaded:", !!$.fn.validate);
 </script>
