@@ -304,47 +304,16 @@
     }
 
 
-    function load_list_company() {
-        $.ajax({
-                url: 'https://recruit.infomedia.co.id/home/load_list_company',
-                type: 'POST',
-                dataType: 'json',
-            })
-            .done(function(data) {
-                $("#list_company").html('');
-                list_comp = '';
 
-                $.each(data, function(index, value) {
-
-                    list_comp = list_comp + `<div class="col-lg-2 col-md-3 col-6  card-company my-auto" onclick="detail_company(` + value.id + `)" style="margin: 10px 0px;padding: 50px 20px;text-align:center;">
-            <img class="my-auto" id="company_logo_` + value.id + `" src="https://recruit.infomedia.co.id//assets/backend/images/company_logo/` + value.logo + `" style="width: inherit;">
-            <div style="display:none">
-              <p id="company_name_` + value.id + `">` + value.company_name + `</p>
-              <p id="email_name_` + value.id + `">` + value.email_support + `</p>
-              <p id="phone_name_` + value.id + `">` + value.phone_no + `</p>
-              <p id="website_name_` + value.id + `">` + value.website_url + `</p>
-              <p id="industry_name_` + value.id + `">` + value.industry + `</p>
-              <p id="alamat_name_` + value.id + `">` + value.address + `</p>
-              <div id="description_` + value.id + `">` + value.company_description + `</div>
-              <div id="short_description_` + value.id + `">` + value.company_short_description + `</div>
-            </div>
-        </div>`;
-                });
-
-                $("#list_company").html(list_comp);
-            })
-            .fail(function() {
-                NProgress.done();
-            });
-    }
 
     function load_vacancy_by_company(id, stream, from_section) {
 
         $.ajax({
-            url: 'https://recruit.infomedia.co.id/job/loadRecord/' + 0,
+            url: '{{ url("load_vacancy_by_company") }}',
             type: 'post',
             data: {
                 company: id,
+                '_token': "{{ csrf_token() }}",
                 stream: $("#code_stream_" + stream).text(),
                 jenjang: '',
                 count_page: 100,
@@ -365,12 +334,12 @@
             success: function(response) {
                 $('#' + from_section_id).html('');
                 $('#' + pagination).html(response.pagination);
-                $("#" + lowongan_tersedia).text(response.result.length);
-                if (response.result.length < 1) {
+                $("#" + lowongan_tersedia).text(response.length);
+                if (response.length < 1) {
                     $('#' + from_section_id).html('');
                 } else {
 
-                    $.each(response.result, function(i, val) {
+                    $.each(response, function(i, val) {
 
                         href = val.vacancy_base_url + 'job/detail/' + val.vacancy_id;
 
@@ -400,11 +369,14 @@
 
     function generate_html_stream() {
         $.ajax({
-                url: 'https://recruit.infomedia.co.id/home/load_html_stream',
+                url: '{{ url("load_vacancy_by_company") }}',
                 type: 'POST',
-                dataType: 'json',
+                data: {
+                    '_token': "{{ csrf_token() }}",
+                }
             })
             .done(function(data) {
+                console.log(data)
                 i = 0;
                 $.each(data, function(index, value) {
                     $("#stream_" + i).html(`<div onclick=navigation_menu_job_by_stream("` + value.group_code + `")><i class="material-icons" style="font-size: 40px;">layers</i>
@@ -417,7 +389,6 @@
             });
     }
 
-    load_list_company();
     generate_html_stream();
 </script>
 @endsection

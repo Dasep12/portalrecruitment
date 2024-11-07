@@ -23,4 +23,22 @@ class PortalController extends Controller
     {
         return view('frontend/regis');
     }
+
+    public function load_vacancy_by_company()
+    {
+        $data = array([
+            'vacancy_id' => 'Bonecom Tricom',
+            'vacancy_base_url' => 'detail',
+            'vacancy_logo_company' => 'img',
+            'vacancy_name' => 'das',
+            'job_description' => 'ts',
+            'stream_group_name' => 'fsf',
+            'education_name' => '1',
+            'group_code' => "BONEC",
+            'group_name' => "BONE",
+            'total_vacancy' => 40
+        ]);
+
+        return response()->json($data);
+    }
 }

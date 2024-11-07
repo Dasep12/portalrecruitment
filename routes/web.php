@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CVController;
 use App\Http\Controllers\PortalController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,3 +19,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PortalController::class, 'index']);
 Route::get('/login', [PortalController::class, 'login']);
 Route::get('/regis', [PortalController::class, 'regis']);
+Route::post('/load_vacancy_by_company', [PortalController::class, 'load_vacancy_by_company']);
+
+
+Route::prefix('/main')->group(function () {
+    Route::get('/datadiri', [CVController::class, 'index']);
+    Route::get('/home', [CVController::class, 'home']);
+    Route::get('/apply', [CVController::class, 'apply']);
+    Route::get('/cv', [CVController::class, 'cv']);
+    Route::get('/job_vacany', [CVController::class, 'job_vacany']);
+});

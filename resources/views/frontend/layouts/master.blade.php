@@ -249,8 +249,8 @@
                 <li class="list-left-menu">
                     <p style="margin:0px" class="nav-link" onclick="detail_tentang_sso()" style="color: black;">Tentang HR</p>
                 </li>
-                <li class="list-left-menu"><a class="nav-link" href="https://recruit.infomedia.co.id/job" style="color: black;">Lowongan</a></li>
-                <li class="list-left-menu"><a class="nav-link" href="https://recruit.infomedia.co.id/faq" style="color: black;">FAQ</a></li>
+                <li class="list-left-menu"><a class="nav-link" href="{{ url('/') }}" style="color: black;">Lowongan</a></li>
+                <li class="list-left-menu"><a class="nav-link" href="#" style="color: black;">FAQ</a></li>
             </ul>
         </div>
 
@@ -671,7 +671,7 @@
             }
         });
 
-       
+
         $('.carousel').carousel({
             interval: 10000
         });
@@ -680,7 +680,7 @@
     });
 
 
-    
+
 
     function play_carousel() {
         $('#carouselExampleIndicators').carousel('cycle');
@@ -711,7 +711,32 @@
 
     }
 
+    function detail_tentang_sso() {
+        $("#modal_menu").modal('hide');
+        if ($("#bool_menu_about_sso").val() == 1) {
+            $("#navigation_about_sso").animate({
+                width: '0%',
+                opacity: '0'
+            }, 2000);
+            $("#bool_menu_about_sso").val(0);
+            $("#navigation_about_sso").css('z-index', 0);
+            $("#menu_navbar").show();
+            $("#home_content").css('position', 'relative');
+            $("#btn_close_about_sso").hide();
 
-
-   
+            $("#navigation_about_sso").removeClass("navigation_about_sso_phone");
+        } else {
+            $("#navigation_about_sso").animate({
+                width: '94%',
+                opacity: '1'
+            });
+            $("#bool_menu_about_sso").val(1);
+            $("#navigation_about_sso").css('z-index', 10);
+            $("#home_content").css('position', 'fixed');
+            $("#menu_navbar").hide();
+            $("#menu_navbar").click();
+            $("#btn_close_about_sso").show();
+            $("#navigation_about_sso").addClass("navigation_about_sso_phone");
+        }
+    }
 </script>
