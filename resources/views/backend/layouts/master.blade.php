@@ -12,21 +12,21 @@
 
     <!-- VENDORS -->
     <!-- v2.0.0 -->
-    <link rel="stylesheet" type="text/css" href="../assets/loading.css">
-    <link rel="stylesheet" type="text/css" href="../assets/backend/vendors/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/backend/vendors/jscrollpane/style/jquery.jscrollpane.css">
-    <link rel="stylesheet" type="text/css" href="../assets/backend/vendors/ladda/dist/ladda-themeless.min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/backend/vendors/bootstrap-select/dist/css/bootstrap-select.min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/backend/vendors/select2/dist/css/select2.min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/backend/vendors/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/backend/vendors/fullcalendar/dist/fullcalendar.min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/backend/vendors/bootstrap-sweetalert/dist/sweetalert.css">
-    <link rel="stylesheet" type="text/css" href="../assets/backend/vendors/summernote/dist/summernote.css">
-    <link rel="stylesheet" type="text/css" href="../assets/backend/vendors/datatables/media/css/dataTables.bootstrap4.css">
-    <link rel="stylesheet" type="text/css" href="../assets/backend/vendors/c3/c3.min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/backend/vendors/chartist/dist/chartist.min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/backend/vendors/nprogress/nprogress.css">
-    <link rel="stylesheet" type="text/css" href="../assets/backend/vendors/jquery-steps-master/demo/css/jquery.steps.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/assets/loading.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/vendors/bootstrap/dist/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/vendors/jscrollpane/style/jquery.jscrollpane.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/vendors/ladda/dist/ladda-themeless.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/vendors/bootstrap-select/dist/css/bootstrap-select.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/vendors/select2/dist/css/select2.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/vendors/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/vendors/fullcalendar/dist/fullcalendar.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/vendors/bootstrap-sweetalert/dist/sweetalert.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/vendors/summernote/dist/summernote.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/vendors/datatables/media/css/dataTables.bootstrap4.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/vendors/c3/c3.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/vendors/chartist/dist/chartist.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/vendors/nprogress/nprogress.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/vendors/jquery-steps-master/demo/css/jquery.steps.css')}}">
     <link rel="stylesheet" type="text/css" href="https://recruit.infomedia.co.id/assets/backend/vendors/dropify/dist/css/dropify.min.css">
     <link rel="stylesheet" type="text/css" href="https://recruit.infomedia.co.id/assets/backend/vendors/font-icomoon/style.css">
     <link rel="stylesheet" type="text/css" href="https://recruit.infomedia.co.id/assets/backend/vendors/font-awesome/css/font-awesome.min.css">
@@ -37,9 +37,9 @@
     <script src="https://recruit.infomedia.co.id/assets/backend/vendors/jquery-mousewheel/jquery.mousewheel.min.js"></script>
     <script src="https://recruit.infomedia.co.id/assets/backend/vendors/jscrollpane/script/jquery.jscrollpane.min.js"></script>
     <script src="https://recruit.infomedia.co.id/assets/backend/vendors/spin.js/spin.js"></script>
-    <script src="https://recruit.infomedia.co.id/assets/backend/vendors/ladda/dist/ladda.min.js"></script>
-    <script src="https://recruit.infomedia.co.id/assets/backend/vendors/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-    <script src="https://recruit.infomedia.co.id/assets/backend/vendors/select2/dist/js/select2.full.min.js"></script>
+    <script src="{{ asset('assets/backend/vendors/ladda/dist/ladda.min.js') }}"></script>
+    <script src="{{ asset('assets/backend/vendors/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
+    <script src="{{ asset('assets/backend/vendors/select2/dist/js/select2.full.min.js') }}"></script>
     <script src="https://recruit.infomedia.co.id/assets/backend/vendors/html5-form-validation/dist/jquery.validation.min.js"></script>
     <script src="https://recruit.infomedia.co.id/assets/backend/vendors/jquery-typeahead/dist/jquery.typeahead.min.js"></script>
     <script src="https://recruit.infomedia.co.id/assets/backend/vendors/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
@@ -48,7 +48,8 @@
     <script src="https://recruit.infomedia.co.id/assets/backend/vendors/moment/min/moment.min.js"></script>
     <script src="https://recruit.infomedia.co.id/assets/backend/vendors/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
     <script src="https://recruit.infomedia.co.id/assets/backend/vendors/fullcalendar/dist/fullcalendar.min.js"></script>
-    <script src="https://recruit.infomedia.co.id/assets/backend/vendors/bootstrap-sweetalert/dist/sweetalert.min.js"></script>
+    <!-- <script src="https://recruit.infomedia.co.id/assets/backend/vendors/bootstrap-sweetalert/dist/sweetalert.min.js"></script> -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://recruit.infomedia.co.id/assets/backend/vendors/remarkable-bootstrap-notify/dist/bootstrap-notify.min.js"></script>
     <script src="https://recruit.infomedia.co.id/assets/backend/vendors/summernote/dist/summernote.min.js"></script>
     <script src="https://recruit.infomedia.co.id/assets/backend/vendors/nestable/jquery.nestable.js"></script>
@@ -94,6 +95,30 @@
     <script src="https://recruit.infomedia.co.id/assets/block_ui.js"></script>
 
 
+    <script>
+        function loaderSending() {
+            $.blockUI({
+                message: '<h4>Mohon tunggu...</h4>',
+                css: {
+                    border: 'none',
+                    padding: '15px',
+                    backgroundColor: '#000',
+                    '-webkit-border-radius': '10px',
+                    '-moz-border-radius': '10px',
+                    opacity: .5,
+                    color: '#fff',
+                    fontSize: '5px'
+                }
+            });
+        }
+
+        function isNumberKey(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode
+            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return false;
+            return true;
+        }
+    </script>
 
 </head>
 <style type="text/css">
@@ -395,6 +420,16 @@
         $(window).on('load', function() {
             $(".loading").fadeOut("slow");
         });
+
+        function isNumber(event) {
+            // Check if the key pressed is a number or backspace
+            const charCode = event.which ? event.which : event.keyCode;
+            if (charCode < 48 || charCode > 57) {
+                event.preventDefault();
+                return false;
+            }
+            return true;
+        }
     </script>
 
 </body>

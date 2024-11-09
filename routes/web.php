@@ -27,7 +27,24 @@ Route::post('/load_vacancy_by_company', [PortalController::class, 'load_vacancy_
 
 
 Route::middleware(['check.session'])->prefix('/main')->group(function () {
+
+    // Data Diri
     Route::get('/datadiri', [CVController::class, 'index']);
+    Route::post('/personaldata', [CVController::class, 'personaldata']);
+    Route::post('/updatepersonaldata', [CVController::class, 'updatepersonaldata']);
+    Route::post('/address', [CVController::class, 'address']);
+    Route::post('/updateaddress', [CVController::class, 'updateaddress']);
+
+
+    Route::get('/country', [CVController::class, 'country']);
+    Route::get('/regencies', [CVController::class, 'regencies']);
+    Route::get('/provinces', [CVController::class, 'provinces']);
+    Route::get('/districts', [CVController::class, 'districts']);
+    Route::get('/faculty', [CVController::class, 'faculty']);
+    Route::get('/major', [CVController::class, 'major']);
+    Route::get('/degree', [CVController::class, 'degree']);
+    Route::get('/skills', [CVController::class, 'skills']);
+    Route::get('/education', [CVController::class, 'education']);
     Route::get('/home', [CVController::class, 'home']);
     Route::get('/apply', [CVController::class, 'apply']);
     Route::get('/cv', [CVController::class, 'cv']);

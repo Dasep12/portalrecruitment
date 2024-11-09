@@ -30,13 +30,12 @@ class PortalController extends Controller
             if ($cekUser->count() > 0) {
                 $data = $cekUser->first();
                 session()->put('user_id', $data->user_id);
-                session()->flash('message', 'Verifikasi Akun Anda Segera Lewat Link Aktivasi Yang di Terima di Email Anda');
                 return response()->json(['success' => true, 'msg' => 'ok']);
             } else {
                 return response()->json('User Not Found', 404);
             }
         } catch (Exception $e) {
-            return response()->json($e->getMessage());
+            return response()->json($e->getMessage(), 500);
         }
     }
 

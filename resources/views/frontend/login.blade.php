@@ -124,14 +124,15 @@
                         error: function(xhr, desc, err) {
                             var respText = "";
                             try {
-                                respText = eval(xhr.responseText);
-                            } catch {
+                                let jsonResponse = JSON.parse(xhr.responseText);
+                                respText = jsonResponse.error || xhr.responseText;
+                            } catch (e) {
                                 respText = xhr.responseText;
                             }
 
-                            respText = unescape(respText).replaceAll("_n_", "<br/>")
+                            respText = respText.replaceAll("_n_", "<br/>");
 
-                            var errMsg = '<div class="alert alert-warning mt-2 alert-dismissible fade show" role="alert"><small><b> Error ' + xhr.status + '!</b><br/>' + respText + '</small><button type="button" class="close" data-dismiss="alert" aria-label="Close"></button></button></div>'
+                            var errMsg = '<div class="alert alert-warning alert-dismissible fade show" role="alert"><small><b> Error ' + xhr.status + '!</b><br/>' + respText + '</small><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>'
                             $('#ErrorInfo').html(errMsg);
                         },
                     });

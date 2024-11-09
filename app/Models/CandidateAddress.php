@@ -7,26 +7,27 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Support\Facades\DB;
 
 
-class Users extends Model
+class CandidateAddress extends Model
 {
     use HasFactory;
     /**
      * The attributes that are mass assignable.
      */
-    protected $table = 'tbl_mst_users';
+    protected $table = 'tbl_mst_candidate_address';
     protected $primaryKey = 'id';
     protected $fillable = [
-        'username',
-        'password',
-        'email',
-        'phone',
-        'lock_user',
-        'profile',
-        'supplier_id',
-        'role_id',
+        'id',
+        'candidate_id',
+        'address_now',
+        'provience_now',
+        'city_now',
+        'village_now',
+        'zip_code_now',
+        'phone_home_now',
+        'phone_now',
         'created_at',
         'created_by',
-        'updated_by',
         'updated_at',
+        'updated_by',
     ];
 }
