@@ -34,6 +34,8 @@ Route::middleware(['check.session'])->prefix('/main')->group(function () {
     Route::post('/updatepersonaldata', [CVController::class, 'updatepersonaldata']);
     Route::post('/address', [CVController::class, 'address']);
     Route::post('/updateaddress', [CVController::class, 'updateaddress']);
+    Route::post('/educationCandidate', [CVController::class, 'educationCandidate']);
+    Route::post('/updateEducation', [CVController::class, 'updateEducation']);
 
 
     Route::get('/country', [CVController::class, 'country']);

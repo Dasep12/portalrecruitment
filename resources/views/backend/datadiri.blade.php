@@ -725,7 +725,8 @@
                                     <div class="col-lg-12">
                                         <div class="mb-5">
 
-                                            <form id="form-education" name="form-education" action="#" class="">
+                                            <form id="form-education" name="form-education" method="post" action="#" class="">
+                                                @csrf
                                                 <div class="row" style="padding-bottom: 9px;">
                                                     <div class="col-6">
                                                         <h4 class="text-black"><strong>Pendidikan</strong></h4>
@@ -739,107 +740,13 @@
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <input type="hidden" name="csrf_sso_tg" value="b08bb7eec9802ef34a68c25a5355fd8a" style="display: none">
                                                 <!-- this for add education -->
                                                 <div class="body-detail-education-add"></div>
                                                 <!-- this for list education -->
                                                 <div class="body-detail-education">
-                                                    <div class="content-detail pt-0" style="margin-top:10px;" data-id="1503551" id="education_1503551">
-                                                        <div class="row bg-headername ">
-                                                            <div class="col-md-12">
-                                                                <h5 class="pull-left"><b>Pendidikan 1</b></h5>
-                                                                <div id="button-remove-1503551"> <a href="javascript: void(0)" data-id="1503551" class="pull-right delete-education d-flex" style="color: white;cursor:pointer"><span class="my-auto">Hapus</span><span style="color: white;" class="material-icons my-auto">delete</span></a> </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md-4">
-                                                                <div class="form-group"> <label class="d-flex">Jenjang Pendidikan<span class="ml-2 my-auto asterik"></span></label> <select class="form-control select2" name="" id="education_level" tabindex="-1" aria-hidden="true">
-                                                                        <option value="">Pilihan </option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-4">
-                                                                <div class="form-group"> <label class="d-flex">Sekolah/ Perguruan Tinggi<span class="ml-2 my-auto asterik"></span></label> <select class="form-control select2" name="applicant[1503551][university]" id="university_1503551" tabindex="-1" aria-hidden="true">
-                                                                        <option value="860">STMIK Swadharma/Jakarta</option>
-                                                                        <option value="99999">Lainnya</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-4">
-                                                                <div class="form-group"> <label>Jenis Perguruan Tinggi:</label> <select class="form-control select2 jenis-pt" name="applicant[1503551][jenis_pt]" id="jenis_pt" tabindex="-1" aria-hidden="true">
-                                                                        <option value="">Pilihan </option>
-                                                                        <option value="ptn">PTN (Negeri) </option>
-                                                                        <option value="pts">PTS (Swasta) </option>
-                                                                        <option value="ptln">PTLN (Luar Negeri) </option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6" id="ptln_1503551" hidden="">
-                                                                <div class="form-group"> <label>Nama Perguruan Tinggi Luar Negeri: <label class="asterik">*</label> </label> <input type="text" name="applicant[1503551][nama_jenjang_pendidikan_ln]" id="nama_jenjang_pendidikan_ln_1503551" class="form-control" data-validation-message="Tidak boleh kosong" value="undefined" placeholder="Perguruan Tinggi Luar Negeri"> </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md-3">
-                                                                <div class="form-group"> <label class="d-flex">Fakultas<span class="ml-2 my-auto asterik"></span></label> <select class="form-control select2 fakultas-others select2-hidden-accessible" name="applicant[1503551][fakultas]" id="fakultas" data-id="1503551" data-fakultas="old" tabindex="-1" aria-hidden="true">
-                                                                        <option value="">Pilihan </option>
-                                                                        <option value="9999">Lainnya </option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <div class="form-group"> <label class="d-flex">Jurusan<span class="ml-2 my-auto asterik"></span></label> <select class="form-control select2 jurusan-others select2-hidden-accessible" name="applicant[1503551][major]" id="major" tabindex="-1" aria-hidden="true">
-                                                                        <option value="">Pilihan </option>
 
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <div class="form-group"> <label class="d-flex">IPK/Nilai<span class="ml-2 my-auto asterik"></span></label> <input type="text" name="applicant[1503551][current_gpa]" onkeypress="return NumberandDot(event)" id="current_gpa_1503551" placeholder="Minimal IPK/Nilai" class="form-control cek_decimal" value="3.6" data-validation="[NOTEMPTY]" data-validation-message="Tidak boleh kosong"> </div>
-                                                            </div>
-                                                            <div class="col-xs-1">
-                                                                <div class="form-group"> <label> dari </label> </div>
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                                <div class="form-group"> <label class="d-flex">Maksimal<span class="ml-2 my-auto asterik"></span></label> <input type="text" name="applicant[1503551][score_gpa]" onkeypress="return NumberandDot(event)" id="score_gpa_1503551" placeholder="Maksimal IPK/Nilai" class="form-control getIpkMaks cek_decimal" data-id="1503551" value="4.0" data-validation="[NOTEMPTY]" data-validation-message="Tidak boleh kosong"> </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md-3">
-                                                                <div class="form-group"> <label>Negara: </label> <select class="form-control negara-edu-others select2 select2-hidden-accessible" name="applicant[1503551][country_education]" id="country_education" data-id="1503551" data-kota="old" tabindex="-1" aria-hidden="true">
-
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <div class="form-group aw"> <label>Kota/Kabupaten: </label> <select class="form-control select2 select2-hidden-accessible" name="applicant[1503551][kota_education]" id="kota_education" data-id="1503551" data-kota="old" tabindex="-1" aria-hidden="true">
-
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="form-group"> <label>Tahun Pendidikan: </label>
-                                                                    <div class="row">
-                                                                        <div class="col-sm-6 date"> <input type="text" name="applicant[1503551][education_date_start]" id="education_date_start_1503551" placeholder="Tahun Mulai" class="form-control selectyear datetimepicker1" value="2019" data-idno="1503551"> </div>
-                                                                        <div class="col-sm-6 date"> <input type="text" name="applicant[1503551][education_date_end]" id="education_date_end_1503551" placeholder="Tahun Akhir" class="form-control datetimepicker2 datetimepicker1503551" value="2023"> </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md-6"> <input type="text" class="form-control" name="applicant[1503551][other_edu]" id="other_text_kota_1503551" style="display:none;" placeholder="Masukkan Kota Lainnya.."> <input type="text" class="form-control" name="applicant[1503551][other_edu]" id="other_text_kota_2_1503551" style="display:none;" value=""> </div>
-                                                        </div> <span class="d-flex"><label class="asterik my-auto pull-left"> </label>&nbsp; Field wajib diisi</span>
-                                                    </div>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="col-md-12">
 
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-12">
-
-                                                    </div>
-                                                </div>
                                             </form>
                                         </div>
                                     </div>
@@ -1585,97 +1492,9 @@
 
 
     </section>
-
+    @include('backend.partials.PartialsDataDiri')
 </div>
 <script>
-    $.get("{{ url('main/regencies') }}",
-        function(data, txtStatus, jqXHR) {
-            dataEmp = data;
-            data.forEach((itm, idx) => {
-                let label = `${itm.name}`;
-                $("#lokasi_penempatan").append($('<option></option>').val(itm.id).html(label));
-                $("#kota_education").append($('<option></option>').val(itm.id).html(label));
-                $("#city_now").append($('<option></option>').val(itm.id).html(label));
-                $("#alamat_perusahaan").append($('<option></option>').val(itm.id).html(label));
-            })
-        }
-    );
-    $.get("{{ url('main/degree') }}",
-        function(data, txtStatus, jqXHR) {
-            dataEmp = data;
-            data.forEach((itm, idx) => {
-                let label = `${itm.name}`;
-                $("#gelar_1").append($('<option></option>').val(itm.id).html(label));
-                $("#gelar_2").append($('<option></option>').val(itm.id).html(label));
-                $("#gelar_3").append($('<option></option>').val(itm.id).html(label));
-            })
-        }
-    );
-    $.get("{{ url('main/provinces') }}",
-        function(data, txtStatus, jqXHR) {
-            dataEmp = data;
-            data.forEach((itm, idx) => {
-                let label = `${itm.name}`;
-                $("#province_now").append($('<option></option>').val(itm.id).html(label));
-            })
-        }
-    );
-    $.get("{{ url('main/country') }}",
-        function(data, txtStatus, jqXHR) {
-            dataEmp = data;
-            data.forEach((itm, idx) => {
-                let label = `${itm.name}`;
-                $("#country_education").append($('<option></option>').val(itm.id).html(label));
-                $("#country_job").append($('<option></option>').val(itm.id).html(label));
-            })
-        }
-    );
-    $.get("{{ url('main/districts') }}",
-        function(data, txtStatus, jqXHR) {
-            dataEmp = data;
-            data.forEach((itm, idx) => {
-                let label = `${itm.name}`;
-                $("#village_now").append($('<option></option>').val(itm.id).html(label));
-            })
-        }
-    );
-    $.get("{{ url('main/education') }}",
-        function(data, txtStatus, jqXHR) {
-            dataEmp = data;
-            data.forEach((itm, idx) => {
-                let label = `${itm.name}`;
-                $("#education_level").append($('<option></option>').val(itm.id).html(label));
-            })
-        }
-    );
-    $.get("{{ url('main/faculty') }}",
-        function(data, txtStatus, jqXHR) {
-            dataEmp = data;
-            data.forEach((itm, idx) => {
-                let label = `${itm.name}`;
-                $("#fakultas").append($('<option></option>').val(itm.id).html(label));
-            })
-        }
-    );
-    $.get("{{ url('main/major') }}",
-        function(data, txtStatus, jqXHR) {
-            dataEmp = data;
-            data.forEach((itm, idx) => {
-                let label = `${itm.name}`;
-                $("#major").append($('<option></option>').val(itm.id).html(label));
-            })
-        }
-    );
-    $.get("{{ url('main/skills') }}",
-        function(data, txtStatus, jqXHR) {
-            dataEmp = data;
-            data.forEach((itm, idx) => {
-                let label = `${itm.name}`;
-                $("#keterampilan").append($('<option></option>').val(itm.id).html(label));
-            })
-        }
-    );
-
     $(document).ready(function() {
 
         // Personal Data 
@@ -1807,19 +1626,16 @@
                     }
 
                     respText = respText.replaceAll("_n_", "<br/>");
-                    console.log(respText);
-                    // swal({
-                    //     title: "Error " + xhr.status,
-                    //     text: respText,
-                    //     icon: "error",
-                    //     button: "Ok",
-                    // });
+                    swal({
+                        title: "Error " + xhr.status,
+                        text: respText,
+                        icon: "error",
+                        button: "Ok",
+                    });
                 },
             })
         }
         Address()
-
-
         // Update Address
         $("#form-address2").on('submit', function(e) {
             e.preventDefault();
@@ -1867,6 +1683,275 @@
             })
         })
 
+        // Address 
+        function Education() {
+            $.ajax({
+                url: "{{ url('main/educationCandidate') }}",
+                method: "POST",
+                data: {
+                    "_token": "{{ csrf_token() }}"
+                },
+                beforeSend: function() {
+                    loaderSending()
+                },
+                complete: function() {
+                    $.unblockUI();
+                },
+                success: function(res) {
+                    const html = res.map((data, i) => listEducation(i, data)).join('');
+
+                    $(".body-detail-education").append(html);
+
+                    // Fetch education and country data in parallel
+                    Promise.all([
+                        $.get("{{ url('main/education') }}"),
+                        $.get("{{ url('main/country') }}"),
+                        $.get("{{ url('main/faculty') }}"),
+                        $.get("{{ url('main/major') }}"),
+                        $.get("{{ url('main/regencies') }}"),
+                    ]).then(([educationData, countryData, facultyData, majorData, regenciesData]) => {
+
+                        populateDropdown(".fakultas", facultyData);
+
+                        // Initialize Select2 on the dynamically added elements
+                        $('.select2').select2();
+                        res.forEach((data, index) => {
+                            var idEnd = (index + 1);
+                            populateDropdown("#level_education_" + idEnd, educationData);
+                            // Populate country dropdowns
+                            populateDropdown("#country_edu_" + idEnd, countryData);
+                            // Populate major_ dropdowns
+                            populateDropdown("#major_edu_" + idEnd, majorData);
+                            // Populate city_ dropdowns
+                            populateDropdown("#city_edu_" + idEnd, regenciesData);
+                            $("#level_education_" + (index + 1)).val(data.level_education).trigger("change");
+                            $("#country_edu_" + (index + 1)).val(data.country_edu).trigger("change");
+                            $("#faculty_edu_" + (index + 1)).val(data.faculty).trigger("change");
+                            $("#major_edu_" + (index + 1)).val(data.major).trigger("change");
+                            $("#campus_edu_" + (index + 1)).val(data.campus);
+                            $("#type_campus_edu_" + (index + 1)).val(data.type_campus).trigger("change");
+                            $("#city_edu_" + (index + 1)).val(data.city).trigger("change");
+                            $("#ipk_" + (index + 1)).val(data.ipk);
+                            $("#from_ipk_" + (index + 1)).val(data.from_ipk);
+                            $("#start_year_" + (index + 1)).val(moment(data.start_year).format("YYYY"));
+                            $("#end_year_" + (index + 1)).val(moment(data.end_year).format("YYYY"));
+                            $("#country_edu_" + (index + 1)).val(data.country_edu).trigger("change");
+                        });
+                    }).catch(error => {
+                        console.error("Error fetching data:", error);
+                    });
+
+
+
+                    // Initialize select2 on dynamically added elements
+                    // $('.select2').select2();
+                    $('.datetimepicker1,.datetimepicker2').datetimepicker({
+                        format: 'YYYY', // Only show the year
+                        viewMode: 'years' // Start view mode at years
+                    });
+
+
+                },
+                error: function(xhr, desc, err) {
+                    var respText = "";
+                    try {
+                        let jsonResponse = JSON.parse(xhr.responseText);
+                        respText = jsonResponse.error || xhr.responseText;
+                    } catch (e) {
+                        respText = xhr.responseText;
+                    }
+
+                    respText = respText.replaceAll("_n_", "<br/>");
+                    swal({
+                        title: "Error " + xhr.status,
+                        text: respText,
+                        icon: "error",
+                        button: "Ok",
+                    });
+                },
+            })
+        }
+        Education()
+
+        // Add Education
+        $(document).on("click", "#add-education", function() {
+            var lastId = $('div[id^="education_"]').last().attr('id');
+            var lastNumber = lastId.split('_')[1];
+            var html = listEducation(parseInt(lastNumber), [{}])
+            $(".body-detail-education").append(html);
+            //Fetch education and country data in parallel
+            Promise.all([
+                $.get("{{ url('main/education') }}"),
+                $.get("{{ url('main/country') }}"),
+                $.get("{{ url('main/faculty') }}"),
+                $.get("{{ url('main/major') }}"),
+                $.get("{{ url('main/regencies') }}"),
+            ]).then(([educationData, countryData, facultyData, majorData, regenciesData]) => {
+                var idEnd = parseInt(lastNumber) + 1;
+                // Populate education level dropdowns
+                populateDropdown("#level_education_" + idEnd, educationData);
+                // Populate country dropdowns
+                populateDropdown("#country_edu_" + idEnd, countryData);
+                // Populate faculty dropdowns
+                populateDropdown("#faculty_edu_" + idEnd, facultyData);
+                // Populate major_ dropdowns
+                populateDropdown("#major_edu_" + idEnd, majorData);
+                // Populate city_ dropdowns
+                populateDropdown("#city_edu_" + idEnd, regenciesData);
+
+                // Initialize Select2 on the dynamically added elements
+                $('.select2').select2();
+
+                $('.datetimepicker1,.datetimepicker2').datetimepicker({
+                    format: 'YYYY', // Only show the year
+                    viewMode: 'years' // Start view mode at years
+                });
+            }).catch(error => {
+                console.error("Error fetching data:", error);
+            });
+
+
+
+        });
+        // Remove Education
+        $(document).on("click", ".delete-education", function() {
+            const id = $(this).data("id");
+            // Remove the parent div of the clicked delete button
+            $(this).closest('#education_' + id).remove();
+        });
+        // Update Education
+        $("#form-education").on('submit', function(e) {
+            e.preventDefault();
+            var form = document.getElementById("form-education");
+            $.ajax({
+                url: "{{ url('main/updateEducation') }}",
+                type: 'POST',
+                contentType: false,
+                processData: false,
+                data: new FormData(form),
+                async: false,
+                beforeSend: function() {
+                    loaderSending()
+                },
+                complete: function() {
+                    $.unblockUI();
+                },
+                success: function(data) {
+                    if (data.success) {
+                        swal({
+                            title: "Berhasil",
+                            text: "Data Update",
+                            icon: "success",
+                            button: "Ok",
+                        });
+                    }
+                },
+                error: function(xhr, desc, err) {
+                    var respText = "";
+                    try {
+                        let jsonResponse = JSON.parse(xhr.responseText);
+                        respText = jsonResponse.error || xhr.responseText;
+                    } catch (e) {
+                        respText = xhr.responseText;
+                    }
+
+                    respText = respText.replaceAll("_n_", "<br/>");
+                    swal({
+                        title: "Error " + xhr.status,
+                        text: respText,
+                        icon: "error",
+                        button: "Ok",
+                    });
+                },
+            })
+        })
+
+
+        function listEducation(index, data) {
+            return `<div class="content-detail pt-0" style="margin-top:10px;" data-id="${index+1}" id="education_${index+1}">
+                <div class="row bg-headername ">
+                    <div class="col-md-12">
+                        <h5 class="pull-left"><b>Pendidikan ${index+1}</b></h5>
+                        <div class="button-remove"> <a href="javascript: void(0)" class="pull-right delete-education d-flex" data-id="${index+1}" style="color: white;cursor:pointer"><span class="my-auto">Hapus</span><span style="color: white;" class="material-icons my-auto">delete</span></a> </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group"> <label class="d-flex">Jenjang Pendidikan<span class="ml-2 my-auto "></span></label>
+                        <select class="education_level form-control select2" name="level_education[]" id="level_education_${index+1}" tabindex="-1" aria-hidden="true">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group"> <label class="d-flex">Nama Sekolah/ Perguruan Tinggi<span class="ml-2 my-auto asterik"></span></label>
+                            <input  type="text" name="campus[]" class="form-control" id="campus_edu_${index+1}">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group"> <label>Jenis Perguruan Tinggi:</label> <select class="form-control select2" name="type_campus[]" id="type_campus_edu_${index+1}" tabindex="-1" aria-hidden="true">
+                                <option value="">Pilihan </option>
+                                <option value="ptn">PTN (Negeri) </option>
+                                <option value="pts">PTS (Swasta) </option>
+                                <option value="ptln">PTLN (Luar Negeri) </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group"> <label class="d-flex">Fakultas<span class="ml-2 my-auto asterik"></span></label>
+                        <select name="faculty[]" id="faculty_edu_${index+1}" class="fakultas form-control select2" tabindex="-1" aria-hidden="true">
+                                <option value="">Pilihan </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group"> <label class="d-flex">Jurusan<span class="ml-2 my-auto asterik"></span></label>
+                        <select  name="major[]" id="major_edu_${index+1}" class="major form-control select2 " tabindex="-1" aria-hidden="true">
+                                <option value="">Pilihan </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group"> <label class="d-flex">IPK/Nilai<span class="ml-2 my-auto asterik"></span></label> <input type="text" name="ipk[]" id="ipk_${index+1}" placeholder="Minimal IPK/Nilai" class="form-control cek_decimal">
+                        </div>
+                    </div>
+                    <div class="col-xs-1">
+                        <div class="form-group"> <label> dari </label> </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group"> <label class="d-flex">Maksimal<span class="ml-2 my-auto asterik"></span></label> <input type="text" placeholder="Maksimal IPK/Nilai" name="from_ipk[]" id="from_ipk_${index+1}" class="form-control"> </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group"> <label>Negara: </label>
+                            <select name="country_edu[]" id="country_edu_${index+1}" class="form-control country_edu select2" tabindex="-1" aria-hidden="true"></select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group aw"> <label>Kota/Kabupaten: </label> <select name="city[]" id="city_edu_${index+1}" class="form-control select2 kota_education" tabindex="-1" aria-hidden="true"></select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group"> <label>Tahun Pendidikan: </label>
+                            <div class="row">
+                                <div class="col-sm-6 date"> <input type="text" placeholder="Tahun Mulai" name="start_year[]" id="start_year_${index+1}" class="form-control selectyear datetimepicker1"> </div>
+                                <div class="col-sm-6 date"> <input type="text" placeholder="Tahun Akhir" name="end_year[]" id="end_year_${index+1}" class="form-control datetimepicker2"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6"> <input type="text" class="form-control" name="applicant[1503551][other_edu]" id="other_text_kota_1503551" style="display:none;" placeholder="Masukkan Kota Lainnya.."> <input type="text" class="form-control" name="applicant[1503551][other_edu]" id="other_text_kota_2_1503551" style="display:none;" value=""> </div>
+                </div> <span class="d-flex"><label class="asterik my-auto pull-left"> </label>&nbsp; Field wajib diisi</span>
+            </div>`;
+        }
+
+
+
+
+
         $('.select2').select2();
         $('.datetimepicker1,.datetimepicker2').datetimepicker({
             format: 'YYYY', // Only show the year
@@ -1878,4 +1963,7 @@
         });
     });
 </script>
+
+
+
 @endsection

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Candidate;
 use App\Models\CandidateAddress;
+use App\Models\CandidateEducation;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -29,7 +30,7 @@ class CVController extends Controller
     public function address(Request $req)
     {
         $data = DB::table('tbl_mst_candidate_address as a')
-            ->where('a.id', $this->sessId)
+            ->where('a.candidate_id', $this->sessId)
             ->select('a.*')
             ->first();
         return response()->json($data);
@@ -91,6 +92,49 @@ class CVController extends Controller
             $data->city_trip =  $req->city_trip;
             $data->lokasi_penempatan =  $req->lokasi_penempatan;
             $data->save();
+            DB::commit();
+            return response()->json(['success' => true]);
+        } catch (Exception $ex) {
+            return response()->json(['error' => $ex->getMessage()], 500);
+        }
+    }
+
+    //personal data
+    public function educationCandidate(Request $req)
+    {
+        $data = DB::table('tbl_mst_candidate_education as a')
+            ->where('a.candidate_id', $this->sessId)
+            ->select('a.*')
+            ->get();
+        return response()->json($data);
+    }
+
+    public function updateEducation(Request $req)
+    {
+        DB::beginTransaction();
+        try {
+            DB::table("tbl_mst_candidate_education")->where("candidate_id", $this->sessId)->delete();
+            $params = [];
+            for ($i = 0; $i < count($req->level_education); $i++) {
+                $data = [
+                    'candidate_id' => $this->sessId,
+                    'level_education' => $req->level_education[$i],
+                    'campus' => $req->campus[$i],
+                    'type_campus' => $req->type_campus[$i],
+                    'faculty' => $req->faculty[$i],
+                    'major' => $req->major[$i],
+                    'country_edu' => $req->country_edu[$i],
+                    'city' => $req->city[$i],
+                    'start_year' => $req->start_year[$i] . '-01-01',
+                    'end_year' => $req->end_year[$i] . '-01-01',
+                    'ipk' => $req->ipk[$i],
+                    'from_ipk' => $req->from_ipk[$i],
+                    'created_at' => date('Y-m-d H:i:s'),
+                    'created_by' => $this->sessId,
+                ];
+                array_push($params, $data);
+            }
+            DB::table("tbl_mst_candidate_education")->insert($params);
             DB::commit();
             return response()->json(['success' => true]);
         } catch (Exception $ex) {
