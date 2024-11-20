@@ -143,6 +143,7 @@
                                 timer: 3000,
                                 showConfirmButton: false,
                                 allowOutsideClick: false,
+                                icon :"success",
                                 onOpen: function() {
                                     swal.showLoading();
                                     const timerInterval = setInterval(function() {

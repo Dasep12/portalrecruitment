@@ -93,7 +93,8 @@
 
 
     <script src="https://recruit.infomedia.co.id/assets/block_ui.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/jquery.barrating.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/themes/fontawesome-stars.css">
 
     <script>
         function loaderSending() {
@@ -215,7 +216,12 @@
     }
 </style>
 
+<?php
 
+use App\Models\Candidate;
+
+$personals =  Candidate::find(session()->get("user_id"));
+?>
 
 <body id="menu_style" class="cat__config--vertical cat__menu-left--colorful">
     <div class="loading">
@@ -235,7 +241,7 @@
             </div>
         </div>
         <div class="cat__menu-left__logo">
-            <a href="https://recruit.infomedia.co.id/">
+            <a href="#">
                 <img src="{{ asset('assets/frontend/img/bti_logo_hires_bw.gif') }}" />
             </a>
         </div>
@@ -260,12 +266,12 @@
                         Lamaran Saya
                     </a>
                 </li>
-                <li class='cat__menu-left__item ' id='my_mail' data-toggle='ajax'>
+                <!-- <li class='cat__menu-left__item ' id='my_mail' data-toggle='ajax'>
                     <a href='main#my_mail'>
                         <span class='cat__menu-left__icon fa fa-envelope'></span>
                         Kotak Masuk
                     </a>
-                </li>
+                </li> -->
             </ul>
         </div>
 
@@ -287,7 +293,7 @@
                 <div class="dropdown cat__top-bar__avatar-dropdown">
                     <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                         <span class="cat__top-bar__avatar" href="javascript:void(0);">
-                            <img src="https://recruit.infomedia.co.id/curiculum_vitae/get_document/prev/OTlmNThjOGMxOTg3MTJmZmUyZTgwZGNlZWM2ZDdiNDUzNzlhOGZiMTBhZWVkYzdkZTEyZDUxYTdiOTY3NGI2ZTAyNTI3OTYwYzljM2U1OTg2ODdiNGY3YzViNmVkMTk5ZTNlOTUxOWYxNTk0OTc4NWFiYWZkYjczN2FjZmEzNmVLa2NURGlENnU1ODVpM0VJNmNvQTFDV2Z0akUxa2JRYUN0MUxLZHdwQWV3PQ==/71aa54fc36116f6104389ca2e4576cc1.jpg"> </span>
+                            <img src="{{ asset('photo/'. $personals->photo) }}"> </span>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="" role="menu">
 

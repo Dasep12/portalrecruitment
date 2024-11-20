@@ -29,7 +29,7 @@ class PortalController extends Controller
                 ->where(['email' => $email, 'password' => $password, 'status' => 1]);
             if ($cekUser->count() > 0) {
                 $data = $cekUser->first();
-                session()->put('user_id', $data->user_id);
+                session()->put('user_id', $data->candidate_id);
                 return response()->json(['success' => true, 'msg' => 'ok']);
             } else {
                 return response()->json('User Not Found', 404);
@@ -62,19 +62,20 @@ class PortalController extends Controller
                 $account =  [
                     'email' => $email,
                     'password' => $password,
-                    'status' => 0,
+                    'status' => 1,
                     'created_at' => date('Y-m-d H:i:s'),
-                    'user_id' => ''
+                    'candidate_id' => ''
                 ];
                 $candidate = [
                     'fullname' => $namaLengkap,
                     'id_card' => $id_card,
+                    'email' => $email,
                     'created_at' => date('Y-m-d H:i:s')
                 ];
                 DB::beginTransaction();
                 DB::table('tbl_mst_candidate')->insert($candidate);
                 $lastId = DB::getPdo()->lastInsertId();
-                $account['user_id'] = $lastId;
+                $account['candidate_id'] = $lastId;
                 DB::table('tbl_mst_account')->insert($account);
                 try {
                     DB::commit();

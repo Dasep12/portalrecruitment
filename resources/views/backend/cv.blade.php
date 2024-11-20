@@ -255,7 +255,7 @@
                         <div class="row">
                             <div class="col-md-3 text-center col-12" style="padding-top: 20px;padding-bottom: 20px;">
                                 <a href="https://recruit.infomedia.co.id/main#profile" id="col-image" class="cat__core__avatar cat__core__avatar--border-white d-block " style="width: 150px; height: 150px;border-radius:25px; border:0px">
-                                    <img src="https://recruit.infomedia.co.id/curiculum_vitae/get_document/prev/ZGE1MjAzOTU4NTQ3ZWE4NWFkZTIyYmQ1YWE2NjEyNjhjMzA1M2ZlZWQ2YmY1MTU5ZjlhNDUwNGY5OTQyMzE0N2Q2MDUwNTdhMmYzODEyZjY1ZDM5ZmU1NzI4MGMwZTBlZDJlZjBhMzM1NTRmM2Y2NDZlNDQ0NWFjZjA3ZjAzYzZSRHZLYUZjL3NIT0o4elVCOU5ualA3K3JlcklhcXNoQkdxVy9pVjM4d2hFPQ==/71aa54fc36116f6104389ca2e4576cc1.jpg" alt="" style="object-fit:cover;">
+                                    <img src="{{ asset('photo/'.$personal->photo) }}" alt="" style="object-fit:cover;">
                                 </a>
                             </div>
 
@@ -274,11 +274,11 @@
                                 <div class="row col-section-2 ">
                                     <div class="col-6 col-md-12 mb-3">
                                         <b>Nama</b>
-                                        <p>Dasep Depiyawan</p>
+                                        <p>{{ $personal->fullname }}</p>
                                     </div>
                                     <div class="col-6 col-md-12 mb-3">
                                         <b>Email</b>
-                                        <p>depiyawandasep13@gmail.com</p>
+                                        <p>{{ $personal->email }}</p>
                                     </div>
                                     <div class="col-6 col-md-12 mb-3">
                                         <b>KTP</b>
@@ -290,7 +290,7 @@
                                         <b>No. HP</b>
                                         <!-- <p id="phone_secret">************</p> -->
                                         <br>
-                                        <label for="" class="preview_secret" data-preview="083821619460">************</label>
+                                        <label for="" class="preview_secret" data-preview="{{ $personal->phone }}">************</label>
                                     </div>
                                     <div class="col-6 col-md-12 mb-3">
                                         <b>No. Whatsapp</b>
@@ -299,7 +299,7 @@
                     </p> -->
                                         <br>
                                         <label for="">
-                                            <a id="no_wa" class="preview_secret" data-preview="083821619460" style="text-decoration:underline" href="https://api.whatsapp.com/send?phone=6283821619460&amp;text=" target="_blank">
+                                            <a id="no_wa" class="preview_secret" data-preview="{{ $personal->phone_wa }}" style="text-decoration:underline" href="https://api.whatsapp.com/send?phone=6283821619460&amp;text=" target="_blank">
                                                 ************ </a>
                                         </label>
                                     </div>
@@ -324,7 +324,7 @@
                                         <b>Tanggal Lahir</b>
                                         <!-- <p id="birthday_secret">*************</p> -->
                                         <br>
-                                        <label for="" class="preview_secret" data-preview="13 April 1999">*************</label>
+                                        <label for="" class="preview_secret" data-preview="{{ $personal->born_date }}">*************</label>
                                     </div>
                                     <div class="col-6 col-md-12 mb-3">
                                         <b>Usia</b>
@@ -332,17 +332,17 @@
                                     </div>
                                     <div class="col-6 col-md-12 mb-3">
                                         <b>Agama</b>
-                                        <p>Islam</p>
+                                        <p>{{ $personal->religion }}</p>
                                     </div>
 
                                     <div class="col-6 col-md-12 mb-3">
                                         <b>Status Pernikahan</b>
-                                        <p>Lajang</p>
+                                        <p>{{ $personal->status_married }}</p>
                                     </div>
 
                                     <div class="col-6 col-md-12 mb-3">
                                         <b>Jenis Kelamin</b>
-                                        <p>Laki-laki</p>
+                                        <p>{{ $personal->gender }}</p>
                                     </div>
 
 
@@ -428,30 +428,30 @@
                                     <li class="qualified">
                                         <h5 class="sub-header"><b class="">Alamat Domisili</b></h5>
 
-                                        <p>Jl Lodan Dalam II C Kota Jakarta Utara</p>
+                                        <p>{{ $personal->alamat }}</p>
                                         <div class="row m-0">
                                             <div class="col-4 bb pl-0">
                                                 <b>Provinsi</b>
-                                                <p class="mb-1">DKI Jakarta </p>
+                                                <p class="mb-1">{{ $personal->provinsi }} </p>
                                             </div>
                                             <div class="col-4 bb bl">
                                                 <b>Kota/ Kabupaten</b>
-                                                <p class="mb-1">ADM. JAKARTA UTARA</p>
+                                                <p class="mb-1">{{ $personal->city }}</p>
                                             </div>
                                             <div class="col-4 bb bl">
                                                 <b>Kecamatan</b>
-                                                <p class="mb-1">Pademangan</p>
+                                                <p class="mb-1">{{ $personal->kecamatan }}</p>
                                             </div>
                                             <div class="col-4 pl-0">
                                                 <b>No. Rumah</b>
-                                                <p class="mb-1">0838</p>
+                                                <p class="mb-1">{{ $personal->no_home }}</p>
                                             </div>
                                             <div class="col-4 bl">
                                                 <b>Kode Pos</b>
-                                                <p class="mb-1">14430</p>
+                                                <p class="mb-1">{{ $personal->zip_code_now }}</p>
                                             </div>
                                             <div class="col-4 bl">
-                                                <b>No Telephone</b>
+                                                <b>{{ $personal->phone_now }}</b>
                                                 <!-- <p id="notelp_alamat_domicile_secret" data-original="083821619460" class="mb-1">************</p> -->
                                                 <br>
                                                 <label for="" class="preview_secret" data-preview="083821619460">************</label>
@@ -475,35 +475,39 @@
                                 <div class="col-12 col-md-11">
                                     <h4 class="text-header">Pendidikan</h4>
                                     <ul class="timeline-cv" id="">
-                                        <li class="qualified">
-                                            <h5 class="sub-header"><b class="">S1-Perguruan Tinggi, STMIK SwadharmaJakarta</b></h5>
+                                        @foreach($education as $edu)
 
-                                            <p>Negara : Indonesia, Kota : ADM. JAKARTA BARAT</p>
+                                        <li class="qualified">
+                                            <h5 class="sub-header"><b class="">{{ $edu->level_edu }}, {{ $edu->campus }}</b></h5>
+
+                                            <p>Negara : {{ $edu->negara }}, Kota : {{ $edu->kota }}</p>
                                             <div class="row m-0">
                                                 <div class="col-4 bb pl-0">
                                                     <b>Fakultas</b>
-                                                    <p class="mb-1">FAKULTAS TEKNOLOGI INFORMASI DAN KOMUNIKASI</p>
+                                                    <p class="mb-1">{{ $edu->fakultas }}</p>
                                                 </div>
                                                 <div class="col-4 bb bl">
                                                     <b>Jurusan</b>
-                                                    <p class="mb-1">S1-Sistem Informasi</p>
+                                                    <p class="mb-1">{{ $edu->jurusan }}</p>
                                                 </div>
                                                 <div class="col-4 bb bl">
                                                     <b>IPK/ Nilai</b>
-                                                    <p class="mb-1">3.6 dari max 4.0</p>
+                                                    <p class="mb-1">{{ $edu->ipk }} dari max {{ $edu->from_ipk }}</p>
                                                 </div>
                                                 <div class="col-4 pl-0">
                                                     <b>Tahun Pendidikan</b>
-                                                    <p class="mb-1">2019 s/d 2023</p>
+                                                    <p class="mb-1">{{ $edu->startyear }} s/d {{ $edu->endyear }}</p>
                                                 </div>
                                                 <div class="col-4  bl">
                                                     <b>Jenis Sekolah</b>
-                                                    <p class="mb-1" style="text-transform: uppercase;">pts</p>
+                                                    <p class="mb-1" style="text-transform: uppercase;">{{ $edu->type_campus }}</p>
                                                 </div>
 
 
                                             </div>
                                         </li>
+                                        @endforeach
+
                                     </ul>
                                 </div>
                             </div>
@@ -520,10 +524,11 @@
                                 <h4 class="text-header">Pengalaman Pekerjaan</h4>
 
                                 <ul class="timeline-cv" id="">
+                                    @foreach($experience as $exp)
                                     <li class="qualified">
-                                        <h5 class="sub-header"><b class="">PT RAVALIA INTI MANDIRI</b></h5>
+                                        <h5 class="sub-header"><b class="">{{ $exp->company_job }}</b></h5>
 
-                                        <p> Negara: Indonesia, Kota: KAB. BEKASI</p>
+                                        <p> Negara: {{ $exp->country_job }}, Kota: {{ $exp->city }}</p>
                                         <div class="row m-0">
                                             <div class="col-4 bb pl-0">
                                                 <b>Jabatan</b>
@@ -532,150 +537,45 @@
                                             </div>
                                             <div class="col-4 bb bl">
                                                 <b>Tahun Masuk</b>
-                                                <p class="mb-1">01 July 2024</p>
+                                                <p class="mb-1">{{ $exp->startYear }}</p>
 
                                             </div>
                                             <div class="col-4 bb bl">
                                                 <b>Tahun Berhenti</b>
-                                                <p class="mb-1">25 October 2024</p>
+                                                <p class="mb-1">{{ $exp->endYear }}</p>
 
                                             </div>
                                             <div class="col-4 bb pl-0">
                                                 <b>Gaji</b>
-                                                <p class="mb-1">7000000</p>
+                                                <p class="mb-1">{{ $exp->sallary }}</p>
                                             </div>
 
                                             <div class="col-4 bb bl">
                                                 <b>Industri</b>
-                                                <p class="mb-1">
-                                                    Manufacture / Production</p>
+                                                <p class="mb-1">{{ $exp->industry }}</p>
                                             </div>
                                             <div class="col-4  bl bb">
                                                 <b>Tipe Pekerja</b>
-                                                <p class="mb-1">PWT (Contract)</p>
+                                                <p class="mb-1">{{ $exp->type_job }}</p>
                                             </div>
 
-                                            <div class="col-6 pl-0 bb">
+                                            <div class="col-12 pl-0 bb">
                                                 <b>Alasan Berhenti</b>
-                                                <p class="mb-1">-</p>
+                                                <p class="mb-1">{{ $exp->reason_stop }}</p>
                                             </div>
-                                            <div class="col-6  bl bb">
+                                            <!-- <div class="col-6  bl bb">
                                                 <b>Fasilitas</b>
                                                 <p class="mb-1">-</p>
-                                            </div>
+                                            </div> -->
                                             <div class="col-12 pl-0">
                                                 <b>Deskripsi Pekerjaan</b>
                                                 <p class="mb-1 pre-tag-style"></p>
-                                                <p>Build Development Web Application with ASP NET MVC C#<br></p>
+                                                <p>{{ $exp->description }}<br></p>
                                                 <p></p>
                                             </div>
                                         </div>
                                     </li>
-
-                                    <li class="qualified">
-                                        <h5 class="sub-header"><b class="">PT SIGAP PRIMA ASTREA</b></h5>
-
-                                        <p> Negara: Indonesia, Kota: ADM. JAKARTA PUSAT</p>
-                                        <div class="row m-0">
-                                            <div class="col-4 bb pl-0">
-                                                <b>Jabatan</b>
-                                                <p class="mb-1">IT PROGRAMMER</p>
-
-                                            </div>
-                                            <div class="col-4 bb bl">
-                                                <b>Tahun Masuk</b>
-                                                <p class="mb-1">01 January 2022</p>
-
-                                            </div>
-                                            <div class="col-4 bb bl">
-                                                <b>Tahun Berhenti</b>
-                                                <p class="mb-1">30 June 2024</p>
-
-                                            </div>
-                                            <div class="col-4 bb pl-0">
-                                                <b>Gaji</b>
-                                                <p class="mb-1">7000000</p>
-                                            </div>
-
-                                            <div class="col-4 bb bl">
-                                                <b>Industri</b>
-                                                <p class="mb-1">
-                                                    Jasa Industri</p>
-                                            </div>
-                                            <div class="col-4  bl bb">
-                                                <b>Tipe Pekerja</b>
-                                                <p class="mb-1">PWT (Contract)</p>
-                                            </div>
-
-                                            <div class="col-6 pl-0 bb">
-                                                <b>Alasan Berhenti</b>
-                                                <p class="mb-1">Ingin Menaikan Karir dan Pendapatan</p>
-                                            </div>
-                                            <div class="col-6  bl bb">
-                                                <b>Fasilitas</b>
-                                                <p class="mb-1">-</p>
-                                            </div>
-                                            <div class="col-12 pl-0">
-                                                <b>Deskripsi Pekerjaan</b>
-                                                <p class="mb-1 pre-tag-style"></p>
-                                                <p>Development pembuatan sistem web aplikasi / mobile berdasarkan user<br>requirement perusahaan .<br>Maintenance berkala pada sistem yang sudah berjalan dan memaskan dak ada<br>bug atau error pada sistem keka sedang berjalan.<br>Melakukan riset dan analisa di perusahaan untuk melakukan improvement dan<br>pengembangan terhadap sistem yang sudah ada.<br>Sistem aplikasi yang sudah di develop seper :<br>- Security Guard Tour<br>- Ipatrol<br>- Isecurity<br>- Crime Index<br></p>
-                                                <p></p>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li class="qualified">
-                                        <h5 class="sub-header"><b class="">PT INDOMARCO PRISMATAMA</b></h5>
-
-                                        <p> Negara: Indonesia, Kota: ADM. JAKARTA UTARA</p>
-                                        <div class="row m-0">
-                                            <div class="col-4 bb pl-0">
-                                                <b>Jabatan</b>
-                                                <p class="mb-1">IT SUPPORT</p>
-
-                                            </div>
-                                            <div class="col-4 bb bl">
-                                                <b>Tahun Masuk</b>
-                                                <p class="mb-1">16 January 2018</p>
-
-                                            </div>
-                                            <div class="col-4 bb bl">
-                                                <b>Tahun Berhenti</b>
-                                                <p class="mb-1">31 December 2021</p>
-
-                                            </div>
-                                            <div class="col-4 bb pl-0">
-                                                <b>Gaji</b>
-                                                <p class="mb-1">4500000</p>
-                                            </div>
-
-                                            <div class="col-4 bb bl">
-                                                <b>Industri</b>
-                                                <p class="mb-1">
-                                                    Retail</p>
-                                            </div>
-                                            <div class="col-4  bl bb">
-                                                <b>Tipe Pekerja</b>
-                                                <p class="mb-1">PWTT (Permanent)</p>
-                                            </div>
-
-                                            <div class="col-6 pl-0 bb">
-                                                <b>Alasan Berhenti</b>
-                                                <p class="mb-1">Beralih karir dari IT support ke IT Programmer</p>
-                                            </div>
-                                            <div class="col-6  bl bb">
-                                                <b>Fasilitas</b>
-                                                <p class="mb-1">-</p>
-                                            </div>
-                                            <div class="col-12 pl-0">
-                                                <b>Deskripsi Pekerjaan</b>
-                                                <p class="mb-1 pre-tag-style"></p>
-                                                <p>Maintenance alat alat elektronik seper komputer monitor dan printer<br>Merekap error/bug yang terjadi pada sistem aplikasi dan melakukan reporng<br>kepada pihak IT Development untuk temuan bug atau error tersebut<br>Melakukan stock opname sarana elektronik dan melakukan pemisahan antara<br>barang yang akf rusak dan cadangan<br></p>
-                                                <p></p>
-                                            </div>
-                                        </div>
-                                    </li>
-
+                                    @endforeach
                                 </ul>
                             </div>
                         </div>
@@ -690,21 +590,21 @@
                             <div class="col-12 col-md-11">
                                 <h4 class="text-header">Pengalaman Organisasi</h4>
                                 <ul class="timeline-cv" id="">
+                                    @foreach($organisasi as $org)
                                     <li class="qualified">
-                                        <h5 class="sub-header"><b class="">Tarung Derajat</b></h5>
+                                        <h5 class="sub-header"><b class="">{{ $org->name_org }}</b></h5>
                                         <div class="row m-0">
                                             <div class="col-6 pl-0">
                                                 <b>Jabatan / Posisi</b>
-                                                <p class="mb-1">anggota</p>
+                                                <p class="mb-1">{{ $org->jabatan }}</p>
                                             </div>
                                             <div class="col-6 bl">
                                                 <b>Peran &amp; Tanggungjawab</b>
-                                                <p class="mb-1">Anggota </p>
+                                                <p class="mb-1">{{ $org->peran }} </p>
                                             </div>
                                         </div>
-
-
                                     </li>
+                                    @endforeach
                                 </ul>
                             </div>
                         </div>
@@ -712,7 +612,7 @@
                         <!-- end pengalaman organisasi -->
 
                         <!-- Sertifikasi -->
-                        <div class="row m-0">
+                        <!-- <div class="row m-0">
                             <div class="col-md-1 icon-box">
                                 <img class="icon-1" src="https://recruit.infomedia.co.id/assets/images/icons/Cube-2.png">
                             </div>
@@ -725,7 +625,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <br>
                         <!-- sertifikasi end -->
 
@@ -736,22 +636,15 @@
                             </div>
                             <div class="col-12 col-md-11">
                                 <h4 class="text-header">Kompetensi / Skill</h4>
-
                                 <ul class="timeline-cv" id="">
+                                    @foreach($skills as $sk)
                                     <li class="qualified">
-                                        <p class="m-0">Job Analysis</p>
-                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                        <p class="m-0">{{ $sk->skill }}</p>
+                                        @for($i = 0 ; $i <= $sk->level ; $i++ )
+                                            <i class="fa fa-star"></i>
+                                            @endfor
                                     </li>
-
-                                    <li class="qualified">
-                                        <p class="m-0">Database Administration</p>
-                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                    </li>
-
-                                    <li class="qualified">
-                                        <p class="m-0">Application Programming </p>
-                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                    </li>
+                                    @endforeach
                                 </ul>
 
                             </div>
@@ -776,39 +669,19 @@
                             </div>
                             <div class="col-12 col-md-11">
                                 <h4 class="text-header">File Uploaded</h4>
+                                @foreach($document as $doc)
                                 <div style="border:solid 1px #e4e9f0;border-radius:5px" class="row m-0 p-2 mb-1 list-file">
                                     <div class="col-6 my-auto">
-                                        <label class="m-0">ijazah</label>
+                                        <label class="m-0">{{ $doc->document }}</label>
                                     </div>
                                     <div class="col-4 my-auto">
-                                        <label class="m-0">2024-10-25 09:17:45</label>
+                                        <label class="m-0">{{ $doc->created_at }}</label>
                                     </div>
                                     <div class="col-2 text-right">
-                                        <a target="_blank" href="https://recruit.infomedia.co.id//curiculum_vitae/get_document/prev/YjlmODJhOGNjNTBjNjc4MjZiMjM4NzZiZTMzNTUxNzE1YzExYzQyMzNiZWY3NWFlM2E4ODRmNzNiYjViNTk0OWIyMjJmZDg4MjYyNDA0NzE5YzhjMGM2ZWYwMjVmOWIxMjc3YjlmNDUyMDFkMDVkYWI1NzQ1NWM2YTMxYTc5NjQrRWhZRVYvZlVYU1pYV2N2RnFHR3gzcnpLaGNrUFdCSnd2Zlp0eWFYUFA4PQ=="> <span class="material-icons" style="background: #0190fe;color: white;padding: 3px;border-radius: 7px;cursor: pointer;">call_made</span></a>
+                                        <a target="_blank" href="{{ asset('document/'.$doc->name_file) }}"> <span class="material-icons" style="background: #0190fe;color: white;padding: 3px;border-radius: 7px;cursor: pointer;">call_made</span></a>
                                     </div>
                                 </div>
-                                <div style="border:solid 1px #e4e9f0;border-radius:5px" class="row m-0 p-2 mb-1 list-file">
-                                    <div class="col-6 my-auto">
-                                        <label class="m-0">ktp</label>
-                                    </div>
-                                    <div class="col-4 my-auto">
-                                        <label class="m-0">2024-10-25 09:17:51</label>
-                                    </div>
-                                    <div class="col-2 text-right">
-                                        <a target="_blank" href="https://recruit.infomedia.co.id//curiculum_vitae/get_document/prev/MmE2YWMzZDJhMGNhNmNlYTNhNzZjOTgwNTMwNWE3ODllYTk4NWQyZTdlNDFhYzI0YTVkYTlmNjlhNmZmMmM0MTY0NGRlMTdmOTdmODc5M2YyOTZlODM3YzlkNWRiNjI5NGExY2M1MzNkNTBjMjJkOGZjZWUyMTk4NTMyZDM1MGN4MW1Lc1Y4SUhBQWVwNkJHQVFtTjMyNWo5VFFwSXZadElPdnVRUFRLbGRNPQ=="> <span class="material-icons" style="background: #0190fe;color: white;padding: 3px;border-radius: 7px;cursor: pointer;">call_made</span></a>
-                                    </div>
-                                </div>
-                                <div style="border:solid 1px #e4e9f0;border-radius:5px" class="row m-0 p-2 mb-1 list-file">
-                                    <div class="col-6 my-auto">
-                                        <label class="m-0">transkip_nilai</label>
-                                    </div>
-                                    <div class="col-4 my-auto">
-                                        <label class="m-0">2024-10-25 09:18:02</label>
-                                    </div>
-                                    <div class="col-2 text-right">
-                                        <a target="_blank" href="https://recruit.infomedia.co.id//curiculum_vitae/get_document/prev/ZTg3OTAzNWM2YzU1MmRkMzU2YzIyOTUwM2M4NDM3Njk4NTVhYWFmYzYzZDJlMzJjOTAyMTY5MGVhMzExY2E4NjlkM2MzNWYzYWIyNDI1MTc5OTc1MzVkMzgyZTAyNTA3YmQxYzY1NjIxNzczZmQ2ZDMxMjg2NGUyZTYxYzAwYTREYmtuVlRwTjVKalNOL2gyRlVaUjY4Rjh4RmwwUWFkT3lOKy9XMmh3b3lNPQ=="> <span class="material-icons" style="background: #0190fe;color: white;padding: 3px;border-radius: 7px;cursor: pointer;">call_made</span></a>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
                         </div>
                         <!-- end list file -->
@@ -826,48 +699,6 @@
     <script type="text/javascript">
         $(document).ready(function() {
             var userlevel = 'pelamar';
-
-            // if ( userlevel != 'pelamar' ) {
-            //     $(".action-edit").remove();
-            // }
-
-            // var ubah_data = 0;
-            // if( ubah_data != 0){
-            //     $("#ubah").hide();
-            // }else{
-            //     $("#ubah").show();
-            // }
-            //
-            // var lastapplied = $('#datelast').val();
-            // var exp_id = $('#exp_id').val();
-            // var m_vacancy_id_new = $('#m_vacancy_id_new').val();
-            // var today = new Date().toISOString().slice(0,10);
-            // // console.log(lastapplied);
-            // if( today > lastapplied){
-            //   // console.log('yay');
-            //   $("#ubah").show();
-            // }
-            // else if (exp_id == 3) {
-            //   $("#ubah").show();
-            // }
-            // if(m_vacancy_id_new <99){
-            //   $("#ubah").show();
-            // }else{
-            //   // console.log('no');
-            //   $("#ubah").hide();
-            //   $('#infolastapplied').append('<div class="row" style="border:solid 1px #FF1919; border-radius:5px; padding:10px">\
-            //     <div class="col-md-1 text-center"></div>\
-            //     <div class="col-md-1 text-center">\
-            //       <i class="fa fa-warning fa-lg" style="color: #FF1919; font-size: 40px; padding-top: 10px;"></i>\
-            //     </div>\
-            //     <div class="col-md-8">\
-            //       <label>Anda tidak dapat mengubah profil sebelum tanggal terakhir melamar s/d 1 tahun<br> <b>01 January 1971</b>.</label>\
-            //     </div>\
-            //     <div class="col-md-1 text-center">\
-            //       <i class="fa fa-warning fa-lg" style="color: #FF1919; font-size: 40px; padding-top: 10px;"></i>\
-            //     </div>\
-            //   </div>');
-            // }
 
             var doc = new jsPDF();
             $('#download-cv').click(function() {
@@ -892,54 +723,6 @@
                 }, 10000);
             });
         });
-
-        // $(function() {
-        //     var check_skill       = "1";
-        //     var check_address     = "1";
-        //     var check_work        = "1";
-        //     var check_education   = "1";
-        //     var check_organisasi  = "1";
-        //     var check_family      = "0";
-        //     var check_prestasi    = "0";
-        //     var check_sertifikasi = "0";
-        //
-        //     check_skill=="0"?$(".list_skill").hide():$(".list_skill").show();
-        //     check_address=="0"?$(".list_address").hide():$(".list_address").show();
-        //     check_work=="0"?$(".list_work").hide():$(".list_work").show();
-        //     check_education=="0"?$(".list_education").hide():$(".list_education").show();
-        //     check_organisasi=="0"?$(".list_organisasi").hide():$(".list_organisasi").show();
-        //     check_family =="0"?$(".list_keluarga").hide():$(".list_keluarga").show();
-        //     check_prestasi =="0"?$(".list_prestasi ").hide():$(".list_prestasi").show();
-        //     check_sertifikasi =="0"?$(".list_sertifikasi ").hide():$(".list_sertifikasi").show();
-        // });
-
-        // $("#btn-addon").click(function(){
-        //   $(this).toggleClass('active');
-        //   if ($(this).hasClass('active')) {
-        //     $(this).html(`<i class="material-icons" style="color: #0a0a0a">visibility_on</i>`);
-        //       $("#nik_secret").html('3217141304990005');
-        //       $("#phone_secret").html('083821619460');
-        //       $("#no_wa_secret").html('083821619460');
-        //       $("#birthday_secret").html('13 April 1999');
-        //       $("#notelp_alamat_domicile_secret").html($("#notelp_alamat_domicile_secret").attr('data-original'));
-        //       $("#account_number_secret").html('');
-        //       $("#notelp_alamat_ktp_secret").html($("#notelp_alamat_ktp_secret").attr('data-original'));
-        //   }
-        //   else {
-        //     $(this).html(`<i class="material-icons" style="color: #0a0a0a">visibility_off</i>`);
-        //       $("#nik_secret").html("3217141304990005".replace(/./g, '*'));
-        //       $("#phone_secret").html("083821619460".replace(/./g, '*'));
-        //       $("#no_wa_secret").html("083821619460".replace(/./g, '*'));
-        //       $("#birthday_secret").html("13 April 1999".replace(/./g, '*'));
-        //       if($("#notelp_alamat_ktp_secret").attr('data-original')){
-        //         $("#notelp_alamat_ktp_secret").html($("#notelp_alamat_ktp_secret").attr('data-original').replace(/./g, "*"));
-        //       }
-        //       if($("#notelp_alamat_domicile_secret").attr('data-original')){
-        //         $("#notelp_alamat_domicile_secret").html($("#notelp_alamat_domicile_secret").attr('data-original').replace(/./g, "*"));
-        //       }
-        //       $("#account_number_secret").html("".replace(/./g, '*'));
-        //   }
-        // })
 
         function gen_cv_pdf() {
             var btn = $("#btn-download-cv").val();
@@ -974,17 +757,6 @@
                 })
 
                 $("#btn-download-cv").val('noenc');
-
-                // // Select the anchor element by its ID
-                // var link = document.getElementsByClassName('dcv');
-
-                // // Value to append (e.g., a query string)
-                // var additionalValue = '/noenc';
-
-                // // Loop through the elements and change their text
-                // for (var i = 0; i < link.length; i++) {
-                //   link[i].href = link[i].href += additionalValue;
-                // }
             } else {
                 thisbtn.removeClass('icmn-eye');
                 thisbtn.addClass('icmn-eye-blocked');
@@ -994,17 +766,6 @@
                 })
 
                 $("#btn-download-cv").val('enc');
-
-                // // Select the anchor element by its ID
-                // var link = document.getElementsByClassName('dcv');
-
-                // // Value to append (e.g., a query string)
-                // var additionalValue = '/enc';
-
-                // // Loop through the elements and change their text
-                // for (var i = 0; i < link.length; i++) {
-                //   link[i].href = link[i].href += additionalValue;
-                // }
             }
         }
     </script>

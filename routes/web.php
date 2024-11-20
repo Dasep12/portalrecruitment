@@ -30,13 +30,24 @@ Route::middleware(['check.session'])->prefix('/main')->group(function () {
 
     // Data Diri
     Route::get('/datadiri', [CVController::class, 'index']);
+    Route::get('/account', [CVController::class, 'account']);
+    Route::post('/updatePhoto', [CVController::class, 'updatePhoto']);
+    Route::post('/updatePassword', [CVController::class, 'updatePassword']);
     Route::post('/personaldata', [CVController::class, 'personaldata']);
     Route::post('/updatepersonaldata', [CVController::class, 'updatepersonaldata']);
     Route::post('/address', [CVController::class, 'address']);
     Route::post('/updateaddress', [CVController::class, 'updateaddress']);
     Route::post('/educationCandidate', [CVController::class, 'educationCandidate']);
     Route::post('/updateEducation', [CVController::class, 'updateEducation']);
-
+    Route::post('/workingHistoryCandidate', [CVController::class, 'workingHistoryCandidate']);
+    Route::post('/updateworkingHistory', [CVController::class, 'updateworkingHistory']);
+    Route::post('/organizationCandidate', [CVController::class, 'organizationCandidate']);
+    Route::post('/updateorganization', [CVController::class, 'updateorganization']);
+    Route::post('/skillsCandidate', [CVController::class, 'skillsCandidate']);
+    Route::post('/updateskills', [CVController::class, 'updateskills']);
+    Route::post('/uploadDocument', [CVController::class, 'uploadDocument']);
+    Route::get('/cekDocument', [CVController::class, 'cekDocument']);
+    Route::get('/cekDataFull', [CVController::class, 'cekDataFull']);
 
     Route::get('/country', [CVController::class, 'country']);
     Route::get('/regencies', [CVController::class, 'regencies']);
@@ -47,6 +58,8 @@ Route::middleware(['check.session'])->prefix('/main')->group(function () {
     Route::get('/degree', [CVController::class, 'degree']);
     Route::get('/skills', [CVController::class, 'skills']);
     Route::get('/education', [CVController::class, 'education']);
+    Route::get('/typeWork', [CVController::class, 'typeWork']);
+    Route::get('/workIndustry', [CVController::class, 'workIndustry']);
     Route::get('/home', [CVController::class, 'home']);
     Route::get('/apply', [CVController::class, 'apply']);
     Route::get('/cv', [CVController::class, 'cv']);
