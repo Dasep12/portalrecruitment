@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\ApplayController;
 use App\Http\Controllers\CVController;
 use App\Http\Controllers\LogoutController;
+use App\Http\Controllers\LokerController;
 use App\Http\Controllers\PortalController;
 use Illuminate\Support\Facades\Route;
 
@@ -60,8 +62,15 @@ Route::middleware(['check.session'])->prefix('/main')->group(function () {
     Route::get('/education', [CVController::class, 'education']);
     Route::get('/typeWork', [CVController::class, 'typeWork']);
     Route::get('/workIndustry', [CVController::class, 'workIndustry']);
-    Route::get('/home', [CVController::class, 'home']);
-    Route::get('/apply', [CVController::class, 'apply']);
     Route::get('/cv', [CVController::class, 'cv']);
-    Route::get('/job_vacany', [CVController::class, 'job_vacany']);
+
+
+    // APPLY
+    Route::get('/apply', [ApplayController::class, 'index']);
+    // Route::get('/home', [ApplayController::class, 'index']);
+
+    // LOWONGAN
+    Route::get('/job_vacany', [LokerController::class, 'index']);
+    Route::get('/listjob', [LokerController::class, 'listjob']);
+    Route::get('/detailjob/{id}', [LokerController::class, 'detailjob']);
 });

@@ -247,7 +247,7 @@
     </style>
 
     <section class="container-cv">
-        <div class="container cv-box p-0" id="cv" style="background:red; border-radius:20px">
+        <div class="container cv-box p-0" id="cv" style="background:#A80807; border-radius:20px">
             <div class="mb-5">
 
                 <div class="row m-0" style="margin-right:-0.99rem">

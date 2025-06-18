@@ -1054,7 +1054,7 @@
 
 
     </section>
-    @include('backend.partials.PartialsDataDiri')
+    @include('backend.cv.partials.PartialsDataDiri')
 </div>
 <script>
     $(document).ready(function() {

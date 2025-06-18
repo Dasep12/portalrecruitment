@@ -26,7 +26,20 @@ class CVController extends Controller
         $data  = [
             'personal' => Candidate::find($this->sessId)
         ];
-        return view('backend/datadiri', $data);
+        return view('backend.cv.datadiri', $data);
+    }
+
+    public function cv()
+    {
+        $data  = [
+            'personal' => DB::table('vw_personaldata')->where('id', $this->sessId)->first(),
+            'education' => DB::table('vw_education')->where('candidate_id', $this->sessId)->get(),
+            'experience' => DB::table('vw_experience')->where('candidate_id', $this->sessId)->get(),
+            'organisasi' => DB::table('tbl_mst_candidate_organization')->where('candidate_id', $this->sessId)->get(),
+            'skills' => DB::table('vw_skills')->where('candidate_id', $this->sessId)->get(),
+            'document' => DB::table('tbl_mst_candidate_document')->where('candidate_id', $this->sessId)->get()
+        ];
+        return view('backend.cv.cv', $data);
     }
 
     public function account()
@@ -34,7 +47,7 @@ class CVController extends Controller
         $data  = [
             'personal' => Candidate::find($this->sessId)
         ];
-        return view('backend/account', $data);
+        return view('backend.cv.account', $data);
     }
 
     public function updatePhoto(Request $req)
@@ -533,22 +546,5 @@ class CVController extends Controller
     public function home()
     {
         return view('backend/home');
-    }
-
-    public function cv()
-    {
-        $data  = [
-            'personal' => DB::table('vw_personaldata')->where('id', $this->sessId)->first(),
-            'education' => DB::table('vw_education')->where('candidate_id', $this->sessId)->get(),
-            'experience' => DB::table('vw_experience')->where('candidate_id', $this->sessId)->get(),
-            'organisasi' => DB::table('tbl_mst_candidate_organization')->where('candidate_id', $this->sessId)->get(),
-            'skills' => DB::table('vw_skills')->where('candidate_id', $this->sessId)->get(),
-            'document' => DB::table('tbl_mst_candidate_document')->where('candidate_id', $this->sessId)->get()
-        ];
-        return view('backend/cv', $data);
-    }
-    public function job_vacany()
-    {
-        return view('backend/job_vacany');
     }
 }

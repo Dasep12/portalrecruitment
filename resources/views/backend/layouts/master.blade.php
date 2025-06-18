@@ -96,6 +96,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/jquery.barrating.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/themes/fontawesome-stars.css">
 
+    <style>
+        .cat__menu-left__inner {
+            background: #A80807 !important;
+        }
+    </style>
     <script>
         function loaderSending() {
             $.blockUI({
@@ -140,11 +145,11 @@
     }
 
     .cat__menu-left__lock {
-        background: #F10315 !important;
+        background: #A80807 !important;
     }
 
     .cat__menu-left__logo {
-        background: red !important;
+        background: #A80807 !important;
     }
 
     .cat__menu-left__logo img {
@@ -152,7 +157,7 @@
     }
 
     .cat__menu-left__inner {
-        background: red !important;
+        background: #A80807 !important;
     }
 
     .cat__menu-left__divider {
