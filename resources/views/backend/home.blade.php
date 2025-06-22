@@ -56,7 +56,79 @@
                         </center>
                     </section>
                 </div>
+            </div>
+        </div>
+        <div class="container my-5">
+            <h5><strong>Dasep depiyawan</strong></h5>
+            <p>No. Registrasi: 3638/PCS8/OJK/2024</p>
+            <h6 class="mb-4">Tahapan Rekrutmen PCS8</h6>
 
+            <div class="d-flex justify-content-between align-items-center bg-white p-4 rounded shadow-sm overflow-auto">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="rounded-circle bg-success text-white p-2 mb-2">
+                        <i class="bi bi-check-circle fs-4"></i>
+                    </div>
+                    <div>Pendaftaran</div>
+                    <span class="badge bg-success mt-1">LOLOS</span>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="rounded-circle bg-danger text-white p-2 mb-2">
+                        <i class="bi bi-x-circle fs-4"></i>
+                    </div>
+                    <div>Seleksi Administrasi</div>
+                    <span class="badge bg-danger mt-1">TIDAK LOLOS</span>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center opacity-50">
+                    <div class="rounded-circle bg-light text-secondary p-2 mb-2 border">
+                        <i class="bi bi-pencil fs-4"></i>
+                    </div>
+                    <div>Tes Potensi Dasar</div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="text-center opacity-50">
+                    <div class="rounded-circle bg-light text-secondary p-2 mb-2 border">
+                        <i class="bi bi-pencil fs-4"></i>
+                    </div>
+                    <div>Tes Kemampuan Umum</div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="text-center opacity-50">
+                    <div class="rounded-circle bg-light text-secondary p-2 mb-2 border">
+                        <i class="bi bi-person-lines-fill fs-4"></i>
+                    </div>
+                    <div>Kepribadian & Psikolog</div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="text-center opacity-50">
+                    <div class="rounded-circle bg-light text-secondary p-2 mb-2 border">
+                        <i class="bi bi-briefcase-medical fs-4"></i>
+                    </div>
+                    <div>Tes Kesehatan</div>
+                </div>
+
+                <!-- Step 7 -->
+                <div class="text-center opacity-50">
+                    <div class="rounded-circle bg-light text-secondary p-2 mb-2 border">
+                        <i class="bi bi-people fs-4"></i>
+                    </div>
+                    <div>Wawancara Panel</div>
+                </div>
+
+                <!-- Step 8 -->
+                <div class="text-center opacity-50">
+                    <div class="rounded-circle bg-light text-secondary p-2 mb-2 border">
+                        <i class="bi bi-folder-check fs-4"></i>
+                    </div>
+                    <div>Penetapan & Pemberkasan</div>
+                </div>
             </div>
         </div>
     </section>

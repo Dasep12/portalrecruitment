@@ -453,86 +453,16 @@
                                     </div>
                                 </div>
 
-                                <div class="mt-2 col-md-12">
-                                    <div class="form-group">
-                                        <label for="">Nama perusahaan</label>
-                                        <select onchange="m_load_job_list(5, 0)" class="form-control select2 select2-hidden-accessible" multiple="" name="m_company_filter_job[]" id="m_company_filter_job" style="width:100%; height:10px" tabindex="-1" aria-hidden="true">
-                                            <option value="2">PT. Infomedia Nusantara</option>
-                                            <option value="3">PT Telekomunikasi Indonesia</option>
-                                            <option value="9719">PT MelOn Indonesia</option>
-                                            <option value="9720">PT. Administrasi Medika</option>
-                                            <option value="9721">PT Graha Telkomsigma</option>
-                                            <option value="9722">PT Integrasi Logistic Cipta Solusi</option>
-                                            <option value="9723">PT. Metra Digital Innovation</option>
-                                            <option value="9724">PT. Metra Digital Media</option>
-                                            <option value="9727">PT. Metra-Net</option>
-                                            <option value="9728">Metrasat</option>
-                                            <option value="9730">PT. Pins Indonesia</option>
-                                            <option value="9731">PT. Pojok Celebes Mandiri</option>
-                                            <option value="9733">PT Sigma Cipta Caraka</option>
-                                            <option value="9736">PT. Multimedia Nusantara</option>
-                                            <option value="9739">PT. Finnet Indonesia</option>
-                                            <option value="9740">PT. Teltranet Aplikasi Solusi</option>
-                                            <option value="9741">PT. Nutech Integrasi</option>
-                                            <option value="9742">PT. Swadharma Sarana Informatika</option>
-                                            <option value="9743">PT. Bosnet Distribution Indonesia</option>
-                                            <option value="9745">PT. Telkom Satelit Indonesia</option>
-                                        </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1">
-                                                    <ul class="select2-selection__rendered">
-                                                        <li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li>
-                                                    </ul>
-                                                </span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                                    </div>
-                                </div>
+
 
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="">Bidang Pekerjaan</label>
                                         <select onchange="m_load_job_list(5, 0)" class="form-control select2 select2-hidden-accessible" multiple="" name="m_stream[]" id="m_stream" style="width:100%; height:10px" tabindex="-1" aria-hidden="true">
-                                            <option value="2">Administrative</option>
-                                            <option value="3">Advertising</option>
-                                            <option value="7">Art/Creative</option>
-                                            <option value="39">Asset Management</option>
-                                            <option value="4">Business Analyst</option>
-                                            <option value="8">Business Development</option>
-                                            <option value="9">Consulting</option>
-                                            <option value="6">Data Analyst</option>
-                                            <option value="12">Design</option>
-                                            <option value="11">Distribution</option>
-                                            <option value="13">Education</option>
-                                            <option value="14">Engineering</option>
-                                            <option value="15">Finance</option>
-                                            <option value="5">Financial Analyst</option>
-                                            <option value="41">Fresh Graduate</option>
-                                            <option value="16">General Business</option>
-                                            <option value="17">Health Care Provider</option>
-                                            <option value="38">HSSE</option>
-                                            <option value="18">Human Resources</option>
-                                            <option value="10">Inbound Call/CS/Frontliner</option>
-                                            <option value="19">Information Technology</option>
-                                            <option value="40">Internal Audit</option>
-                                            <option value="20">Legal</option>
-                                            <option value="21">Management</option>
-                                            <option value="22">Manufacturing</option>
-                                            <option value="43">Maritime (Pelayaran)</option>
-                                            <option value="23">Marketing/Sales</option>
-                                            <option value="1">OBC Agent Verifikator</option>
-                                            <option value="32">OBC Telesales</option>
-                                            <option value="24">Other</option>
-                                            <option value="27">Product Management</option>
-                                            <option value="29">Production</option>
-                                            <option value="28">Project Management</option>
-                                            <option value="25">Public Relations</option>
-                                            <option value="26">Purchasing</option>
-                                            <option value="44">Quality and Knowledge Management</option>
-                                            <option value="30">Quality Assurance</option>
-                                            <option value="31">Research</option>
-                                            <option value="33">Science</option>
-                                            <option value="42">Secretary</option>
-                                            <option value="34">Strategy/Planning</option>
-                                            <option value="35">Supply Chain</option>
-                                            <option value="36">Training</option>
-                                            <option value="37">Writing/Editing</option>
+                                            <option value="2">Finance Accounting & Tax</option>
+                                            <option value="3">Logistic</option>
+                                            <option value="7">Quality</option>
+                                            <option value="39">IT</option>
                                         </select>
                                     </div>
                                 </div>

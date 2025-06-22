@@ -100,6 +100,67 @@
         .cat__menu-left__inner {
             background: #A80807 !important;
         }
+
+        .timeline {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            top: 32px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: rgb(101, 102, 103);
+            z-index: 1;
+        }
+
+        .timeline-step {
+            position: relative;
+            z-index: 2;
+            width: 120px;
+            min-width: 120px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .timeline-step .circle {
+            width: 60px;
+            height: 60px;
+            background-color: #636466;
+            border-width: 3px;
+            border-style: solid;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-step .circle img {
+            width: 50px;
+        }
+
+        .timeline-label {
+            min-height: 32px;
+            font-size: 14px;
+            line-height: 1.2;
+            font-weight: bold;
+        }
+
+        .badge-status {
+            font-size: 10px;
+            margin-top: 4px;
+            font-weight: bold;
+            padding: 6px;
+            color: #FFF;
+        }
     </style>
     <script>
         function loaderSending() {
@@ -440,6 +501,15 @@ $personals =  Candidate::find(session()->get("user_id"));
                 return false;
             }
             return true;
+        }
+
+        function goBack() {
+            window.close();
+
+            // Fallback jika window tidak bisa ditutup
+            setTimeout(function() {
+                window.history.back();
+            }, 200);
         }
     </script>
 

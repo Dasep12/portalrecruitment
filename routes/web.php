@@ -67,10 +67,15 @@ Route::middleware(['check.session'])->prefix('/main')->group(function () {
 
     // APPLY
     Route::get('/apply', [ApplayController::class, 'index']);
+    Route::get('/formapply/{id}', [ApplayController::class, 'form']);
+    Route::post('/applyJob', [ApplayController::class, 'applyJob']);
     // Route::get('/home', [ApplayController::class, 'index']);
 
     // LOWONGAN
     Route::get('/job_vacany', [LokerController::class, 'index']);
+    Route::get('/PartJobJson', [LokerController::class, 'PartJobJson']);
     Route::get('/listjob', [LokerController::class, 'listjob']);
+    Route::get('/JsonTypeJob', [LokerController::class, 'JsonTypeJob']);
+    Route::get('/cekStatusLamaran', [LokerController::class, 'cekStatusLamaran']);
     Route::get('/detailjob/{id}', [LokerController::class, 'detailjob']);
 });

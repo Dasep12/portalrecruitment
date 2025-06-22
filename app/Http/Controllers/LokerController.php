@@ -8,6 +8,7 @@ use App\Models\CandidateEducation;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Svg\Tag\Rect;
 
 class LokerController extends Controller
 {
@@ -26,38 +27,41 @@ class LokerController extends Controller
         return view('backend.loker.job');
     }
 
-    public function detailjob(Request $req)
+    public function detailjob($id)
     {
-        return view('backend.loker.detailjob');
+        $detail = DB::table('tbl_mst_postjob as a')
+            ->leftJoin('tbl_mst_type_job as b', 'b.id', 'a.type_job')
+            ->where('a.id', $id)
+            ->select('a.*', 'b.name as type_jobs')
+            ->first();
+        return view('backend.loker.detailjob', compact('detail'));
+    }
+
+    public function cekStatusLamaran(Request $req)
+    {
+        $validationJobs = DB::table('tbl_trn_apply')->where(
+            ['account_id' => session()->get("user_id"), 'job_id' =>  $req->id]
+        )->count();
+        return response()->json([
+            'status' => $validationJobs > 0 ? true : false,
+            'message' => $validationJobs > 0 ? 'Anda Sudah Melamar Pekerjaan Ini' : ''
+        ]);
     }
 
     public function listjob()
     {
-        $data = array(
-            'result' => array(
-                [
-                    'id' => 1,
-                    'vacancy_base_url' => '?category=detailjob',
-                    'vacancy_company_name' => 'Bonecom Tricom',
-                    'vacancy_name'   => 'IT PROGRAMMER ON KARAWANG PLANT',
-                    'education_name' => 'S1',
-                    'stream_group_name' => 'Manufactur',
-                    'job_description'  => 'Web Developer',
-                    'percentage'  => 20
-
-                ],
-                [
-                    'id' => 2,
-                    'vacancy_base_url' => '?category=detailjob',
-                    'vacancy_company_name' => 'Ravalia Inti Mandiri BEKASI PLANT',
-                    'vacancy_name'   => 'MARKETING',
-                    'education_name' => 'S1',
-                    'stream_group_name' => 'Manufactur',
-                    'job_description'  => 'Sales',
-                    'percentage'  => 90
-                ],
-            )
-        );
+        $data = DB::table('tbl_mst_postjob')->get();
         echo json_encode($data);
+    }
+
+    public function PartJobJson()
+    {
+        $data = DB::table('tbl_mst_partjob')->get();
+        return response()->json($data);
+    }
+    public function JsonTypeJob()
+    {
+        $data = DB::table('tbl_mst_type_job')->get();
+        return response()->json($data);
     }
 }

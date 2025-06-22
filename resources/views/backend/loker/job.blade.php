@@ -49,57 +49,22 @@
             <div class="col-md-12" style="color:white;background: #09090994;padding: 10px">
                 <label>Nama Lowongan</label>
                 <div class="input-group">
-                    <input type="text" class="form-control" name="name_vacancy" id="name_vacancy" placeholder="Cari kata kunci vacancy">
+                    <input type="text" class="form-control" name="name_vacancy" id="name_vacancy" placeholder="Cari kata kunci pekerjaan">
                     <span onclick="loadPagination(0)" class="input-group-addon" style="background: white;border-top-right-radius: 5px;border-bottom-right-radius: 5px;"><span class="material-icons" style="color: black;padding: 7px;">search</span></span>
                 </div>
             </div>
 
-            <div class="col-md-4" style="color:white;background: #09090994;padding: 10px;">
-                <div class="form-group">
-                    <label for="">Nama perusahaan.</label>
-                    <select onchange="loadPagination(0)" class="form-control js-example-basic-single" id="company_filter_job" style="width:100%; height:10px">
-                        <option value="" selected="">Pilih</option>
-                        <option value="2">PT. Infomedia Nusantara</option>
-                        <option value="3">PT Telekomunikasi Indonesia</option>
-                        <option value="9719">PT MelOn Indonesia</option>
-                        <option value="9720">PT. Administrasi Medika</option>
-                        <option value="9721">PT Graha Telkomsigma</option>
-                        <option value="9722">PT Integrasi Logistic Cipta Solusi</option>
-                        <option value="9723">PT. Metra Digital Innovation</option>
-                        <option value="9724">PT. Metra Digital Media</option>
-                        <option value="9727">PT. Metra-Net</option>
-                        <option value="9728">Metrasat</option>
-                        <option value="9730">PT. Pins Indonesia</option>
-                        <option value="9731">PT. Pojok Celebes Mandiri</option>
-                        <option value="9733">PT Sigma Cipta Caraka</option>
-                        <option value="9736">PT. Multimedia Nusantara</option>
-                        <option value="9739">PT. Finnet Indonesia</option>
-                        <option value="9740">PT. Teltranet Aplikasi Solusi</option>
-                        <option value="9741">PT. Nutech Integrasi</option>
-                        <option value="9742">PT. Swadharma Sarana Informatika</option>
-                        <option value="9743">PT. Bosnet Distribution Indonesia</option>
-                        <option value="9745">PT. Telkom Satelit Indonesia</option>
-                    </select>
-                </div>
-            </div>
+
 
             <div class="col-md-4" style="color:white;background: #09090994;padding: 10px;">
                 <div class="form-group">
                     <label for="">Bidang Pekerjaan</label>
                     <select onchange="loadPagination(0)" class="form-control js-example-basic-single" id="stream" style="width:100%">
                         <option value="" selected="">Pilih</option>
-                        <option value="ACFI">Accounting & Finance</option>
-                        <option value="ADMCOR">Administration & Coordination</option>
-                        <option value="BSNS">Business</option>
-                        <option value="GNRL">General</option>
-                        <option value="HCM">Human Capital</option>
-                        <option value="IT">Information Technology</option>
-                        <option value="LGL">Legal</option>
-                        <option value="MDCTV">Media & Creative</option>
-                        <option value="MGMT">Management</option>
-                        <option value="SALES">Sales & Marketing</option>
-                        <option value="SPLY">Supply</option>
-                        <option value="SVC">Services</option>
+                        <option value="2">Finance Accounting & Tax</option>
+                        <option value="3">Logistic</option>
+                        <option value="7">Quality</option>
+                        <option value="39">IT</option>
                     </select>
                 </div>
             </div>
@@ -109,13 +74,21 @@
                     <label for="">Jenjang Pendidikan</label>
                     <select onchange="loadPagination(0)" class="form-control js-example-basic-single" id="jenjang" style="width:100%">
                         <option value="" selected="">Pilih</option>
-                        <option value="3">SLTA/SMK</option>
-                        <option value="4">Diploma I&II</option>
-                        <option value="5">Diploma III</option>
-                        <option value="6">Diploma IV</option>
-                        <option value="7">S1-Perguruan Tinggi</option>
-                        <option value="8">S2-Pasca Sarjana</option>
-                        <option value="9">S3-Pasca/Doktor</option>
+                        <!-- <option value="3">SLTA/SMK</option>
+                        <option value="5">Diploma 3</option>
+                        <option value="6">Diploma 4</option>
+                        <option value="7">S1</option>
+                        <option value="8">S2</option>
+                        <option value="9">S3</option> -->
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-4" style="color:white;background: #09090994;padding: 10px;">
+                <div class="form-group">
+                    <label for="">Status Pekerjaan</label>
+                    <select onchange="loadPagination(0)" class="form-control js-example-basic-single" id="types_jobs" style="width:100%">
+                        <option value="" selected="">Pilih</option>
                     </select>
                 </div>
             </div>
@@ -180,31 +153,59 @@
 
     });
 
-    function load_total_job_all() {
+
+
+    function load_jobPart() {
         $.ajax({
-                url: '{{ url("main/listjob") }}',
-                type: 'GET',
-                dataType: 'json',
-                data: {
-                    company: $("#company_type").val(),
-                    jenis_program: $("#experience_type").val(),
-                    tipe_pekerjaan: $("#employee_type").val(),
-                    urutkan: $("#date_added").val()
-                },
-            })
-            .done(function(data) {
-                $("#total_job_vacancy").text(20);
-            });
+            url: '{{ url("main/PartJobJson") }}',
+            type: 'GET',
+            cache: false,
+            success: function(res) {
+                const $append = $("#stream");
+                $append.empty();
+                $.each(res, function(i, val) {
+                    $append.append(`<option value="${val.id}">${val.name_partjob}</option>`);
+                });
+            }
+        })
     }
 
-    function loadPagination(pagno) {
-        load_total_job_all();
+    function load_education() {
+        $.ajax({
+            url: '{{ url("main/education") }}',
+            type: 'GET',
+            cache: false,
+            success: function(res) {
+                const $append = $("#jenjang");
+                $append.empty();
+                $.each(res, function(i, val) {
+                    $append.append(`<option value="${val.code}">${val.name}</option>`);
+                });
+            }
+        })
+    }
 
+    function load_types_jobs() {
+        $.ajax({
+            url: '{{ url("main/JsonTypeJob") }}',
+            type: 'GET',
+            cache: false,
+            success: function(res) {
+                const $append = $("#types_jobs");
+                $append.empty();
+                $.each(res, function(i, val) {
+                    $append.append(`<option value="${val.code}">${val.name}</option>`);
+                });
+            }
+        })
+    }
+
+
+    function loadListJobs() {
         $.ajax({
             url: '{{ url("main/listjob") }}',
             type: 'GET',
             data: {
-                company: $("#company_filter_job").val(),
                 stream: $("#stream").val(),
                 jenjang: $("#jenjang").val(),
                 vacancy_name: $("#name_vacancy").val(),
@@ -212,49 +213,50 @@
             dataType: 'json',
             beforeSend: function() {
                 $('#list_vacancy').html('<div class="col-xs-12 mx-auto text-center"><div class="d-flex justify-content-center"><i class="fa fa-spin fa-3x fa-circle-o-notch"></i></div></div>');
-
             },
             success: function(response) {
                 $('#list_vacancy').html('');
-                $('#pagination').html(response.pagination);
-
-                if (response.result.length < 1) {
+                console.log(response);
+                $("#total_job_vacancy").text(response.length);
+                if (response.length < 1) {
                     $('#list_vacancy').html('<div class="col-xs-12 mx-auto text-center no-job-available" style="border: 1px solid red;background: antiquewhite;"><i class="material-icons" style="background: white;font-size: 50px;padding: 30px;border-radius: 50%;/*! box-shadow: 0 6px 15px rgba(36, 37, 38, 0.25); */color: red;">extension</i><h5 style="margin-top: 20px;">No job available</h5></div>');
                 } else {
 
-                    $.each(response.result, function(i, val) {
+                    $.each(response, function(i, val) {
 
                         href = base_url + '/detailjob/' + val.id;
                         var canvasStyle = 'none';
                         if (val.percentage !== null) {
                             canvasStyle = 'block';
                         }
+                        const jobdescription = JSON.parse(val.jobdescription).map(n => n.text).join(', ');
                         $("#list_vacancy").append('<div class="row card-list-vacancy" >\
                             <div class="col-md-2" style="">\
                               <div class="relative" style="position: relative;display:' + canvasStyle + ';"><canvas id="chartProgress_' + val.id + '" width="300px" height="200" style="display:' + canvasStyle + '"></canvas><div class="absolute-center text-center" style="position:absolute;top: 62%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: small;">Kuota Kandidat</label></div></div>\
                             </div>\
                             <div class="col-md-7 center-list-job" style="">\
-                              <h4 style="margin-bottom: 0px;font-weight: bold;">' + val.vacancy_name + '</h4>\
-                              <p style="">' + val.vacancy_company_name + '</p>\
+                              <h4 style="margin-bottom: 0px;font-weight: bold;">' + val.position + '</h4>\
+                              <p style="">' + val.company + '</p>\
                               <hr style="border:1px solid #FFF">\
-                              <p>' + val.job_description + '</p>\
+                              <p>' + jobdescription + '</p>\
                             </div>\
                             <div class="col-md-3" style="padding:5px">\
-                              <span>Bidang Pekerjaan</span><br>\
-                              <b>' + val.stream_group_name + '</b><br><br>\
-                              <span>Jenjang</span><br>\
-                              <b>' + val.education_name + '</b>\
+                              <span>Bidang Pekerjaan :</span><br>\
+                              <b>' + val.job_part + '</b><br><br>\
+                              <span>Jenjang Pendidikan :</span><br>\
+                              <b>' + val.education + '</b>\
                               <br><br>\
                               <a target="_blank" href="' + href + '" class="btn btn-danger">Detail Pekerjaan</a>\
                             </div>\
                           </div>');
 
                         var percentage_ratio = 0;
-                        if (val.percentage > 0) {
-                            percentage_ratio = val.percentage;
+                        let percentage = 12;
+                        if (percentage > 0) {
+                            percentage_ratio = percentage;
                         }
                         var percentage_color = '';
-                        if (val.percentage < 80) {
+                        if (percentage < 80) {
                             percentage_color = '#FFF';
                         } else {
                             percentage_color = '#FFF';
@@ -268,7 +270,7 @@
                                 datasets: [{
                                     label: "Population (millions)",
                                     backgroundColor: [percentage_color],
-                                    data: [percentage_ratio, 100 - percentage_ratio]
+                                    data: [percentage_ratio, 10 - percentage_ratio]
                                 }]
                             },
                             plugins: [{
@@ -306,6 +308,11 @@
             }
         });
     }
+
+    load_jobPart();
+    load_education();
+    load_types_jobs();
+    loadListJobs();
 </script>
 
 @endsection
