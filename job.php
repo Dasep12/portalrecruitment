@@ -23,7 +23,7 @@
         </style>
         <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light " style=" border-bottom: solid 0px #e6e6e6;min-height:10vh; z-index:1">
             <a class="navbar-brand" href="https://recruit.infomedia.co.id/">
-                <img id="img_logo_top_bar" class="img-logo" src="./assets/frontend/img/bti_logo_hires_bw.gif" style="width:180px;" height="" alt="">
+                <img id="img_logo_top_bar" class="img-logo" src="https://peff.bithrms.com/Assets/Images/apps/Company/logo-color@2x.png" style="width:180px;" height="" alt="">
             </a>
 
             <button class="navbar-toggler" style="background:transparent" type="button" onclick="modal_show()">

@@ -24,15 +24,15 @@ class LokerController extends Controller
     }
     public function index()
     {
+
         return view('backend.loker.job');
     }
 
     public function detailjob($id)
     {
-        $detail = DB::table('tbl_mst_postjob as a')
-            ->leftJoin('tbl_mst_type_job as b', 'b.id', 'a.type_job')
+        $detail = DB::table('vw_mst_postjobs as a')
             ->where('a.id', $id)
-            ->select('a.*', 'b.name as type_jobs')
+            ->select('a.*')
             ->first();
         return view('backend.loker.detailjob', compact('detail'));
     }
@@ -48,9 +48,33 @@ class LokerController extends Controller
         ]);
     }
 
-    public function listjob()
+    public function listjob(Request $req)
     {
-        $data = DB::table('tbl_mst_postjob')->get();
+        $data = DB::table('vw_mst_postjobs');
+        if (!empty($req->education)) {
+            $data = $data->whereRaw("FIND_IN_SET(?, education)", [$req->education]);
+        }
+
+        if (!empty($req->position)) {
+            $data = $data->where('position_id', $req->position);
+        }
+
+        if (!empty($req->type_job)) {
+            $data = $data->whereRaw("FIND_IN_SET(?, type_job)", [$req->type_job]);
+        }
+        if ($req->has('search_jobs') && !empty($req->search_jobs)) {
+            $search = $req->search_jobs;
+            $data->where(function ($q) use ($search) {
+                $q->where('company', 'like', "%{$search}%")
+                    ->orWhere('position', 'like', "%{$search}%")
+                    ->orWhere('location', 'like', "%{$search}%")
+                    ->orWhere('job_part', 'like', "%{$search}%")
+                    ->orWhere('type_job', 'like', "%{$search}%")
+                    ->orWhere('kuota', 'like', "%{$search}%")
+                    ->orWhere('education', 'like', "%{$search}%");
+            });
+        }
+        $data = $data->get();
         echo json_encode($data);
     }
 

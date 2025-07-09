@@ -503,7 +503,7 @@ class CVController extends Controller
     public function education(Request $req)
     {
         $data = DB::table('tbl_mst_education as a')
-            ->select('a.id', 'a.name')
+            ->select('a.id', 'a.code', 'a.name')
             ->get();
         return response()->json($data);
     }

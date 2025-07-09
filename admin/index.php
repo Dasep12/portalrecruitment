@@ -8,7 +8,7 @@
     <link rel="icon" href="https://recruit.infomedia.co.id/assets/frontend/icons/icon_fav.png" type="image/x-icon" />
     <link rel="shortcut icon" href="../assets/frontend/img/icon_fav.png" type="image/x-icon" />
     <title>Rekrutmen Bonecom Tricom</title>
-    <link href="https://recruit.infomedia.co.id/assets/backend/vendors/font-google/font-google.css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="{{ asset('fonts/font-google.css') }}" rel="stylesheet">
 
     <!-- VENDORS -->
     <!-- v2.0.0 -->
@@ -140,7 +140,7 @@
         font-family: 'Material Icons';
         font-style: normal;
         font-weight: 400;
-        src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://recruit.infomedia.co.id/assets/frontend/fonts/google-material-icon.woff2) format('woff2');
+        src: local('Material Icons'), local('MaterialIcons-Regular'), url('/fonts/font-name.woff2') format('woff2');
     }
 
     .material-icons {

@@ -10,11 +10,11 @@
 
         <div class="row">
             <div class="col-md-1 profile-applicant" style="text-align:-webkit-center;">
-                <img src="https://recruit.infomedia.co.id/curiculum_vitae/get_document/prev/OWVkNTg3M2U5ZWFkMTBjZmJiYmRjMjdmODRlY2Y3ZWYxZGVhODA2MmVhMTRjZTNkN2VhM2UxNTE1ZGJiODM2MGU5MDUzMTFmMDgyMWNkNDVlZjNkOTU5YzBmZGE2ZjQ3OGU4ODJkNzExYTcwMGExYWZiNGNkN2ZlODkyMmQ4MjZjOStrenExbFUrK0x3Qi84YzhNTE04blBDbDRiTElPNVJVME5EWEprSlZJPQ==/71aa54fc36116f6104389ca2e4576cc1.jpg" style="width: 50px;height:50px;border-radius: 30px;object-fit:cover;">
+                <img src="{{ asset('photo/'.$personal->photo) }}" style="width: 50px;height:50px;border-radius: 30px;object-fit:cover;">
             </div>
             <div class="col-md-3 profile-applicant">
-                <h4><b>Dasep Depiyawan</b></h4>
-                <label>Melamar : <span id="created_user"></span></label>
+                <h4><b>{{ $personal->fullname }}</b></h4>
+                <!-- <label>Melamar : <span id="created_user"></span></label> -->
             </div>
             <div class="col-md-2"></div>
             <div class="col-md-2"></div>
@@ -63,23 +63,35 @@
         </div> -->
 </section>
 <hr />
+@foreach($lamaran as $app)
 <section class="container-fluid mt-5 " style="background:#ececec; border-radius:2px;box-shadow:inset">
-    <b class="py-3">Tahapan Rekrutmen Web Programmer PT Bonecom Tricom</b>
+    <b class="py-3">Tahapan Rekrutmen {{ $app->position }} {{ $app->company }}</b>
     <div class="my-5 ">
         <div class="timeline px-3 pb-4">
+            @foreach($stages as $stg)
             <!-- Step: Lolos -->
             <div class="timeline-step">
                 <div class="circle-wrapper">
-                    <div class="circle border-success bg-success-subtle">
-                        <img src="https://ojkpcs8pct2.shl.co.id/images/icon-status/ic-assesment-success.svg" alt="Pendaftaran">
+                    <div id="badge_application_{{ $stg->id }}" class="circle ">
+                        <img src="{{ asset('assets/assets/ic-assesment-not-ready.svg') }}" alt="Pendaftaran">
                     </div>
                 </div>
-                <div class="timeline-label">Pendaftaran</div>
-                <span class="badge bg-success badge-status">LOLOS</span>
+                <div class="timeline-label">{{ $stg->name }}</div>
+                <div id="status_{{ $stg->id }}">
+
+                </div>
+                <script>
+                    window.statusCheckList = window.statusCheckList || [];
+                    window.statusCheckList.push({
+                        jobId: "{{ $app->id }}",
+                        stageId: "{{ $stg->id }}"
+                    });
+                </script>
             </div>
+            @endforeach
 
             <!-- Step: Tidak Lolos -->
-            <div class="timeline-step">
+            <!-- <div class="timeline-step">
                 <div class="circle-wrapper">
                     <div class="circle border-danger bg-danger-subtle">
                         <img src="https://ojkpcs8pct2.shl.co.id/images/icon-status/ic-regist-failed.svg" alt="Seleksi">
@@ -87,65 +99,11 @@
                 </div>
                 <div class="timeline-label">Seleksi Administrasi</div>
                 <span class="badge bg-danger badge-status">TIDAK LOLOS</span>
-            </div>
+            </div> -->
 
-            <!-- Step: Kosong -->
-            <div class="timeline-step">
-                <div class="circle-wrapper">
-                    <div class="circle border-secondary bg-light">
-                        <img src="https://ojkpcs8pct2.shl.co.id/images/icon-status/ic-assesment-not-ready.svg" alt="Tes Potensi">
-                    </div>
-                </div>
-                <div class="timeline-label">Tes Potensi Dasar</div>
-            </div>
-
-            <div class="timeline-step">
-                <div class="circle-wrapper">
-                    <div class="circle border-secondary bg-light">
-                        <img src="https://ojkpcs8pct2.shl.co.id/images/icon-status/ic-assesment-not-ready.svg" alt="Tes Umum">
-                    </div>
-                </div>
-                <div class="timeline-label">Tes Kemampuan Umum</div>
-            </div>
-
-            <div class="timeline-step">
-                <div class="circle-wrapper">
-                    <div class="circle border-secondary bg-light">
-                        <img src="https://ojkpcs8pct2.shl.co.id/images/icon-status/ic-assesment-not-ready.svg" alt="Wawancara Psikolog">
-                    </div>
-                </div>
-                <div class="timeline-label">Tes Kepribadian<br>Wawancara Psikolog</div>
-            </div>
-
-            <div class="timeline-step">
-                <div class="circle-wrapper">
-                    <div class="circle border-secondary bg-light">
-                        <img src="https://ojkpcs8pct2.shl.co.id/images/icon-status/ic-healt-test-not-ready.svg" alt="Tes Kesehatan">
-                    </div>
-                </div>
-                <div class="timeline-label">Tes Kesehatan</div>
-            </div>
-
-            <div class="timeline-step">
-                <div class="circle-wrapper">
-                    <div class="circle border-secondary bg-light">
-                        <img src="https://ojkpcs8pct2.shl.co.id/images/icon-status/ic-user-not-ready.svg" alt="Wawancara Panel">
-                    </div>
-                </div>
-                <div class="timeline-label">Wawancara Panel</div>
-            </div>
-
-            <div class="timeline-step">
-                <div class="circle-wrapper">
-                    <div class="circle border-secondary bg-light">
-                        <img src="https://ojkpcs8pct2.shl.co.id/images/icon-status/ic-filling-not-ready.svg" alt="Pemberkasan">
-                    </div>
-                </div>
-                <div class="timeline-label">Penetapan<br>& Pemberkasan</div>
-            </div>
 
         </div>
-        <div class="d-flex ">
+        <!-- <div class="d-flex ">
             <div class="row  justify-content-center">
                 <div class="mb-5 col-md-6 bg-white p-5 pb-4 px-5" style="border-radius: 5px;">
                     <p class="font-size:14px !important">
@@ -161,10 +119,43 @@
             </div>
 
 
-        </div>
+        </div> -->
     </div>
 
 </section>
+@endforeach
 <!-- </div> -->
+<script>
+    function cekStatusApplication(jobId, stageId) {
+        $.ajax({
+            url: "{{ url('main/cekLamaran') }}",
+            method: "GET",
+            data: {
+                jobId: jobId,
+                stageId: stageId
+            },
+            success: function(res) {
+                if (res.length > 0) {
+                    const $badge = $(`#badge_application_${stageId}`);
+                    $.each(res, function(i, val) {
+                        $badge.removeClass('border-danger bg-danger-subtle')
+                            .addClass(`border-${val.style} bg-${val.style}-subtle`)
+                            .css('background-color', '#d08a06');
+                        $(`#status_${stageId}`).html(`<span class="badge bg-${val.style} badge-status">${val.status}</span>`);
+                    })
+                }
 
+            }
+        })
+    }
+
+    // Jalankan semua setelah DOM siap
+    $(document).ready(function() {
+        if (window.statusCheckList) {
+            window.statusCheckList.forEach(item => {
+                cekStatusApplication(item.jobId, item.stageId);
+            });
+        }
+    });
+</script>
 @endsection

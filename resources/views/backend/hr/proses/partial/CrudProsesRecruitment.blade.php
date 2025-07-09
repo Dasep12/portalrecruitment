@@ -1,22 +1,5 @@
-@extends('backend.layouts.master')
-
-@section('content')
-
-<div id="ajax-content" style="min-height: 80vh; height: auto; padding-bottom: 2.5rem;"><!-- Begin Plugins Ratting Star  -->
-    <link rel="stylesheet" href="https://recruit.infomedia.co.id/assets/backend/vendors/rating-star/themes/bars-1to10.css">
-    <link rel="stylesheet" href="https://recruit.infomedia.co.id/assets/backend/vendors/rating-star/themes/bars-movie.css">
-    <link rel="stylesheet" href="https://recruit.infomedia.co.id/assets/backend/vendors/rating-star/themes/bars-square.css">
-    <link rel="stylesheet" href="https://recruit.infomedia.co.id/assets/backend/vendors/rating-star/themes/bars-pill.css">
-    <link rel="stylesheet" href="https://recruit.infomedia.co.id/assets/backend/vendors/rating-star/themes/bars-reversed.css">
-    <link rel="stylesheet" href="https://recruit.infomedia.co.id/assets/backend/vendors/rating-star/themes/bars-horizontal.css">
-
-    <link rel="stylesheet" href="https://recruit.infomedia.co.id/assets/backend/vendors/rating-star/themes/fontawesome-stars.css">
-    <link rel="stylesheet" href="https://recruit.infomedia.co.id/assets/backend/vendors/rating-star/themes/css-stars.css">
-    <link rel="stylesheet" href="https://recruit.infomedia.co.id/assets/backend/vendors/rating-star/themes/bootstrap-stars.css">
-    <link rel="stylesheet" href="https://recruit.infomedia.co.id/assets/backend/vendors/rating-star/themes/fontawesome-stars-o.css">
-    <script src="https://recruit.infomedia.co.id/assets/backend/vendors/rating-star/jquery.barrating.js"></script>
-
-
+<div id="myCanvas" class="canvas-panel">
+    <a href="javascript:void(0)" class="close-btn text-white" style="z-index: 99999;" onclick="closeCanvas()">&times;</a>
 
     <section class="container-cv">
         <div class="container cv-box p-0" id="cv" style="background:#A80807; border-radius:20px">
@@ -32,12 +15,7 @@
                             </div>
 
                             <div class="col-md-12 text-center mb-4 header-sm">
-                                <!-- <h3 style="text-transform: capitalize;" class=""><strong>simple CV Version </strong></h3>
-                                <button class="btn btn-link mr-2" type="button" id="btn-addon" style="cursor:pointer;">
-                                <i onclick="show_hide_preview(event)" class="fa fa-eye button-icon" style="cursor: pointer; border-radius:5px;top: 0px;right: 20px;padding: 5px;font-size:16px;"></i>
-                                </button>
-                                <a href="{{ url('main/datadiri') }}" id="ubah" class="btn btn-rounded btn-primary  mr-2 mb-2"><i class="fa fa-edit"></i> Ubah Data </a>
-                                <a href="" class="btn btn-rounded btn-light mr-2 mb-2" target="_blank"><i class="fa fa-download"></i> Download </a> -->
+
 
                             </div>
 
@@ -64,11 +42,7 @@
                                         <label for="" class="preview_secret" data-preview="{{ $personal->phone }}">************</label>
                                     </div>
                                     <div class="col-6 col-md-12 mb-3">
-                                        <b>No. Whatsapp</b>
-                                        <!-- <p id="no_wa_secret">
-                      <a id="no_wa" style="text-decoration:underline" href='https://api.whatsapp.com/send?phone=6283821619460&text=' target='_blank'>************</a>
-                    </p> -->
-                                        <br>
+                                        <b>No. Whatsapp</b> <br>
                                         <label for="">
                                             <a id="no_wa" class="preview_secret" data-preview="{{ $personal->phone_wa }}" style="text-decoration:underline" href="https://api.whatsapp.com/send?phone=6283821619460&amp;text=" target="_blank">
                                                 ************ </a>
@@ -78,11 +52,6 @@
                                         <b>Referensi</b>
                                         <p></p>
                                     </div>
-                                    <!-- <div class="col-6 col-md-12 mb-3">
-                    <b>Nama Referensi/Others:</b>
-                    <p></p>
-                  </div> -->
-
                                     <div class="col-6 col-md-12 mb-3" style="display:none;">
                                         <b>Nama Referensi/Others:</b>
                                         <p></p>
@@ -93,7 +62,6 @@
                                     </div>
                                     <div class="col-6 col-md-12 mb-3">
                                         <b>Tanggal Lahir</b>
-                                        <!-- <p id="birthday_secret">*************</p> -->
                                         <br>
                                         <label for="" class="preview_secret" data-preview="{{ $personal->born_date }}">*************</label>
                                     </div>
@@ -159,7 +127,7 @@
                             <div class="col-md-8 my-auto d-flex align-items-center">
                                 <h3 style="text-transform: capitalize;" class="text-black"><strong>simple CV Version </strong></h3>
                                 <button class="btn btn-link mr-2" type="button" id="btn-addon" style="cursor:pointer;">
-                                    <!-- <i class="material-icons" style="color: #0a0a0a">visibility_off</i> -->
+
                                     <i onclick="show_hide_preview(event)" class="fa fa-eye button-icon" style="cursor: pointer; border-radius:5px;top: 0px;right: 20px;padding: 5px;font-size:18px;"></i>
                                 </button>
                             </div>
@@ -167,9 +135,10 @@
 
                             <!-- </div> -->
                             <div class="col-md-4 ">
-                                <a href="{{ url('main/datadiri') }}" id="ubah" class="btn btn-rounded btn-primary  mr-2 mb-2"><i class="fa fa-edit"></i> Ubah Data </a>
+                                <a style="background:red" href="" class="btn btn-rounded btn-danger mr-2 mb-2" target="_blank"><i class="fa fa-close"></i> Rejected </a>
+                                <a href="#" id="ubah" class="btn btn-rounded btn-primary  mr-2 mb-2"><i class="fa fa-arrow-right"></i> Next Steps </a>
 
-                                <a style="background:red" href="" class="btn btn-rounded btn-danger mr-2 mb-2" target="_blank"><i class="fa fa-download"></i> Download </a>
+
                             </div>
 
                         </div>
@@ -461,79 +430,86 @@
         </div>
     </section>
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            var userlevel = 'pelamar';
-
-            var doc = new jsPDF();
-            $('#download-cv').click(function() {
-                var doc = new jsPDF();
-
-                // We'll make our own renderer to skip this editor
-                var specialElementHandlers = {
-                    '#cv': function(element, renderer) {
-                        return true;
-                    }
-                };
-
-                // All units are in the set measurement for the document
-                // This can be changed to "pt" (points), "mm" (Default), "cm", "in"
-                doc.fromHTML($('#cv').get(0), 15, 15, {
-                    'width': 170,
-                    'elementHandlers': specialElementHandlers
-                });
-
-                setTimeout(function() {
-                    doc.save('sample-file.pdf');
-                }, 10000);
-            });
-        });
-
-        function gen_cv_pdf() {
-            var btn = $("#btn-download-cv").val();
-            userlevel = 'pelamar';
-            cv_version = '';
-
-            if (btn == 'enc') {
-                if (userlevel == 'pelamar' || cv_version == '') {
-                    window.open('curiculum_vitae/download_cvv/YzE1MGZjYjg4Yzk4YmRlYTA4MmE2MDZiYjBiYTE1ZDU0OWM0Y2I4NTk5ZDdhYTk0NWMyYWZhNTE2ZmUxY2VkMTA1ZjI2YzM4ZmI4NzkwNzMzMGUxMWI5YzJiMzEyN2UzNGRiMWFkNTJlYjU1Zjc3Y2U0Yzk1MDUzNDZkMzViOTdGTGU4cWJtMndzWlJIQjZNMEEyaFVsdnhYaXhQL1U5YjM0eGhtMUFLRVljPQ==/enc', '_blank');
-                } else {
-                    window.open('curiculum_vitae/download_cvv_version/YzE1MGZjYjg4Yzk4YmRlYTA4MmE2MDZiYjBiYTE1ZDU0OWM0Y2I4NTk5ZDdhYTk0NWMyYWZhNTE2ZmUxY2VkMTA1ZjI2YzM4ZmI4NzkwNzMzMGUxMWI5YzJiMzEyN2UzNGRiMWFkNTJlYjU1Zjc3Y2U0Yzk1MDUzNDZkMzViOTdGTGU4cWJtMndzWlJIQjZNMEEyaFVsdnhYaXhQL1U5YjM0eGhtMUFLRVljPQ==//enc', '_blank');
-                }
-            } else {
-                if (userlevel == 'pelamar' || cv_version == '') {
-                    window.open('curiculum_vitae/download_cvv/YzE1MGZjYjg4Yzk4YmRlYTA4MmE2MDZiYjBiYTE1ZDU0OWM0Y2I4NTk5ZDdhYTk0NWMyYWZhNTE2ZmUxY2VkMTA1ZjI2YzM4ZmI4NzkwNzMzMGUxMWI5YzJiMzEyN2UzNGRiMWFkNTJlYjU1Zjc3Y2U0Yzk1MDUzNDZkMzViOTdGTGU4cWJtMndzWlJIQjZNMEEyaFVsdnhYaXhQL1U5YjM0eGhtMUFLRVljPQ==', '_blank');
-                } else {
-                    window.open('curiculum_vitae/download_cvv_version/YzE1MGZjYjg4Yzk4YmRlYTA4MmE2MDZiYjBiYTE1ZDU0OWM0Y2I4NTk5ZDdhYTk0NWMyYWZhNTE2ZmUxY2VkMTA1ZjI2YzM4ZmI4NzkwNzMzMGUxMWI5YzJiMzEyN2UzNGRiMWFkNTJlYjU1Zjc3Y2U0Yzk1MDUzNDZkMzViOTdGTGU4cWJtMndzWlJIQjZNMEEyaFVsdnhYaXhQL1U5YjM0eGhtMUFLRVljPQ==/', '_blank');
-                }
-            }
-        }
-
-        function show_hide_preview(e) {
-            var thisbtn = $(e.currentTarget);
-            // console.log(e.currentTarget);
-            thisbtn.toggleClass('active');
-            if (thisbtn.hasClass('active')) {
-                thisbtn.removeClass('icmn-eye-blocked');
-                thisbtn.addClass('icmn-eye');
-                // thisbtn.html(`<i class='material-icons' style='color: #0a0a0a;font-size: 24px;border-radius: 5px;border: solid 1px #d9dee6;padding:4px;'>visibility_off</i>`);
-                $('.preview_secret').each(function() {
-                    $(this).html($(this).attr('data-preview'));
-                })
-
-                $("#btn-download-cv").val('noenc');
-            } else {
-                thisbtn.removeClass('icmn-eye');
-                thisbtn.addClass('icmn-eye-blocked');
-                // thisbtn.html(`<i class='material-icons' style='color: #0a0a0a;font-size: 24px;border-radius: 5px;border: solid 1px #d9dee6;padding:4px;'>visibility_on</i>`);
-                $('.preview_secret').each(function() {
-                    $(this).html($(this).attr('data-preview').replace(/./g, '*'));
-                })
-
-                $("#btn-download-cv").val('enc');
-            }
-        }
-    </script>
 </div>
 
-@endsection
+<script>
+    function openCanvas() {
+        document.getElementById("myCanvas").classList.add("open");
+    }
+
+    function closeCanvas() {
+        document.getElementById("myCanvas").classList.remove("open");
+    }
+
+    $(document).ready(function() {
+        var userlevel = 'pelamar';
+
+        var doc = new jsPDF();
+        $('#download-cv').click(function() {
+            var doc = new jsPDF();
+
+            // We'll make our own renderer to skip this editor
+            var specialElementHandlers = {
+                '#cv': function(element, renderer) {
+                    return true;
+                }
+            };
+
+            // All units are in the set measurement for the document
+            // This can be changed to "pt" (points), "mm" (Default), "cm", "in"
+            doc.fromHTML($('#cv').get(0), 15, 15, {
+                'width': 170,
+                'elementHandlers': specialElementHandlers
+            });
+
+            setTimeout(function() {
+                doc.save('sample-file.pdf');
+            }, 10000);
+        });
+    });
+
+    function gen_cv_pdf() {
+        var btn = $("#btn-download-cv").val();
+        userlevel = 'pelamar';
+        cv_version = '';
+
+        if (btn == 'enc') {
+            if (userlevel == 'pelamar' || cv_version == '') {
+                window.open('curiculum_vitae/download_cvv/YzE1MGZjYjg4Yzk4YmRlYTA4MmE2MDZiYjBiYTE1ZDU0OWM0Y2I4NTk5ZDdhYTk0NWMyYWZhNTE2ZmUxY2VkMTA1ZjI2YzM4ZmI4NzkwNzMzMGUxMWI5YzJiMzEyN2UzNGRiMWFkNTJlYjU1Zjc3Y2U0Yzk1MDUzNDZkMzViOTdGTGU4cWJtMndzWlJIQjZNMEEyaFVsdnhYaXhQL1U5YjM0eGhtMUFLRVljPQ==/enc', '_blank');
+            } else {
+                window.open('curiculum_vitae/download_cvv_version/YzE1MGZjYjg4Yzk4YmRlYTA4MmE2MDZiYjBiYTE1ZDU0OWM0Y2I4NTk5ZDdhYTk0NWMyYWZhNTE2ZmUxY2VkMTA1ZjI2YzM4ZmI4NzkwNzMzMGUxMWI5YzJiMzEyN2UzNGRiMWFkNTJlYjU1Zjc3Y2U0Yzk1MDUzNDZkMzViOTdGTGU4cWJtMndzWlJIQjZNMEEyaFVsdnhYaXhQL1U5YjM0eGhtMUFLRVljPQ==//enc', '_blank');
+            }
+        } else {
+            if (userlevel == 'pelamar' || cv_version == '') {
+                window.open('curiculum_vitae/download_cvv/YzE1MGZjYjg4Yzk4YmRlYTA4MmE2MDZiYjBiYTE1ZDU0OWM0Y2I4NTk5ZDdhYTk0NWMyYWZhNTE2ZmUxY2VkMTA1ZjI2YzM4ZmI4NzkwNzMzMGUxMWI5YzJiMzEyN2UzNGRiMWFkNTJlYjU1Zjc3Y2U0Yzk1MDUzNDZkMzViOTdGTGU4cWJtMndzWlJIQjZNMEEyaFVsdnhYaXhQL1U5YjM0eGhtMUFLRVljPQ==', '_blank');
+            } else {
+                window.open('curiculum_vitae/download_cvv_version/YzE1MGZjYjg4Yzk4YmRlYTA4MmE2MDZiYjBiYTE1ZDU0OWM0Y2I4NTk5ZDdhYTk0NWMyYWZhNTE2ZmUxY2VkMTA1ZjI2YzM4ZmI4NzkwNzMzMGUxMWI5YzJiMzEyN2UzNGRiMWFkNTJlYjU1Zjc3Y2U0Yzk1MDUzNDZkMzViOTdGTGU4cWJtMndzWlJIQjZNMEEyaFVsdnhYaXhQL1U5YjM0eGhtMUFLRVljPQ==/', '_blank');
+            }
+        }
+    }
+
+    function show_hide_preview(e) {
+        var thisbtn = $(e.currentTarget);
+        // console.log(e.currentTarget);
+        thisbtn.toggleClass('active');
+        if (thisbtn.hasClass('active')) {
+            thisbtn.removeClass('icmn-eye-blocked');
+            thisbtn.addClass('icmn-eye');
+            // thisbtn.html(`<i class='material-icons' style='color: #0a0a0a;font-size: 24px;border-radius: 5px;border: solid 1px #d9dee6;padding:4px;'>visibility_off</i>`);
+            $('.preview_secret').each(function() {
+                $(this).html($(this).attr('data-preview'));
+            })
+
+            $("#btn-download-cv").val('noenc');
+        } else {
+            thisbtn.removeClass('icmn-eye');
+            thisbtn.addClass('icmn-eye-blocked');
+            // thisbtn.html(`<i class='material-icons' style='color: #0a0a0a;font-size: 24px;border-radius: 5px;border: solid 1px #d9dee6;padding:4px;'>visibility_on</i>`);
+            $('.preview_secret').each(function() {
+                $(this).html($(this).attr('data-preview').replace(/./g, '*'));
+            })
+
+            $("#btn-download-cv").val('enc');
+        }
+    }
+</script>

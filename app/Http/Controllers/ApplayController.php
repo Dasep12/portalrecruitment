@@ -22,7 +22,14 @@ class ApplayController extends Controller
     }
     public function index()
     {
-        return view('backend.apply.apply');
+        $stages = DB::table('tbl_application_stages')->get();
+        $lamaran = DB::table('tbl_trn_apply as a')
+            ->leftJoin('tbl_mst_postjob as b', 'b.id', 'a.job_id')
+            ->where('a.account_id', session()->get("user_id"))
+            ->select('b.*')
+            ->get();
+        $personal = DB::table('vw_personaldata')->where('id', session()->get("user_id"))->first();
+        return view('backend.apply.apply', compact('stages', 'lamaran', 'personal'));
     }
     public function form($id)
     {
@@ -68,7 +75,16 @@ class ApplayController extends Controller
                 'created_by' =>  session()->get("user_id"),
             ];
             DB::table("tbl_trn_apply")->insert($data);
+            $application_id = DB::getPdo()->lastInsertId();
             DB::commit();
+            $stage = [
+                'job_application_id' =>  $application_id,
+                'stage_id'      => 1,
+                'status'        => 'Screening',
+                'style'         => 'warning',
+                'created_at' => date('Y-m-d H:i:s'),
+            ];
+            DB::table("tbl_application_stage_logs")->insert($stage);
             return response()->json([
                 'success' => true,
                 'message' => 'Anda Berhasil Melamar Pekerjaan Ini'
@@ -77,5 +93,24 @@ class ApplayController extends Controller
             DB::rollBack();
             return response()->json(['status' => false, 'error' => $ex->getMessage()], 500);
         }
+    }
+    public function cekLamaran(Request $req)
+    {
+
+        $data = DB::table('tbl_application_stage_logs as a')
+            ->leftJoin('tbl_trn_apply as b', 'b.id', '=', 'a.job_application_id')
+            ->leftJoin('tbl_mst_postjob as c', 'c.id', '=', 'b.job_id')
+            ->leftJoin('tbl_application_stages as d', 'd.id', '=', 'a.stage_id')
+            ->where(
+                [
+                    'b.account_id' => session()->get("user_id"),
+                    'b.job_id'      => $req->jobId,
+                    'a.stage_id'    => $req->stageId
+                ]
+            )
+            ->select('c.position', 'c.company', 'a.status', 'd.name as status_name', 'a.style')
+            ->get();
+
+        return response()->json($data);
     }
 }

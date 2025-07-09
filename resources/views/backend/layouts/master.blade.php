@@ -8,12 +8,13 @@
     <link rel="icon" href="https://recruit.infomedia.co.id/assets/frontend/icons/icon_fav.png" type="image/x-icon" />
     <link rel="shortcut icon" href="../assets/frontend/img/icon_fav.png" type="image/x-icon" />
     <title>Rekrutmen Bonecom Tricom</title>
-    <link href="https://recruit.infomedia.co.id/assets/backend/vendors/font-google/font-google.css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="{{ asset('fonts/font-google.css') }}" rel="stylesheet">
 
     <!-- VENDORS -->
     <!-- v2.0.0 -->
     <link rel="stylesheet" type="text/css" href="{{ asset('/assets/loading.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/vendors/bootstrap/dist/css/bootstrap.min.css')}}">
+    <!-- <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/vendors/bootstrap/dist/css/bootstrap.min.css')}}"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/vendors/jscrollpane/style/jquery.jscrollpane.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/vendors/ladda/dist/ladda-themeless.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/vendors/bootstrap-select/dist/css/bootstrap-select.min.css')}}">
@@ -29,7 +30,8 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/vendors/jquery-steps-master/demo/css/jquery.steps.css')}}">
     <link rel="stylesheet" type="text/css" href="https://recruit.infomedia.co.id/assets/backend/vendors/dropify/dist/css/dropify.min.css">
     <link rel="stylesheet" type="text/css" href="https://recruit.infomedia.co.id/assets/backend/vendors/font-icomoon/style.css">
-    <link rel="stylesheet" type="text/css" href="https://recruit.infomedia.co.id/assets/backend/vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <script type="text/javascript" src="https://recruit.infomedia.co.id/assets/frontend/js/jqrylib.min.js"></script>
     <script src="https://recruit.infomedia.co.id/assets/backend/vendors/tether/dist/js/tether.min.js"></script>
     <script src="https://recruit.infomedia.co.id/assets/backend/vendors/jquery-ui/jquery-ui.min.js"></script>
@@ -95,7 +97,7 @@
     <script src="https://recruit.infomedia.co.id/assets/block_ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/jquery.barrating.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/themes/fontawesome-stars.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
     <style>
         .cat__menu-left__inner {
             background: #A80807 !important;
@@ -186,100 +188,17 @@
             return true;
         }
     </script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote.min.js"></script>
+    <!-- CSS (optional, hanya untuk style error) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/parsleyjs/src/parsley.css" />
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/parsleyjs"></script>
 
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/vendors/custom.css')}}">
 </head>
 <style type="text/css">
-    .pointer {
-        cursor: pointer;
-    }
 
-    body.cat__config--horizontal .cat__menu-left__list--root>li.cat__menu-left__item>a {
-        border-left: 0px;
-    }
-
-    .cat__menu-left__icon {
-        color: white;
-    }
-
-    .cat__menu-left__item>a {
-        color: white;
-    }
-
-    .cat__menu-left__lock {
-        background: #A80807 !important;
-    }
-
-    .cat__menu-left__logo {
-        background: #A80807 !important;
-    }
-
-    .cat__menu-left__logo img {
-        max-height: 3rem !important;
-    }
-
-    .cat__menu-left__inner {
-        background: #A80807 !important;
-    }
-
-    .cat__menu-left__divider {
-        background: #f7f7f785 !important;
-    }
-
-    .loading {
-        background: url('')center center no-repeat content-box #3636364d !important;
-    }
-
-    @font-face {
-        font-family: 'Material Icons';
-        font-style: normal;
-        font-weight: 400;
-        src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://recruit.infomedia.co.id/assets/frontend/fonts/google-material-icon.woff2) format('woff2');
-    }
-
-    .material-icons {
-        font-family: 'Material Icons';
-        font-weight: normal;
-        font-style: normal;
-        font-size: 24px;
-        line-height: 1;
-        letter-spacing: normal;
-        text-transform: none;
-        display: inline-block;
-        white-space: nowrap;
-        word-wrap: normal;
-        direction: ltr;
-        -moz-font-feature-settings: 'liga';
-        -moz-osx-font-smoothing: grayscale;
-    }
-
-    @media screen and (min-width: 1200px) {
-        #login-responsive {
-            display: none;
-        }
-    }
-
-    @media screen and (max-width: 580px) {
-        #login-normal {
-            display: none;
-        }
-
-        #login-mobile {
-            display: none;
-        }
-    }
-
-    body {
-        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
-    }
-
-    .cat__menu-left__pin-button div::before,
-    .cat__menu-left__pin-button div::after {
-        background: #fff !important;
-    }
-
-    .cat__menu-left__pin-button div {
-        background: #fff;
-    }
 </style>
 
 <?php
@@ -314,9 +233,25 @@ $personals =  Candidate::find(session()->get("user_id"));
 
         <div class="cat__menu-left__inner id='sidebar' class='sidebar' ">
             <ul class='cat__menu-left__list cat__menu-left__list--root'>
+
+                <li class='cat__menu-left__item ' id='myapplication' data-toggle='ajax'>
+                    <a href="{{ url('hr/postjob') }}">
+                        <span class='cat__menu-left__icon fa fa-paper-plane'></span>
+                        Post Jobs
+                    </a>
+                </li>
+
+                <li class='cat__menu-left__item ' id='myapplication' data-toggle='ajax'>
+                    <a href="{{ url('hr/proseRecruitment') }}">
+                        <span class='cat__menu-left__icon fa fa-tasks'></span>
+                        Proses Recruitment
+                    </a>
+                </li>
+
+
                 <li class='cat__menu-left__item ' id='curiculum_vitae/preview' data-toggle='ajax'>
                     <a href="{{ url('main/cv') }}">
-                        <span class='cat__menu-left__icon icmn-office'></span>
+                        <span class='cat__menu-left__icon fa fa-id-badge'></span>
                         Daftar Riwayat Hidup
                     </a>
                 </li>
@@ -328,7 +263,7 @@ $personals =  Candidate::find(session()->get("user_id"));
                 </li>
                 <li class='cat__menu-left__item ' id='myapplication' data-toggle='ajax'>
                     <a href="{{ url('main/apply') }}">
-                        <span class='cat__menu-left__icon icmn-accessibility'></span>
+                        <span class='cat__menu-left__icon fa fa-envelope-open'></span>
                         Lamaran Saya
                     </a>
                 </li>
@@ -349,7 +284,7 @@ $personals =  Candidate::find(session()->get("user_id"));
         <div class="cat__top-bar__left">
             <div class="cat__top-bar__logo">
                 <a href="javascript: void(0);">
-                    <img src="{{ asset('assets/frontend/img/bti_logo_hires_bw.gif') }}" />
+                    <img src="https://peff.bithrms.com/Assets/Images/apps/Company/logo-color@2x.png" />
                 </a>
             </div>
         </div>
@@ -380,15 +315,13 @@ $personals =  Candidate::find(session()->get("user_id"));
         <!-- end #ajax-content -->
     </div>
     <!-- END: page scripts -->
-    <div class="cat__footer">
+    <div class="cat__footer d-flex justify-content-center">
         <!-- <div class="cat__footer__bottom" style="padding-top: 65px;"> -->
         <div class="row">
             <div class="col-md-12">
                 <div class="cat__footer__company">
                     <span>
-                        © 2024 Powered By Bonecom Tricom
-                        <br>
-                        All rights reserved
+                        © 2025 Powered By Bonecom Tricom Group
                     </span>
                 </div>
             </div>
@@ -478,6 +411,40 @@ $personals =  Candidate::find(session()->get("user_id"));
 
         gtag('config', 'UA-145863698-4');
 
+        function disabledEnableForm(act, form) {
+            $("#" + form + " :input").each(function() {
+                var $el = $(this);
+                var tag = $el.prop('tagName');
+                var type = $el.attr('type');
+
+                if (type === "checkbox") {
+                    $el.prop('disabled', act); // checkbox pakai disabled
+                    return;
+                }
+
+                switch (tag) {
+                    case "SELECT":
+                        $el.prop("disabled", act);
+                        break;
+                    case "INPUT":
+                        $el.prop("readonly", act);
+                        break;
+                    case "TEXTAREA":
+                        $el.prop("readonly", act);
+                        break;
+                }
+            });
+
+            // Handle Summernote
+            $("#" + form + " .summernote").each(function() {
+                const $el = $(this);
+                if (act) {
+                    $el.summernote('disable');
+                } else {
+                    $el.summernote('enable');
+                }
+            });
+        }
 
 
         $(document).ready(function() {

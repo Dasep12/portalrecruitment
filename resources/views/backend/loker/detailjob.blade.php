@@ -47,9 +47,9 @@
             </style>
 
             <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light " style=" border-bottom: solid 0px #e6e6e6;min-height:10vh; z-index:1">
-                <a class="navbar-brand" href="https://recruit.infomedia.co.id/">
-                    <img id="img_logo_top_bar" class="img-logo" src="https://recruit.infomedia.co.id/assets/frontend/logo_humanvue.png" style="width:180px;" height="" alt="">
-                </a>
+                <!-- <a class="navbar-brand" href="javascript:void(0)">
+                    <img id="img_logo_top_bar" class="img-logo" src="{{ asset('assets/frontend/img/bti_logo_hires_bw.gif') }}" style="width:180px;" height="" alt="">
+                </a> -->
 
 
                 <div class="collapse navbar-collapse " id="navbarSupportedContent" style="border-radius: 5px;padding:20px">
@@ -91,7 +91,7 @@
                             <div style="height: auto;;width: 100%;">
                                 <div class="relative" style="position: relative;"><iframe class="chartjs-hidden-iframe" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" tabindex="-1"></iframe>
                                     <canvas id="chartProgress" width="237" height="280" style="display: block; height: 187px; width: 158px;"></canvas>
-                                    <div class="absolute-center text-center" style="position:absolute;top: 62%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: small;">Kuota Kandidat</label>
+                                    <div class="absolute-center text-center" style="position:absolute;top: 62%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: small;">Pelamar</label>
                                     </div>
                                 </div>
                             </div>
@@ -123,13 +123,7 @@
                             <h5 style="margin-bottom:0px"><b>Job Description</b></h5>
                             <hr>
                             <div style="margin-top:10px">
-                                <p>
-                                    <?php
-                                    $jobdescParse = json_decode($detail->jobdescription);
-                                    foreach ($jobdescParse as $jobdesc): ?>
-                                        <?= $jobdesc->id ?>. <?= $jobdesc->text ?><br>
-                                    <?php endforeach ?>
-                                </p>
+                                {!! $detail->jobdescription !!}
                             </div>
                         </div>
 
@@ -137,26 +131,14 @@
                             <h5 style="margin-bottom:0px"><b>Job Requirement</b></h5>
                             <hr>
                             <div style="margin-top:10px">
-                                <p>
-                                    <?php
-                                    $jobrequirementParse = json_decode($detail->jobrequirement);
-                                    foreach ($jobrequirementParse as $jobreq): ?>
-                                        <?= $jobreq->id ?>. <?= $jobreq->text ?><br>
-                                    <?php endforeach ?>
-                                </p>
+                                {!! $detail->jobrequirement !!}
                             </div>
                         </div>
                         <div class="col-md-12" style="margin-top:30px">
                             <h5 style="margin-bottom:0px"><b>Skill Requirement</b></h5>
                             <hr>
                             <div style="margin-top:10px">
-                                <p>
-                                    <?php
-                                    $skill_requirementParse = json_decode($detail->skill_requirement);
-                                    foreach ($skill_requirementParse as $skillreq): ?>
-                                        <i class="material-icons" style="color: #007bff;">check_circle</i><span style="margin-left: 10px;position: absolute;"><?= $skillreq->text  ?></span><br>
-                                    <?php endforeach ?>
-                                </p>
+                                {!! $detail->skill_requirement !!}
                             </div>
                         </div>
                     </div>
@@ -165,7 +147,7 @@
                 <div class="col-md-3 section-custom">
                     <div class="row">
                         <div class="col-md-12 card-job">
-                            <p>STATUS <b><?= $detail->type_jobs ?></b></p>
+                            <p>STATUS <b><?= $detail->type_job ?></b></p>
                             <hr>
                             <b class="heading">Lokasi:</b>
                             <p><?= $detail->location ?></p>
@@ -207,6 +189,14 @@
                         return false
                     }
 
+
+                    var total_pelamar = "{{ $detail->total_pelamar }}";
+                    var kuota = "{{ $detail->kuota }}";
+                    if (parseInt(total_pelamar) >= parseInt(kuota)) {
+                        $("#lamar_button").append(` <button disabled class="btn btn-danger" id="apply-job">Kuota Terpenuhi</button>`);
+                        return false;
+                    }
+
                     $("#lamar_button").append(`  <a href="{{ url('main/formapply/'.$detail->id) }}" target="_blank" class="btn btn-danger" id="apply-job">Lamar Pekerjaan</a>`);
                 }
             })
@@ -214,15 +204,15 @@
 
         $(document).ready(function() {
             //ratio
-            var percentage_ratio = 14;
-            var percentage = 5;
+            var percentage_ratio = "{{ $detail->total_pelamar }}";
+            var percentage = "{{ $detail->kuota }}";
             var is_check_ratio = 'yes';
 
             if (is_check_ratio == 'yes') {
                 if (percentage == "null" || percentage == "") {
                     percentage_ratio = 0;
                 } else {
-                    percentage_ratio = percentage;
+                    // percentage_ratio = percentage;
                 }
             }
 
@@ -236,11 +226,11 @@
             new Chart(chartProgress, {
                 type: 'doughnut',
                 data: {
-                    labels: ["Rasio", 'Available'],
+                    labels: ["Pelamar", 'Available'],
                     datasets: [{
                         label: "Population (millions)",
                         backgroundColor: [percentage_color, '#FFFFFF'],
-                        data: [percentage_ratio, 100 - percentage_ratio]
+                        data: [percentage_ratio, percentage - percentage_ratio]
                     }]
                 },
                 plugins: [{
@@ -259,7 +249,7 @@
                         ctx.fillStyle = percentage_color;
                         ctx.textBaseline = "middle";
 
-                        var text = percentage_ratio + "%",
+                        var text = percentage_ratio + "",
                             textX = Math.round((width - ctx.measureText(text).width) / 2),
                             textY = height / 2.3;
 

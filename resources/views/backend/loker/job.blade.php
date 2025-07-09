@@ -27,7 +27,7 @@
             .card-list-vacancy {
                 margin: 10px 0px;
                 /* background: whitesmoke; */
-                background: #A80807;
+                background: #939393 !important;
                 padding: 10px 0px;
                 border-radius: 2px;
                 color: #FFF;
@@ -49,8 +49,8 @@
             <div class="col-md-12" style="color:white;background: #09090994;padding: 10px">
                 <label>Nama Lowongan</label>
                 <div class="input-group">
-                    <input type="text" class="form-control" name="name_vacancy" id="name_vacancy" placeholder="Cari kata kunci pekerjaan">
-                    <span onclick="loadPagination(0)" class="input-group-addon" style="background: white;border-top-right-radius: 5px;border-bottom-right-radius: 5px;"><span class="material-icons" style="color: black;padding: 7px;">search</span></span>
+                    <input type="text" class="form-control" name="search_jobs" id="search_jobs" placeholder="Cari kata kunci pekerjaan">
+                    <span onclick="loadListJobs()" class="input-group-addon" style="background: white;border-top-right-radius: 5px;border-bottom-right-radius: 5px;cursor:pointer"><span class="material-icons" style="color: black;padding: 4px;">search</span></span>
                 </div>
             </div>
 
@@ -59,7 +59,7 @@
             <div class="col-md-4" style="color:white;background: #09090994;padding: 10px;">
                 <div class="form-group">
                     <label for="">Bidang Pekerjaan</label>
-                    <select onchange="loadPagination(0)" class="form-control js-example-basic-single" id="stream" style="width:100%">
+                    <select onchange="loadListJobs()" class="form-control js-example-basic-single" id="position" style="width:100%">
                         <option value="" selected="">Pilih</option>
                         <option value="2">Finance Accounting & Tax</option>
                         <option value="3">Logistic</option>
@@ -72,7 +72,7 @@
             <div class="col-md-4" style="color:white;background: #09090994;padding: 10px;">
                 <div class="form-group">
                     <label for="">Jenjang Pendidikan</label>
-                    <select onchange="loadPagination(0)" class="form-control js-example-basic-single" id="jenjang" style="width:100%">
+                    <select onchange="loadListJobs()" class="form-control js-example-basic-single" id="education" style="width:100%">
                         <option value="" selected="">Pilih</option>
                         <!-- <option value="3">SLTA/SMK</option>
                         <option value="5">Diploma 3</option>
@@ -87,7 +87,7 @@
             <div class="col-md-4" style="color:white;background: #09090994;padding: 10px;">
                 <div class="form-group">
                     <label for="">Status Pekerjaan</label>
-                    <select onchange="loadPagination(0)" class="form-control js-example-basic-single" id="types_jobs" style="width:100%">
+                    <select onchange="loadListJobs()" class="form-control js-example-basic-single" id="type_job" style="width:100%">
                         <option value="" selected="">Pilih</option>
                     </select>
                 </div>
@@ -149,7 +149,6 @@
             pageno = $(this).attr('data-ci-pagination-page');
             loadPagination(pageno);
         });
-        loadPagination(0);
 
     });
 
@@ -161,8 +160,9 @@
             type: 'GET',
             cache: false,
             success: function(res) {
-                const $append = $("#stream");
+                const $append = $("#position");
                 $append.empty();
+                $append.append(`<option value="">* PILIH</option>`);
                 $.each(res, function(i, val) {
                     $append.append(`<option value="${val.id}">${val.name_partjob}</option>`);
                 });
@@ -176,8 +176,9 @@
             type: 'GET',
             cache: false,
             success: function(res) {
-                const $append = $("#jenjang");
+                const $append = $("#education");
                 $append.empty();
+                $append.append(`<option value="">* PILIH</option>`);
                 $.each(res, function(i, val) {
                     $append.append(`<option value="${val.code}">${val.name}</option>`);
                 });
@@ -191,10 +192,11 @@
             type: 'GET',
             cache: false,
             success: function(res) {
-                const $append = $("#types_jobs");
+                const $append = $("#type_job");
                 $append.empty();
+                $append.append(`<option value="">* PILIH</option>`);
                 $.each(res, function(i, val) {
-                    $append.append(`<option value="${val.code}">${val.name}</option>`);
+                    $append.append(`<option value="${val.name}">${val.name}</option>`);
                 });
             }
         })
@@ -206,9 +208,10 @@
             url: '{{ url("main/listjob") }}',
             type: 'GET',
             data: {
-                stream: $("#stream").val(),
-                jenjang: $("#jenjang").val(),
-                vacancy_name: $("#name_vacancy").val(),
+                education: $("#education").val(),
+                position: $("#position").val(),
+                type_job: $("#type_job").val(),
+                search_jobs: $("#search_jobs").val()
             },
             dataType: 'json',
             beforeSend: function() {
@@ -216,7 +219,6 @@
             },
             success: function(response) {
                 $('#list_vacancy').html('');
-                console.log(response);
                 $("#total_job_vacancy").text(response.length);
                 if (response.length < 1) {
                     $('#list_vacancy').html('<div class="col-xs-12 mx-auto text-center no-job-available" style="border: 1px solid red;background: antiquewhite;"><i class="material-icons" style="background: white;font-size: 50px;padding: 30px;border-radius: 50%;/*! box-shadow: 0 6px 15px rgba(36, 37, 38, 0.25); */color: red;">extension</i><h5 style="margin-top: 20px;">No job available</h5></div>');
@@ -229,20 +231,20 @@
                         if (val.percentage !== null) {
                             canvasStyle = 'block';
                         }
-                        const jobdescription = JSON.parse(val.jobdescription).map(n => n.text).join(', ');
+                        // const jobdescription = JSON.parse(val.jobdescription).map(n => n.text).join(', ');
                         $("#list_vacancy").append('<div class="row card-list-vacancy" >\
                             <div class="col-md-2" style="">\
-                              <div class="relative" style="position: relative;display:' + canvasStyle + ';"><canvas id="chartProgress_' + val.id + '" width="300px" height="200" style="display:' + canvasStyle + '"></canvas><div class="absolute-center text-center" style="position:absolute;top: 62%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: small;">Kuota Kandidat</label></div></div>\
+                              <div class="relative" style="position: relative;display:' + canvasStyle + ';"><canvas id="chartProgress_' + val.id + '" width="300px" height="200" style="display:' + canvasStyle + '"></canvas><div class="absolute-center text-center" style="position:absolute;top: 62%;left: 50%;transform: translate(-50%, -50%);"><label style="line-height: 1;font-size: small;color:#095EF1">Pelamar</label></div></div>\
                             </div>\
                             <div class="col-md-7 center-list-job" style="">\
-                              <h4 style="margin-bottom: 0px;font-weight: bold;">' + val.position + '</h4>\
+                              <h4 style="margin-bottom: 0px;font-weight: bold;">' + val.job_part + '</h4>\
                               <p style="">' + val.company + '</p>\
                               <hr style="border:1px solid #FFF">\
-                              <p>' + jobdescription + '</p>\
+                              <p>' + val.jobdescription + '</p>\
                             </div>\
                             <div class="col-md-3" style="padding:5px">\
                               <span>Bidang Pekerjaan :</span><br>\
-                              <b>' + val.job_part + '</b><br><br>\
+                              <b>' + val.position + '</b><br><br>\
                               <span>Jenjang Pendidikan :</span><br>\
                               <b>' + val.education + '</b>\
                               <br><br>\
@@ -251,26 +253,27 @@
                           </div>');
 
                         var percentage_ratio = 0;
-                        let percentage = 12;
+                        let percentage = val.total_pelamar;
                         if (percentage > 0) {
-                            percentage_ratio = percentage;
+                            percentage_ratio = val.total_pelamar;
                         }
+
                         var percentage_color = '';
-                        if (percentage < 80) {
-                            percentage_color = '#FFF';
+                        var percentage_color = '';
+                        if (percentage_ratio < 80) {
+                            percentage_color = '#095EF1';
                         } else {
-                            percentage_color = '#FFF';
-                            // percentage_color = '#6d6ada';
+                            percentage_color = '#F10909';
                         }
                         var chartProgress = document.getElementById('chartProgress_' + val.id);
                         new Chart(chartProgress, {
                             type: 'doughnut',
                             data: {
-                                labels: ["Rasio", 'Available'],
+                                labels: ["Pelamar", 'Available'],
                                 datasets: [{
                                     label: "Population (millions)",
-                                    backgroundColor: [percentage_color],
-                                    data: [percentage_ratio, 10 - percentage_ratio]
+                                    backgroundColor: [percentage_color, '#FFFFFF'],
+                                    data: [percentage_ratio, val.kuota - val.total_pelamar]
                                 }]
                             },
                             plugins: [{
@@ -280,12 +283,16 @@
                                         ctx = chart.chart.ctx;
 
                                     ctx.restore();
+                                    ctx.beginPath();
+                                    ctx.arc(width / 2, height / 2, 60, 0, 2 * Math.PI);
+                                    ctx.fillStyle = '#FFFFFF';
+                                    ctx.fill();
                                     var fontSize = (height / 100).toFixed(2);
                                     ctx.font = fontSize + "em sans-serif";
                                     ctx.fillStyle = percentage_color;
                                     ctx.textBaseline = "middle";
 
-                                    var text = percentage_ratio + "%",
+                                    var text = percentage_ratio + "",
                                         textX = Math.round((width - ctx.measureText(text).width) / 2),
                                         textY = height / 2.3;
 

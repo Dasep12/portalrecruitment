@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ApplayController;
 use App\Http\Controllers\CVController;
+use App\Http\Controllers\HRController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\LokerController;
 use App\Http\Controllers\PortalController;
@@ -69,7 +70,7 @@ Route::middleware(['check.session'])->prefix('/main')->group(function () {
     Route::get('/apply', [ApplayController::class, 'index']);
     Route::get('/formapply/{id}', [ApplayController::class, 'form']);
     Route::post('/applyJob', [ApplayController::class, 'applyJob']);
-    // Route::get('/home', [ApplayController::class, 'index']);
+    Route::get('/cekLamaran', [ApplayController::class, 'cekLamaran']);
 
     // LOWONGAN
     Route::get('/job_vacany', [LokerController::class, 'index']);
@@ -78,4 +79,13 @@ Route::middleware(['check.session'])->prefix('/main')->group(function () {
     Route::get('/JsonTypeJob', [LokerController::class, 'JsonTypeJob']);
     Route::get('/cekStatusLamaran', [LokerController::class, 'cekStatusLamaran']);
     Route::get('/detailjob/{id}', [LokerController::class, 'detailjob']);
+});
+
+
+Route::middleware(['check.session'])->prefix('/hr')->group(function () {
+    Route::get('/postjob', [HRController::class, 'postjob']);
+    Route::get('/listJobJson', [HRController::class, 'listJobJson']);
+    Route::post('/crudPostJob', [HRController::class, 'crudPostJob']);
+    Route::get('/listJsonPelamar', [HRController::class, 'listJsonPelamar']);
+    Route::get('/proseRecruitment', [HRController::class, 'proseRecruitment']);
 });
