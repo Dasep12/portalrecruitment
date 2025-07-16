@@ -169,4 +169,47 @@ class HRController extends Controller
         $document = DB::table('tbl_mst_candidate_document')->where('candidate_id', $this->sessId)->get();
         return view('backend.hr.proses.index', compact('lowongan', 'progress', 'personal', 'education', 'experience', 'organisasi', 'skills', 'document'));
     }
+
+    public function getDataPelamar(Request $req)
+    {
+        $personal = DB::table('vw_personaldata')->where('id', $req->candidate_id)->first();
+        $education = DB::table('vw_education')->where('candidate_id', $req->candidate_id)->get();
+        $experience = DB::table('vw_experience')->where('candidate_id', $req->candidate_id)->get();
+        $organisasi = DB::table('tbl_mst_candidate_organization')->where('candidate_id', $req->candidate_id)->get();
+        $skills = DB::table('vw_skills')->where('candidate_id', $req->candidate_id)->get();
+        $document = DB::table('tbl_mst_candidate_document')->where('candidate_id', $req->candidate_id)->get();
+        return response()->json(
+            [
+                'personal' => $personal,
+                'education' => $education,
+                'experience' => $experience,
+                'organisasi' => $organisasi,
+                'experience' => $experience,
+                'skills' => $skills,
+                'document' => $document,
+            ]
+        );
+    }
+
+
+    public function stagesList()
+    {
+        $data =  DB::table("tbl_application_stages")->get();
+        return response()->json($data);
+    }
+    public function stagesEmployee(Request $req)
+    {
+        $data =  DB::table("vw_stage_application")
+            ->where([
+                'job_id' => $req->job_id,
+                'stage_id' => $req->stage_id,
+            ])->get();
+        return response()->json($data);
+    }
+
+    public function CrudStages(Request $req)
+    {
+        $progress = $req->progress_sort;
+        $job_id = $req->job_id;
+    }
 }

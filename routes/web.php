@@ -86,6 +86,10 @@ Route::middleware(['check.session'])->prefix('/hr')->group(function () {
     Route::get('/postjob', [HRController::class, 'postjob']);
     Route::get('/listJobJson', [HRController::class, 'listJobJson']);
     Route::post('/crudPostJob', [HRController::class, 'crudPostJob']);
+    Route::post('/CrudStages', [HRController::class, 'CrudStages']);
     Route::get('/listJsonPelamar', [HRController::class, 'listJsonPelamar']);
     Route::get('/proseRecruitment', [HRController::class, 'proseRecruitment']);
+    Route::get('/stagesList', [HRController::class, 'stagesList']);
+    Route::get('/stagesEmployee', [HRController::class, 'stagesEmployee']);
+    Route::get('/getDataPelamar', [HRController::class, 'getDataPelamar']);
 });
